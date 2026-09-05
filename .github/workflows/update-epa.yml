@@ -1,7 +1,5 @@
 name: Update EPA
 
-# Tuesday mornings, after Monday night football has been added to nflverse.
-# workflow_dispatch means you can also run it by hand from the Actions tab.
 on:
   schedule:
     - cron: "0 12 * * 2"
