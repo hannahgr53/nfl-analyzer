@@ -220,30 +220,48 @@ def fd_pick_slate(rows):
     return sorted([r for r in rows if r.get("id")], key=rank)
 
 
-def fd_slate_id():
-    """Resolve the NFL slate id, or None if the slate list cannot be read."""
+def fd_slates():
+    """Every NFL slate FanDuel Research lists, or [] if the call cannot be read.
+    sport alone; supplying `range` is rejected by the schema."""
+    try:
+        data = fd_graphql(FD_SLATES_QUERY, {"sport": "NFL"}, "GetSlates")
+    except Exception as e:                                   # noqa: BLE001
+        print("  slates failed: %s" % str(e)[:140], flush=True)
+        return []
+    rows = [r for r in (data.get("getSlates") or []) if r.get("id")]
+    if rows:
+        print("  FanDuel slates: %s" % ", ".join(
+            "%s=%s" % (r.get("id"), fd_name(r)) for r in rows[:12]), flush=True)
+    return rows
+
+
+def fd_slate_id(rows):
+    """Resolve the main NFL slate id, or None if the slate list cannot be read."""
     override = os.environ.get("FD_SLATE_ID", "").strip()
     if override:
         print("  FanDuel slate pinned by FD_SLATE_ID=%s" % override, flush=True)
         return override, "pinned"
-
-    # sport alone; supplying `range` is rejected by the schema.
-    for variables in ({"sport": "NFL"},):
-        try:
-            data = fd_graphql(FD_SLATES_QUERY, variables, "GetSlates")
-        except Exception as e:                               # noqa: BLE001
-            print("  slates %s failed: %s" % (variables, str(e)[:140]), flush=True)
-            continue
-        rows = data.get("getSlates") or []
-        if not rows:
-            continue
-        ordered = fd_pick_slate(rows)
-        print("  FanDuel slates: %s" % ", ".join(
-            "%s=%s" % (r.get("id"), fd_name(r)) for r in ordered[:6]), flush=True)
-        if ordered:
-            pick = ordered[0]
-            return str(pick["id"]), fd_name(pick)
+    ordered = fd_pick_slate(rows)
+    if ordered:
+        pick = ordered[0]
+        return str(pick["id"]), fd_name(pick)
     return None, None
+
+
+def fd_single_slates(rows):
+    """Single-game slates, named for the matchup: 'NE @ SEA'. These carry their
+    own salary scale — nothing like the main slate's — so they are fetched and
+    stored separately rather than derived by filtering the main pool."""
+    out = []
+    for r in rows:
+        n = fd_name(r)
+        if " @ " not in n:
+            continue
+        parts = [p.strip().upper() for p in n.split(" @ ")]
+        if len(parts) != 2:
+            continue
+        out.append((str(r["id"]), n, parts))
+    return out
 
 
 def fanduel_via_research(slate_id):
@@ -314,8 +332,28 @@ def fanduel_via_research(slate_id):
             "players": players, "def": defs}
 
 
+def fanduel_singles(slates):
+    """One priced block per single-game slate, capped at a handful so a run stays
+    short. A slate that fails is skipped, never fatal."""
+    out = []
+    for sid, name, teams in slates[:6]:
+        try:
+            blk = fanduel_via_research(sid)
+        except Exception as e:                               # noqa: BLE001
+            print("  FanDuel single %s (%s) failed: %s" % (name, sid, str(e)[:120]), flush=True)
+            continue
+        blk["slate"] = name
+        blk["single"] = True
+        blk["teams"] = teams
+        blk["games"] = 1
+        print("  FanDuel single game %s: %d priced" % (name, blk["count"]), flush=True)
+        out.append(blk)
+    return out
+
+
 def fanduel(prev_fd=None):
-    slate_id, name = fd_slate_id()
+    slates = fd_slates()
+    slate_id, name = fd_slate_id(slates)
     tried = []
     if slate_id:
         tried.append(slate_id)
@@ -330,6 +368,10 @@ def fanduel(prev_fd=None):
             fd = fanduel_via_research(sid)
             if name and name != "pinned":
                 fd["slate"] = "FanDuel %s" % name
+            try:
+                fd["singles"] = fanduel_singles(fd_single_slates(slates))
+            except Exception as e:                           # noqa: BLE001
+                print("  FanDuel single games skipped: %s" % str(e)[:120], flush=True)
             print("  FanDuel via Research GraphQL: %s, %d priced"
                   % (fd["slate"], fd["count"]), flush=True)
             return fd
@@ -376,7 +418,9 @@ def main():
         "note": ("Salaries for the next slate. DraftKings comes from its own "
                  "draftables feed; FanDuel from the public FanDuel Research "
                  "projections GraphQL endpoint. Captain and MVP rows are "
-                 "dropped — the app applies the 1.5x multiplier itself."),
+                 "dropped — the app applies the 1.5x multiplier itself. "
+                 "sources.fd.singles holds one block per FanDuel single-game "
+                 "slate, each with its own salary scale and its two teams."),
         "sources": sources,
     }
 
