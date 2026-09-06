@@ -26,21 +26,37 @@ import sys
 import urllib.request
 from datetime import datetime, timezone
 
-STATS = ("https://github.com/nflverse/nflverse-data/releases/download/player_stats/"
-         "player_stats_{season}.csv.gz")
+# nflverse has renamed this asset more than once. Try each known name and use
+# whichever answers; a 404 on the first is normal, not an error.
+STATS_URLS = (
+    "https://github.com/nflverse/nflverse-data/releases/download/stats_player/"
+    "stats_player_week_{season}.csv.gz",
+    "https://github.com/nflverse/nflverse-data/releases/download/stats_player/"
+    "stats_player_reg_week_{season}.csv.gz",
+    "https://github.com/nflverse/nflverse-data/releases/download/player_stats/"
+    "player_stats_{season}.csv.gz",
+)
 FIX = {"OAK": "LV", "SD": "LAC", "STL": "LA", "WSH": "WAS", "LAR": "LA"}
 POS = {"QB", "RB", "WR", "TE"}
 OUT = "data/players.json"
 
 
 def fetch(season):
-    url = STATS.format(season=season)
-    print("fetching", url, flush=True)
-    req = urllib.request.Request(url, headers={"User-Agent": "nfl-analyzer-players/1"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        raw = r.read()
-    print("  %.1f MB compressed" % (len(raw) / 1e6), flush=True)
-    return gzip.decompress(raw).decode("utf-8", "replace")
+    last = None
+    for tmpl in STATS_URLS:
+        url = tmpl.format(season=season)
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "nfl-analyzer-players/1"})
+            with urllib.request.urlopen(req, timeout=300) as r:
+                raw = r.read()
+        except Exception as e:                               # noqa: BLE001
+            print("  no %s (%s)" % (url.rsplit("/", 1)[-1], str(e)[:60]), flush=True)
+            last = e
+            continue
+        print("fetched %s, %.1f MB compressed"
+              % (url.rsplit("/", 1)[-1], len(raw) / 1e6), flush=True)
+        return gzip.decompress(raw).decode("utf-8", "replace")
+    raise RuntimeError("no player stats asset answered for %s (%s)" % (season, last))
 
 
 def num(row, key):
@@ -73,7 +89,8 @@ def aggregate(text):
         weeks.add(wk)
         team = row.get("recent_team") or row.get("team") or ""
         team = FIX.get(team.upper(), team.upper())
-        pts = num(row, "fantasy_points_ppr") or num(row, "fantasy_points")
+        pts = (num(row, "fantasy_points_ppr") or num(row, "fantasy_points")
+               or num(row, "fantasy_points_half_ppr"))
         rec = by.setdefault(pid, {
             "name": row.get("player_display_name") or row.get("player_name") or "",
             "pos": pos, "team": team, "games": [],
