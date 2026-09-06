@@ -3,8 +3,8 @@
   "dk",
   "fd"
  ],
- "generated": "2026-09-06T15:48:19+00:00",
- "note": "Salaries for the next slate. DraftKings comes from its own draftables feed; FanDuel from the public FanDuel Research projections GraphQL endpoint. Captain and MVP rows are dropped \u2014 the app applies the 1.5x multiplier itself.",
+ "generated": "2026-09-06T16:12:22+00:00",
+ "note": "Salaries for the next slate. DraftKings comes from its own draftables feed; FanDuel from the public FanDuel Research projections GraphQL endpoint. Captain and MVP rows are dropped \u2014 the app applies the 1.5x multiplier itself. sources.fd.singles holds one block per FanDuel single-game slate, each with its own salary scale and its two teams.",
  "sources": {
   "dk": {
    "book": "DraftKings",
@@ -2791,6 +2791,259 @@
     }
    ],
    "single": false,
+   "singles": [
+    {
+     "book": "FanDuel",
+     "cap": 60000,
+     "count": 35,
+     "def": {
+      "NE": 6600,
+      "SEA": 6800
+     },
+     "games": 1,
+     "kickoff": 1788999600000.0,
+     "players": [
+      {
+       "id": 53079,
+       "name": "Hunter Henry",
+       "pos": "TE",
+       "salary": 7600,
+       "team": "NE"
+      },
+      {
+       "id": 53448,
+       "name": "Cooper Kupp",
+       "pos": "WR",
+       "salary": 5400,
+       "team": "SEA"
+      },
+      {
+       "id": 53528,
+       "name": "Eric Saubert",
+       "pos": "TE",
+       "salary": 1600,
+       "team": "SEA"
+      },
+      {
+       "id": 53538,
+       "name": "Mack Hollins",
+       "pos": "WR",
+       "salary": 5800,
+       "team": "NE"
+      },
+      {
+       "id": 53786,
+       "name": "Sam Darnold",
+       "pos": "QB",
+       "salary": 11600,
+       "team": "SEA"
+      },
+      {
+       "id": 54161,
+       "name": "A.J. Brown",
+       "pos": "WR",
+       "salary": 10800,
+       "team": "NE"
+      },
+      {
+       "id": 54167,
+       "name": "Drew Lock",
+       "pos": "QB",
+       "salary": 8000,
+       "team": "SEA"
+      },
+      {
+       "id": 54640,
+       "name": "Reggie Gilliam",
+       "pos": "RB",
+       "salary": 1000,
+       "team": "NE"
+      },
+      {
+       "id": 54894,
+       "name": "Rhamondre Stevenson",
+       "pos": "RB",
+       "salary": 10000,
+       "team": "NE"
+      },
+      {
+       "id": 55050,
+       "name": "Cody White",
+       "pos": "WR",
+       "salary": 1000,
+       "team": "SEA"
+      },
+      {
+       "id": 55238,
+       "name": "Velus Jones",
+       "pos": "RB",
+       "salary": 1400,
+       "team": "SEA"
+      },
+      {
+       "id": 55278,
+       "name": "Romeo Doubs",
+       "pos": "WR",
+       "salary": 8200,
+       "team": "NE"
+      },
+      {
+       "id": 55472,
+       "name": "Rashid Shaheed",
+       "pos": "WR",
+       "salary": 7200,
+       "team": "SEA"
+      },
+      {
+       "id": 55595,
+       "name": "Jaxon Smith-Njigba",
+       "pos": "WR",
+       "salary": 13000,
+       "team": "SEA"
+      },
+      {
+       "id": 55596,
+       "name": "Zach Charbonnet",
+       "pos": "RB",
+       "salary": 9600,
+       "team": "SEA"
+      },
+      {
+       "id": 55684,
+       "name": "Demario Douglas",
+       "pos": "WR",
+       "salary": 3800,
+       "team": "NE"
+      },
+      {
+       "id": 55715,
+       "name": "Emanuel Wilson",
+       "pos": "RB",
+       "salary": 4200,
+       "team": "SEA"
+      },
+      {
+       "id": 55730,
+       "name": "Jake Bobo",
+       "pos": "WR",
+       "salary": 2600,
+       "team": "SEA"
+      },
+      {
+       "id": 55753,
+       "name": "Julian Hill",
+       "pos": "TE",
+       "salary": 1000,
+       "team": "NE"
+      },
+      {
+       "id": 55762,
+       "name": "Brady Russell",
+       "pos": "RB",
+       "salary": 1000,
+       "team": "SEA"
+      },
+      {
+       "id": 55831,
+       "name": "Tommy DeVito",
+       "pos": "QB",
+       "salary": 8000,
+       "team": "NE"
+      },
+      {
+       "id": 55921,
+       "name": "Drake Maye",
+       "pos": "QB",
+       "salary": 12400,
+       "team": "NE"
+      },
+      {
+       "id": 56078,
+       "name": "AJ Barner",
+       "pos": "TE",
+       "salary": 4800,
+       "team": "SEA"
+      },
+      {
+       "id": 56138,
+       "name": "Terrell Jennings",
+       "pos": "RB",
+       "salary": 1200,
+       "team": "NE"
+      },
+      {
+       "id": 56204,
+       "name": "George Holani",
+       "pos": "RB",
+       "salary": 5000,
+       "team": "SEA"
+      },
+      {
+       "id": 56276,
+       "name": "TreVeyon Henderson",
+       "pos": "RB",
+       "salary": 8600,
+       "team": "NE"
+      },
+      {
+       "id": 56304,
+       "name": "Tory Horton",
+       "pos": "WR",
+       "salary": 2400,
+       "team": "SEA"
+      },
+      {
+       "id": 56315,
+       "name": "Robbie Ouzts",
+       "pos": "RB",
+       "salary": 1000,
+       "team": "SEA"
+      },
+      {
+       "id": 56352,
+       "name": "Jack Westover",
+       "pos": "RB",
+       "salary": 1000,
+       "team": "NE"
+      },
+      {
+       "id": 56374,
+       "name": "Kyle Williams",
+       "pos": "WR",
+       "salary": 3000,
+       "team": "NE"
+      },
+      {
+       "id": 56390,
+       "name": "Elijah Arroyo",
+       "pos": "TE",
+       "salary": 3400,
+       "team": "SEA"
+      },
+      {
+       "id": 56519,
+       "name": "Efton Chism III",
+       "pos": "WR",
+       "salary": 1400,
+       "team": "NE"
+      },
+      {
+       "id": 56547,
+       "name": "Ricky White III",
+       "pos": "WR",
+       "salary": 1000,
+       "team": "SEA"
+      }
+     ],
+     "single": true,
+     "slate": "NE @ SEA",
+     "slateId": "2049539",
+     "teams": [
+      "NE",
+      "SEA"
+     ]
+    }
+   ],
    "slate": "FanDuel Main",
    "slateId": "2049537"
   }
