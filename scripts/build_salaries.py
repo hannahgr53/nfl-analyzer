@@ -311,7 +311,7 @@ def fd_single_slates(rows):
     return out
 
 
-def fanduel_via_research(slate_id):
+def fanduel_via_research(slate_id, min_players=30):
     data = fd_graphql(FD_PROJECTIONS_QUERY,
                       {"input": {"type": "DAILY", "position": "NFL_SKILL",
                                  "sport": "NFL", "slateId": str(slate_id)}},
@@ -356,7 +356,7 @@ def fanduel_via_research(slate_id):
         players.append({"id": p.get("numberFireId"), "name": p.get("name") or "",
                         "pos": pos, "team": team, "salary": sal})
 
-    if len(players) < 30:
+    if len(players) < min_players:
         raise RuntimeError("FanDuel Research returned only %d priced players" % len(players))
 
     teams = set()
@@ -385,7 +385,10 @@ def fanduel_singles(slates):
     out = []
     for sid, name, teams in slates[:6]:
         try:
-            blk = fanduel_via_research(sid)
+            # A two-team slate is naturally thinner than the multi-game main
+            # slate's 30-player floor -- 16 still means real depth at every
+            # skill position, not just a broken or empty response.
+            blk = fanduel_via_research(sid, min_players=16)
         except Exception as e:                               # noqa: BLE001
             print("  FanDuel single %s (%s) failed: %s" % (name, sid, str(e)[:120]), flush=True)
             continue
