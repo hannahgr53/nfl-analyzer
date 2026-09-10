@@ -3,7 +3,7 @@
   "dk",
   "fd"
  ],
- "generated": "2026-09-10T23:44:12+00:00",
+ "generated": "2026-09-10T23:53:20+00:00",
  "note": "Salaries for the next slate. DraftKings comes from its own draftables feed; FanDuel from the public FanDuel Research projections GraphQL endpoint. Captain and MVP rows are dropped \u2014 the app applies the 1.5x multiplier itself. sources.<book>.singles holds one block per single-game (Showdown/MVP) slate for that book, each with its own salary scale and its two teams.",
  "sources": {
   "dk": {
@@ -5100,6 +5100,417 @@
      "teams": [
       "NE",
       "SEA"
+     ]
+    },
+    {
+     "book": "FanDuel",
+     "cap": 60000,
+     "count": 30,
+     "def": {
+      "LA": 7000,
+      "SF": 6600
+     },
+     "games": 1,
+     "kickoff": 1789086900000.0,
+     "players": [
+      {
+       "id": 46,
+       "name": "Matthew Stafford",
+       "pos": "QB",
+       "salary": 11400,
+       "team": "LA"
+      },
+      {
+       "id": 52158,
+       "name": "Kyle Juszczyk",
+       "pos": "RB",
+       "salary": 2200,
+       "team": "SF"
+      },
+      {
+       "id": 52418,
+       "name": "Mike Evans",
+       "pos": "WR",
+       "salary": 9400,
+       "team": "SF"
+      },
+      {
+       "id": 52438,
+       "name": "Davante Adams",
+       "pos": "WR",
+       "salary": 9000,
+       "team": "LA"
+      },
+      {
+       "id": 53085,
+       "name": "Tyler Higbee",
+       "pos": "TE",
+       "salary": 3800,
+       "team": "LA"
+      },
+      {
+       "id": 53230,
+       "name": "Demarcus Robinson",
+       "pos": "WR",
+       "salary": 5400,
+       "team": "SF"
+      },
+      {
+       "id": 53425,
+       "name": "Christian McCaffrey",
+       "pos": "RB",
+       "salary": 13000,
+       "team": "SF"
+      },
+      {
+       "id": 53461,
+       "name": "George Kittle",
+       "pos": "TE",
+       "salary": 8200,
+       "team": "SF"
+      },
+      {
+       "id": 53770,
+       "name": "Christian Kirk",
+       "pos": "WR",
+       "salary": 1000,
+       "team": "SF"
+      },
+      {
+       "id": 54158,
+       "name": "Deebo Samuel",
+       "pos": "WR",
+       "salary": 8600,
+       "team": "SF"
+      },
+      {
+       "id": 54804,
+       "name": "Colby Parkinson",
+       "pos": "TE",
+       "salary": 5800,
+       "team": "LA"
+      },
+      {
+       "id": 54872,
+       "name": "Mac Jones",
+       "pos": "QB",
+       "salary": 8000,
+       "team": "SF"
+      },
+      {
+       "id": 54990,
+       "name": "Tutu Atwell",
+       "pos": "WR",
+       "salary": 1600,
+       "team": "LA"
+      },
+      {
+       "id": 54992,
+       "name": "Luke Farrell",
+       "pos": "TE",
+       "salary": 2000,
+       "team": "SF"
+      },
+      {
+       "id": 55404,
+       "name": "Jake Tonges",
+       "pos": "TE",
+       "salary": 4400,
+       "team": "SF"
+      },
+      {
+       "id": 55455,
+       "name": "Brock Purdy",
+       "pos": "QB",
+       "salary": 10600,
+       "team": "SF"
+      },
+      {
+       "id": 55466,
+       "name": "Ronnie Rivers",
+       "pos": "RB",
+       "salary": 1800,
+       "team": "LA"
+      },
+      {
+       "id": 55506,
+       "name": "Kyren Williams",
+       "pos": "RB",
+       "salary": 10200,
+       "team": "LA"
+      },
+      {
+       "id": 55646,
+       "name": "Xavier Smith",
+       "pos": "WR",
+       "salary": 1400,
+       "team": "LA"
+      },
+      {
+       "id": 55652,
+       "name": "Puka Nacua",
+       "pos": "WR",
+       "salary": 12400,
+       "team": "LA"
+      },
+      {
+       "id": 55842,
+       "name": "Davis Allen",
+       "pos": "TE",
+       "salary": 1200,
+       "team": "LA"
+      },
+      {
+       "id": 55925,
+       "name": "Ricky Pearsall",
+       "pos": "WR",
+       "salary": 1000,
+       "team": "SF"
+      },
+      {
+       "id": 55929,
+       "name": "Blake Corum",
+       "pos": "RB",
+       "salary": 7600,
+       "team": "LA"
+      },
+      {
+       "id": 55992,
+       "name": "Jordan Whittington",
+       "pos": "WR",
+       "salary": 3400,
+       "team": "LA"
+      },
+      {
+       "id": 56051,
+       "name": "Jacob Cowing",
+       "pos": "WR",
+       "salary": 1000,
+       "team": "SF"
+      },
+      {
+       "id": 56313,
+       "name": "Terrance Ferguson",
+       "pos": "TE",
+       "salary": 2600,
+       "team": "LA"
+      },
+      {
+       "id": 56341,
+       "name": "Konata Mumpfield",
+       "pos": "WR",
+       "salary": 3000,
+       "team": "LA"
+      },
+      {
+       "id": 56569,
+       "name": "Brennan Presley",
+       "pos": "WR",
+       "salary": 1000,
+       "team": "LA"
+      }
+     ],
+     "single": true,
+     "slate": "SF @ LAR",
+     "slateId": "2071187",
+     "teams": [
+      "SF",
+      "LAR"
+     ]
+    },
+    {
+     "book": "FanDuel",
+     "cap": 60000,
+     "count": 27,
+     "def": {
+      "DEN": 6800,
+      "KC": 6400
+     },
+     "games": 1,
+     "kickoff": 1789431300000.0,
+     "players": [
+      {
+       "id": 52104,
+       "name": "Travis Kelce",
+       "pos": "TE",
+       "salary": 7200,
+       "team": "KC"
+      },
+      {
+       "id": 53432,
+       "name": "Patrick Mahomes",
+       "pos": "QB",
+       "salary": 12400,
+       "team": "KC"
+      },
+      {
+       "id": 53441,
+       "name": "Evan Engram",
+       "pos": "TE",
+       "salary": 4800,
+       "team": "DEN"
+      },
+      {
+       "id": 53781,
+       "name": "Courtland Sutton",
+       "pos": "WR",
+       "salary": 10200,
+       "team": "DEN"
+      },
+      {
+       "id": 54313,
+       "name": "Jarrett Stidham",
+       "pos": "QB",
+       "salary": 8000,
+       "team": "DEN"
+      },
+      {
+       "id": 54340,
+       "name": "Lil'Jordan Humphrey",
+       "pos": "WR",
+       "salary": 2600,
+       "team": "DEN"
+      },
+      {
+       "id": 54503,
+       "name": "J.K. Dobbins",
+       "pos": "RB",
+       "salary": 8800,
+       "team": "DEN"
+      },
+      {
+       "id": 54566,
+       "name": "Adam Trautman",
+       "pos": "TE",
+       "salary": 3800,
+       "team": "DEN"
+      },
+      {
+       "id": 54863,
+       "name": "Justin Fields",
+       "pos": "QB",
+       "salary": 8000,
+       "team": "KC"
+      },
+      {
+       "id": 54871,
+       "name": "Jaylen Waddle",
+       "pos": "WR",
+       "salary": 9600,
+       "team": "DEN"
+      },
+      {
+       "id": 55048,
+       "name": "Noah Gray",
+       "pos": "TE",
+       "salary": 3000,
+       "team": "KC"
+      },
+      {
+       "id": 55268,
+       "name": "Kenneth Walker III",
+       "pos": "RB",
+       "salary": 10800,
+       "team": "KC"
+      },
+      {
+       "id": 55438,
+       "name": "Tyquan Thornton",
+       "pos": "WR",
+       "salary": 5200,
+       "team": "KC"
+      },
+      {
+       "id": 55552,
+       "name": "Tyler Badie",
+       "pos": "RB",
+       "salary": 1800,
+       "team": "DEN"
+      },
+      {
+       "id": 55594,
+       "name": "Marvin Mims",
+       "pos": "WR",
+       "salary": 3400,
+       "team": "DEN"
+      },
+      {
+       "id": 55622,
+       "name": "Rashee Rice",
+       "pos": "WR",
+       "salary": 11400,
+       "team": "KC"
+      },
+      {
+       "id": 55761,
+       "name": "Nate Adkins",
+       "pos": "TE",
+       "salary": 1400,
+       "team": "DEN"
+      },
+      {
+       "id": 55913,
+       "name": "Bo Nix",
+       "pos": "QB",
+       "salary": 11800,
+       "team": "DEN"
+      },
+      {
+       "id": 55917,
+       "name": "Xavier Worthy",
+       "pos": "WR",
+       "salary": 7600,
+       "team": "KC"
+      },
+      {
+       "id": 56064,
+       "name": "Troy Franklin",
+       "pos": "WR",
+       "salary": 5600,
+       "team": "DEN"
+      },
+      {
+       "id": 56071,
+       "name": "Jared Wiley",
+       "pos": "TE",
+       "salary": 1000,
+       "team": "KC"
+      },
+      {
+       "id": 56202,
+       "name": "Nikko Remigio",
+       "pos": "WR",
+       "salary": 1000,
+       "team": "KC"
+      },
+      {
+       "id": 56275,
+       "name": "RJ Harvey",
+       "pos": "RB",
+       "salary": 8200,
+       "team": "DEN"
+      },
+      {
+       "id": 56299,
+       "name": "Brashard Smith",
+       "pos": "RB",
+       "salary": 2000,
+       "team": "KC"
+      },
+      {
+       "id": 56357,
+       "name": "Pat Bryant",
+       "pos": "WR",
+       "salary": 2400,
+       "team": "DEN"
+      }
+     ],
+     "single": true,
+     "slate": "DEN @ KC",
+     "slateId": "2074062",
+     "teams": [
+      "DEN",
+      "KC"
      ]
     }
    ],
