@@ -25,6 +25,7 @@ import gzip
 import io
 import json
 import os
+import re
 import sys
 import urllib.request
 from collections import defaultdict
@@ -32,8 +33,16 @@ from datetime import datetime, timezone
 
 PBP = ("https://github.com/nflverse/nflverse-data/releases/download/pbp/"
        "play_by_play_{season}.csv.gz")
-STATS = ("https://github.com/nflverse/nflverse-data/releases/download/player_stats/"
-         "player_stats_{season}.csv.gz")
+# nflverse has renamed this asset more than once (see build_players.py). Try
+# each known name and use whichever answers; a 404 on the first is normal.
+STATS_URLS = (
+    "https://github.com/nflverse/nflverse-data/releases/download/stats_player/"
+    "stats_player_week_{season}.csv.gz",
+    "https://github.com/nflverse/nflverse-data/releases/download/stats_player/"
+    "stats_player_reg_week_{season}.csv.gz",
+    "https://github.com/nflverse/nflverse-data/releases/download/player_stats/"
+    "player_stats_{season}.csv.gz",
+)
 GAMES = "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv"
 
 FIX = {"OAK": "LV", "SD": "LAC", "STL": "LA", "WSH": "WAS", "LAR": "LA"}
@@ -59,6 +68,18 @@ def fetch_text(url, gz):
         print("  %.1f MB compressed" % (len(raw) / 1e6), flush=True)
         raw = gzip.decompress(raw)
     return raw.decode("utf-8", "replace")
+
+
+def fetch_stats_text(season):
+    """Try each known nflverse weekly-stats asset name in turn."""
+    last = None
+    for tmpl in STATS_URLS:
+        try:
+            return fetch_text(tmpl.format(season=season), True)
+        except Exception as e:                               # noqa: BLE001
+            print("  no %s (%s)" % (tmpl.rsplit("/", 1)[-1], str(e)[:60]), flush=True)
+            last = e
+    raise RuntimeError("no player stats asset answered for %s (%s)" % (season, last))
 
 
 def rows_of(text):
@@ -333,7 +354,7 @@ def pbp_tables(pbp, recs):
 
 
 # ----------------------------------------------------------------- player tables
-def player_tables(stats, season):
+def _per_player(stats):
     per = defaultdict(lambda: {"name": "", "pos": "", "team": "", "weeks": [],
                                "tds": 0.0, "targets": 0.0, "tshare": [], "rz": 0.0})
     for row in stats:
@@ -356,6 +377,22 @@ def player_tables(stats, season):
         ts = f(row, "target_share", None) if row.get("target_share") not in (None, "", "NA") else None
         if ts is not None:
             r["tshare"].append(ts)
+    return per
+
+
+def player_tables(stats, season, prev_stats=None):
+    # Early in a season almost nobody has a current-season row yet, so a
+    # player who has not taken a 2026 snap (hurt, or just a normal team that
+    # has not played its week-1 game) would otherwise vanish from this table
+    # entirely rather than being merely stale. Last season's numbers fill
+    # that gap; current-season rows always win once they exist. This means a
+    # player's team can still lag behind an offseason trade or free-agent
+    # signing until he actually plays a game — no feed here can know a
+    # roster move before it shows up in a box score — but at least the whole
+    # league stays populated instead of thinning out to whoever already has
+    # a game in the book.
+    per = dict(_per_player(prev_stats)) if prev_stats else {}
+    per.update(_per_player(stats))
 
     qb_td = {"columns": ["Player", "Team", "Games", "TDs", "TD/Game"], "rows": []}
     rb_td = {"columns": ["Player", "Team", "Games", "TDs", "TD/Game"], "rows": []}
@@ -389,6 +426,83 @@ def player_tables(stats, season):
     return {"QB TD/Game": qb_td, "RB TD/Game": rb_td, "Fantasy Projections": fantasy}
 
 
+# ------------------------------------------------------- live roster overlay
+# nflverse's weekly stats only know a player's team as of his last recorded
+# game, so a trade or free-agent signing is invisible to every table above
+# until he actually plays for his new team. ESPN's roster endpoint has no
+# such lag — a signing shows up there the day it happens — so it is used
+# here only to correct the Team column after the fact, never to add or
+# drop a row.
+ROSTER_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/{id}/roster"
+ESPN_TEAM_IDS = {
+    "ARI": 22, "ATL": 1, "BAL": 33, "BUF": 2, "CAR": 29, "CHI": 3, "CIN": 4,
+    "CLE": 5, "DAL": 6, "DEN": 7, "DET": 8, "GB": 9, "HOU": 34, "IND": 11,
+    "JAX": 30, "KC": 12, "LV": 13, "LAC": 24, "LA": 14, "MIA": 15, "MIN": 16,
+    "NE": 17, "NO": 18, "NYG": 19, "NYJ": 20, "PHI": 21, "PIT": 23, "SF": 25,
+    "SEA": 26, "TB": 27, "TEN": 10, "WAS": 28,
+}
+
+
+def _name_key(n):
+    n = (n or "").lower()
+    n = re.sub(r"[.’‘',]", "", n)
+    n = re.sub(r"[-–]", " ", n)
+    n = re.sub(r"\s+(jr|sr|ii|iii|iv|v)$", "", n)
+    return re.sub(r"\s+", " ", n).strip()
+
+
+def current_teams():
+    """Live name -> team abbreviation map from ESPN rosters. One request per
+    team; a team that fails to answer just contributes nothing to the map
+    rather than failing the whole build."""
+    out = {}
+    ok = 0
+    for abbr, tid in ESPN_TEAM_IDS.items():
+        try:
+            # Deliberately no custom User-Agent here: ESPN's edge (Akamai)
+            # blocks this particular endpoint for anything that looks like a
+            # named client or a spoofed browser, but answers urllib's own
+            # plain default string. Every other fetch in this file talks to
+            # GitHub/nflverse instead, which does not care either way.
+            req = urllib.request.Request(ROSTER_URL.format(id=tid))
+            with urllib.request.urlopen(req, timeout=20) as r:
+                d = json.loads(r.read().decode("utf-8", "replace"))
+        except Exception as e:                               # noqa: BLE001
+            print("  roster %s failed: %s" % (abbr, str(e)[:100]), flush=True)
+            continue
+        ok += 1
+        for group in d.get("athletes") or []:
+            for p in group.get("items") or []:
+                k = _name_key(p.get("displayName"))
+                if k:
+                    out[k] = abbr
+    print("  live rosters: %d of %d teams answered, %d players"
+          % (ok, len(ESPN_TEAM_IDS), len(out)), flush=True)
+    return out
+
+
+def apply_live_teams(tabs, teams_map):
+    """Correct the Team column on the player tables using ESPN's current
+    rosters, wherever it disagrees with what the stats-derived team was.
+    Never adds, drops or reorders a row -- only fixes the one field that a
+    box score cannot know before it happens."""
+    if not teams_map:
+        return 0
+    changed = 0
+    for name in ("QB TD/Game", "RB TD/Game", "Fantasy Projections"):
+        tab = tabs.get(name)
+        if not tab:
+            continue
+        cols = tab["columns"]
+        pi, ti = cols.index("Player"), cols.index("Team")
+        for row in tab["rows"]:
+            live = teams_map.get(_name_key(row[pi]))
+            if live and live != row[ti]:
+                row[ti] = live
+                changed += 1
+    return changed
+
+
 def main():
     now = datetime.now(timezone.utc)
     season = now.year if now.month >= 3 else now.year - 1
@@ -412,9 +526,22 @@ def main():
         print("play-by-play tables skipped: %s" % e, flush=True)
 
     try:
-        tabs.update(player_tables(rows_of(fetch_text(STATS.format(season=season), True)), season))
+        cur_stats = rows_of(fetch_stats_text(season))
+        prev_stats = None
+        try:
+            prev_stats = rows_of(fetch_stats_text(season - 1))
+        except Exception as e:                               # noqa: BLE001
+            print("  prior-season stats unavailable, early-season table will be thin: %s" % e, flush=True)
+        tabs.update(player_tables(cur_stats, season, prev_stats))
     except Exception as e:                                   # noqa: BLE001
         print("player tables skipped: %s" % e, flush=True)
+
+    try:
+        changed = apply_live_teams(tabs, current_teams())
+        if changed:
+            print("  corrected team for %d rows using live ESPN rosters" % changed, flush=True)
+    except Exception as e:                                   # noqa: BLE001
+        print("live roster overlay skipped: %s" % e, flush=True)
 
     payload = {
         "generated": now.isoformat(timespec="seconds"),
