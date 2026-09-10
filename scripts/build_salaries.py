@@ -121,6 +121,58 @@ def norm_pos(p):
 
 
 # --------------------------------------------------------------------- DraftKings
+def _dk_parse_draftgroup(gid):
+    """Fetch one DraftKings draft group and return its priced players/defenses,
+    deduped -- Showdown groups list the same man twice (CPT and FLEX); the
+    cheaper, non-captain row is kept, since the app applies the 1.5x itself."""
+    d = get(DK_DRAFTABLES.format(gid=gid))
+    players, defs, seen = [], {}, set()
+    for p in d.get("draftables") or []:
+        pos = norm_pos(p.get("position"))
+        sal = p.get("salary")
+        if pos not in ("QB", "RB", "WR", "TE", "DEF") or not sal:
+            continue
+        key = (p.get("playerId"), pos)
+        if key in seen:
+            continue
+        seen.add(key)
+        name = p.get("displayName") or ""
+        team = (p.get("teamAbbreviation") or "").upper()
+        if pos == "DEF":
+            if team and (team not in defs or sal < defs[team]):
+                defs[team] = sal
+            continue
+        players.append({"id": p.get("playerId"), "name": name, "pos": pos,
+                        "team": team, "salary": sal})
+    return players, defs
+
+
+def dk_single_slates(cands, main_gid):
+    """Every other single-game (Showdown) draft group, fetched and stored
+    separately -- each prices on its own scale, the same way FanDuel's
+    single-game slates do. Capped at a handful so a run stays short."""
+    out = []
+    for c in [c for c in cands if c["n"] == 1 and c["gid"] != main_gid][:6]:
+        try:
+            players, defs = _dk_parse_draftgroup(c["gid"])
+        except (urllib.error.URLError, urllib.error.HTTPError, ValueError) as e:
+            print("  DK single-game group %s failed: %s" % (c["gid"], e), flush=True)
+            continue
+        teams = sorted({p["team"] for p in players if p["team"]})
+        if len(players) < 8 or len(teams) != 2:
+            continue
+        when = ""
+        if c["ms"]:
+            when = datetime.fromtimestamp(c["ms"] / 1000, timezone.utc).strftime("%a %b %d")
+        name = "%s @ %s%s" % (teams[0], teams[1], (", " + when) if when else "")
+        print("  DraftKings single game %s: %d priced" % (name, len(players) + len(defs)), flush=True)
+        out.append({
+            "slate": name, "teams": teams, "cap": 50000,
+            "count": len(players) + len(defs), "players": players, "def": defs,
+        })
+    return out
+
+
 def draftkings():
     lobby = get(DK_LOBBY)
     groups = lobby.get("DraftGroups") or []
@@ -148,52 +200,47 @@ def draftkings():
                       "tag": g.get("DraftGroupTag") or "", "suffix": g.get("ContestStartTimeSuffix") or ""})
 
     # Soonest slate that has not started, biggest first inside a window; the
-    # main slate before the showdowns.
+    # main slate before the showdowns. A single-game (Showdown) group is
+    # almost always posted, and kicks off, before the real weekly main slate --
+    # a Wednesday or Thursday opener's own Showdown contest goes up days ahead
+    # of Sunday's main slate -- so a multi-game candidate is preferred over a
+    # single-game one whenever both exist, rather than picking whichever is
+    # merely soonest; a single-game group is only used as the main slate if
+    # nothing bigger is available at all.
     ahead = [c for c in cands if c["gid"] and c["ms"] and c["ms"] > now - 4 * 3600e3]
     behind = [c for c in cands if c["gid"] and (not c["ms"] or c["ms"] <= now - 4 * 3600e3)]
-    ahead.sort(key=lambda c: (c["ms"], -c["n"]))
-    behind.sort(key=lambda c: -(c["ms"] or 0))
+    ahead.sort(key=lambda c: (c["n"] == 1, c["ms"], -c["n"]))
+    behind.sort(key=lambda c: (c["n"] == 1, -(c["ms"] or 0)))
     order = ahead + behind
 
-    for c in order[:6]:
+    dk = None
+    for c in order[:10]:
         try:
-            d = get(DK_DRAFTABLES.format(gid=c["gid"]))
+            players, defs = _dk_parse_draftgroup(c["gid"])
         except (urllib.error.URLError, urllib.error.HTTPError, ValueError) as e:
             print("  draftgroup %s failed: %s" % (c["gid"], e), flush=True)
             continue
-        players, defs, seen = [], {}, set()
-        for p in d.get("draftables") or []:
-            pos = norm_pos(p.get("position"))
-            sal = p.get("salary")
-            if pos not in ("QB", "RB", "WR", "TE", "DEF") or not sal:
-                continue
-            # Showdown groups list the same man twice (CPT and FLEX). Keep the
-            # cheaper, non-captain row; the app applies the 1.5x itself.
-            key = (p.get("playerId"), pos)
-            if key in seen:
-                continue
-            seen.add(key)
-            name = p.get("displayName") or ""
-            team = (p.get("teamAbbreviation") or "").upper()
-            if pos == "DEF":
-                if team and (team not in defs or sal < defs[team]):
-                    defs[team] = sal
-                continue
-            players.append({"id": p.get("playerId"), "name": name, "pos": pos,
-                            "team": team, "salary": sal})
         if len(players) >= 30:
             when = ""
             if c["ms"]:
                 when = datetime.fromtimestamp(c["ms"] / 1000, timezone.utc).strftime("%a %b %d")
-            return {
+            dk = {
                 "book": "DraftKings", "cap": 50000, "slateId": c["gid"],
                 "games": c["n"], "single": c["n"] == 1,
                 "slate": "%s-game DraftKings slate%s" % (c["n"], (", " + when) if when else ""),
                 "kickoff": c["ms"], "count": len(players) + len(defs),
                 "players": players, "def": defs,
             }
+            break
         print("  draftgroup %s had %d priced players; trying the next" % (c["gid"], len(players)), flush=True)
-    raise RuntimeError("no DraftKings draft group had a full priced slate")
+    if not dk:
+        raise RuntimeError("no DraftKings draft group had a full priced slate")
+
+    try:
+        dk["singles"] = dk_single_slates(cands, dk["slateId"])
+    except Exception as e:                                   # noqa: BLE001
+        print("  DraftKings single games skipped: %s" % str(e)[:120], flush=True)
+    return dk
 
 
 # ----------------------------------------------------------------------- FanDuel
@@ -419,8 +466,9 @@ def main():
                  "draftables feed; FanDuel from the public FanDuel Research "
                  "projections GraphQL endpoint. Captain and MVP rows are "
                  "dropped — the app applies the 1.5x multiplier itself. "
-                 "sources.fd.singles holds one block per FanDuel single-game "
-                 "slate, each with its own salary scale and its two teams."),
+                 "sources.<book>.singles holds one block per single-game "
+                 "(Showdown/MVP) slate for that book, each with its own "
+                 "salary scale and its two teams."),
         "sources": sources,
     }
 
