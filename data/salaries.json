@@ -3,7 +3,7 @@
   "dk",
   "fd"
  ],
- "generated": "2026-09-11T18:04:23+00:00",
+ "generated": "2026-09-12T17:40:53+00:00",
  "note": "Salaries for the next slate. DraftKings comes from its own draftables feed; FanDuel from the public FanDuel Research projections GraphQL endpoint. Captain and MVP rows are dropped \u2014 the app applies the 1.5x multiplier itself. sources.<book>.singles holds one block per single-game (Showdown/MVP) slate for that book, each with its own salary scale and its two teams.",
  "sources": {
   "dk": {
@@ -6926,7 +6926,7 @@
   "fd": {
    "book": "FanDuel",
    "cap": 60000,
-   "count": 320,
+   "count": 323,
    "def": {
     "ARI": 3000,
     "ATL": 3700,
@@ -6969,6 +6969,13 @@
      "pos": "TE",
      "salary": 4200,
      "team": "ATL"
+    },
+    {
+     "id": 54046,
+     "name": "Robert Tonyan",
+     "pos": "TE",
+     "salary": 4000,
+     "team": "PIT"
     },
     {
      "id": 54159,
@@ -7459,6 +7466,13 @@
      "pos": "WR",
      "salary": 4800,
      "team": "LV"
+    },
+    {
+     "id": 52114,
+     "name": "Keenan Allen",
+     "pos": "WR",
+     "salary": 5700,
+     "team": "IND"
     },
     {
      "id": 53086,
@@ -8082,6 +8096,13 @@
      "pos": "TE",
      "salary": 4200,
      "team": "CLE"
+    },
+    {
+     "id": 56246,
+     "name": "Travis Hunter",
+     "pos": "WR",
+     "salary": 5300,
+     "team": "JAC"
     },
     {
      "id": 56272,
@@ -9487,7 +9508,7 @@
     {
      "book": "FanDuel",
      "cap": 60000,
-     "count": 27,
+     "count": 28,
      "def": {
       "DEN": 6800,
       "KC": 6400
@@ -9571,6 +9592,13 @@
        "pos": "TE",
        "salary": 3000,
        "team": "KC"
+      },
+      {
+       "id": 55159,
+       "name": "Adam Prentice",
+       "pos": "RB",
+       "salary": 1200,
+       "team": "DEN"
       },
       {
        "id": 55268,
@@ -9877,7 +9905,7 @@
     {
      "book": "FanDuel",
      "cap": 60000,
-     "count": 31,
+     "count": 33,
      "def": {
       "DAL": 6600,
       "NYG": 6200
@@ -9885,6 +9913,13 @@
      "games": 1,
      "kickoff": 1789345200000.0,
      "players": [
+      {
+       "id": 52424,
+       "name": "Odell Beckham",
+       "pos": "WR",
+       "salary": 2600,
+       "team": "NYG"
+      },
       {
        "id": 52774,
        "name": "Jameis Winston",
@@ -10019,6 +10054,13 @@
        "team": "NYG"
       },
       {
+       "id": 55723,
+       "name": "Emari Demercado",
+       "pos": "RB",
+       "salary": 3600,
+       "team": "DAL"
+      },
+      {
        "id": 55724,
        "name": "Hunter Luepke",
        "pos": "RB",
@@ -10100,7 +10142,7 @@
     {
      "book": "FanDuel",
      "cap": 60000,
-     "count": 24,
+     "count": 25,
      "def": {
       "ATL": 6200,
       "PIT": 7000
@@ -10121,6 +10163,13 @@
        "pos": "TE",
        "salary": 2000,
        "team": "ATL"
+      },
+      {
+       "id": 54046,
+       "name": "Robert Tonyan",
+       "pos": "TE",
+       "salary": 1000,
+       "team": "PIT"
       },
       {
        "id": 54159,
