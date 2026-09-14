@@ -353,6 +353,27 @@ def pbp_tables(pbp, recs):
             "Team Defense (DST)": dst}
 
 
+def merge_team_tables(cur, prev):
+    """Every pbp_tables() table is keyed one row per team (Team is column 0),
+    and early in a season most teams have not played yet, so their row simply
+    does not exist -- there's a stretch every week where a team that hasn't
+    played is invisible everywhere, defense included, until it has. A team
+    missing from the current season borrows last season's row until it has
+    played and earned its own, the same fallback player_tables() already
+    applies to per-player stats."""
+    out = {}
+    for name, cur_tab in cur.items():
+        prev_tab = prev.get(name)
+        if not prev_tab:
+            out[name] = cur_tab
+            continue
+        cur_teams = {row[0] for row in cur_tab["rows"]}
+        rows = [row for row in prev_tab["rows"] if row[0] not in cur_teams] + list(cur_tab["rows"])
+        rows.sort(key=(lambda row: -row[-1]) if name == "Team Defense (DST)" else (lambda row: row[0]))
+        out[name] = {"columns": cur_tab["columns"], "rows": rows}
+    return out
+
+
 # ----------------------------------------------------------------- player tables
 def _per_player(stats):
     per = defaultdict(lambda: {"name": "", "pos": "", "team": "", "weeks": [],
@@ -391,8 +412,21 @@ def player_tables(stats, season, prev_stats=None):
     # roster move before it shows up in a box score — but at least the whole
     # league stays populated instead of thinning out to whoever already has
     # a game in the book.
+    cur_per = _per_player(stats)
     per = dict(_per_player(prev_stats)) if prev_stats else {}
-    per.update(_per_player(stats))
+    per.update(cur_per)
+
+    # Only one QB plays at a time, so once someone on a team has taken a
+    # current-season snap, whichever other QB is sitting in this table purely
+    # on last year's numbers is not this year's plan -- he's a backup who
+    # hasn't played, not a player who is merely "not caught up yet" the way a
+    # committee back or receiver rotation would be. Keeping him in would mean
+    # projecting points for someone who, as far as this season shows, isn't
+    # going to see the field. RB/WR/TE are deliberately left alone: a backup
+    # there can still see real work.
+    qb_teams_with_current_snaps = {r["team"] for pid, r in cur_per.items() if r["pos"] == "QB"}
+    per = {pid: r for pid, r in per.items()
+           if not (r["pos"] == "QB" and pid not in cur_per and r["team"] in qb_teams_with_current_snaps)}
 
     qb_td = {"columns": ["Player", "Team", "Games", "TDs", "TD/Game"], "rows": []}
     rb_td = {"columns": ["Player", "Team", "Games", "TDs", "TD/Game"], "rows": []}
@@ -421,8 +455,18 @@ def player_tables(stats, season, prev_stats=None):
 
     qb_td["rows"].sort(key=lambda x: -x[4])
     rb_td["rows"].sort(key=lambda x: -x[4])
+    # A real starting QB can have one bad or short game and average right
+    # off a cliff -- Season Avg is only ever one game deep this early in a
+    # season -- so sorting every position together and keeping the top 250
+    # by that average can drop him from the table entirely, which reads as
+    # "he doesn't exist" rather than "he had a bad week." There are at most
+    # 32 starting QBs, cheap to always keep; the cap only needs to bite on
+    # the far larger RB/WR/TE pool.
+    qb_rows = [row for row in fantasy["rows"] if row[2] == "QB"]
+    other_rows = [row for row in fantasy["rows"] if row[2] != "QB"]
+    other_rows.sort(key=lambda x: -x[5])
+    fantasy["rows"] = qb_rows + other_rows[:max(0, 250 - len(qb_rows))]
     fantasy["rows"].sort(key=lambda x: -x[5])
-    fantasy["rows"] = fantasy["rows"][:250]
     return {"QB TD/Game": qb_td, "RB TD/Game": rb_td, "Fantasy Projections": fantasy}
 
 
@@ -521,7 +565,17 @@ def main():
     tabs = {"Team Records": records, "Offense Rating": offense, "Defense Rating": defense}
 
     try:
-        tabs.update(pbp_tables(rows_of(fetch_text(PBP.format(season=season), True)), recs))
+        cur_pbp_tabs = pbp_tables(rows_of(fetch_text(PBP.format(season=season), True)), recs)
+        prev_pbp_tabs = {}
+        try:
+            _, _, _, prev_recs = schedule_tables(games, season - 1)
+            if prev_recs:
+                prev_pbp_tabs = pbp_tables(
+                    rows_of(fetch_text(PBP.format(season=season - 1), True)), prev_recs)
+        except Exception as e:                               # noqa: BLE001
+            print("  prior-season play-by-play unavailable, early-season team "
+                  "tables will be thin: %s" % e, flush=True)
+        tabs.update(merge_team_tables(cur_pbp_tabs, prev_pbp_tabs))
     except Exception as e:                                   # noqa: BLE001
         print("play-by-play tables skipped: %s" % e, flush=True)
 
