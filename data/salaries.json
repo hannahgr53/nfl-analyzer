@@ -3,7 +3,7 @@
   "dk",
   "fd"
  ],
- "generated": "2026-10-23T18:53:20+00:00",
+ "generated": "2026-10-24T17:49:26+00:00",
  "note": "Salaries for the next slate. DraftKings comes from its own draftables feed; FanDuel from the public FanDuel Research projections GraphQL endpoint. Captain and MVP rows are dropped \u2014 the app applies the 1.5x multiplier itself. sources.<book>.singles holds one block per single-game (Showdown/MVP) slate for that book, each with its own salary scale and its two teams.",
  "sources": {
   "dk": {
@@ -4258,231 +4258,6 @@
    "singles": [
     {
      "cap": 50000,
-     "count": 32,
-     "def": {
-      "LAR": 5100,
-      "PIT": 5400
-     },
-     "players": [
-      {
-       "id": 1162128,
-       "name": "Puka Nacua",
-       "pos": "WR",
-       "salary": 16200,
-       "team": "LAR"
-      },
-      {
-       "id": 323205,
-       "name": "Matthew Stafford",
-       "pos": "QB",
-       "salary": 15600,
-       "team": "LAR"
-      },
-      {
-       "id": 1167361,
-       "name": "Kyren Williams",
-       "pos": "RB",
-       "salary": 14700,
-       "team": "LAR"
-      },
-      {
-       "id": 213957,
-       "name": "Aaron Rodgers",
-       "pos": "QB",
-       "salary": 14100,
-       "team": "PIT"
-      },
-      {
-       "id": 945633,
-       "name": "DK Metcalf",
-       "pos": "WR",
-       "salary": 13200,
-       "team": "PIT"
-      },
-      {
-       "id": 933480,
-       "name": "Rico Dowdle",
-       "pos": "RB",
-       "salary": 12600,
-       "team": "PIT"
-      },
-      {
-       "id": 611417,
-       "name": "Davante Adams",
-       "pos": "WR",
-       "salary": 12000,
-       "team": "LAR"
-      },
-      {
-       "id": 911348,
-       "name": "Michael Pittman Jr.",
-       "pos": "WR",
-       "salary": 10500,
-       "team": "PIT"
-      },
-      {
-       "id": 1116662,
-       "name": "Pat Freiermuth",
-       "pos": "TE",
-       "salary": 9900,
-       "team": "PIT"
-      },
-      {
-       "id": 1060312,
-       "name": "Colby Parkinson",
-       "pos": "TE",
-       "salary": 9300,
-       "team": "LAR"
-      },
-      {
-       "id": 1378917,
-       "name": "Ty Simpson",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "LAR"
-      },
-      {
-       "id": 823220,
-       "name": "Mason Rudolph",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "PIT"
-      },
-      {
-       "id": 1163273,
-       "name": "Jordan Whittington",
-       "pos": "WR",
-       "salary": 7200,
-       "team": "LAR"
-      },
-      {
-       "id": 1229669,
-       "name": "Roman Wilson",
-       "pos": "WR",
-       "salary": 6900,
-       "team": "PIT"
-      },
-      {
-       "id": 1176443,
-       "name": "Jaylen Warren",
-       "pos": "RB",
-       "salary": 4800,
-       "team": "PIT"
-      },
-      {
-       "id": 1380613,
-       "name": "Germie Bernard",
-       "pos": "WR",
-       "salary": 3600,
-       "team": "PIT"
-      },
-      {
-       "id": 1229540,
-       "name": "Blake Corum",
-       "pos": "RB",
-       "salary": 3300,
-       "team": "LAR"
-      },
-      {
-       "id": 1401683,
-       "name": "Max Klare",
-       "pos": "TE",
-       "salary": 3000,
-       "team": "LAR"
-      },
-      {
-       "id": 1106760,
-       "name": "Tutu Atwell",
-       "pos": "WR",
-       "salary": 2700,
-       "team": "LAR"
-      },
-      {
-       "id": 1244224,
-       "name": "Riley Nowakowski",
-       "pos": "RB",
-       "salary": 2400,
-       "team": "PIT"
-      },
-      {
-       "id": 1286179,
-       "name": "Terrance Ferguson",
-       "pos": "TE",
-       "salary": 2100,
-       "team": "LAR"
-      },
-      {
-       "id": 1218658,
-       "name": "Darnell Washington",
-       "pos": "TE",
-       "salary": 1800,
-       "team": "PIT"
-      },
-      {
-       "id": 604176,
-       "name": "Tyler Higbee",
-       "pos": "TE",
-       "salary": 1500,
-       "team": "LAR"
-      },
-      {
-       "id": 1289332,
-       "name": "Konata Mumpfield",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "LAR"
-      },
-      {
-       "id": 976804,
-       "name": "Ronnie Rivers",
-       "pos": "RB",
-       "salary": 1500,
-       "team": "LAR"
-      },
-      {
-       "id": 1383993,
-       "name": "Kaden Wetjen",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "PIT"
-      },
-      {
-       "id": 1137635,
-       "name": "Xavier Smith",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "LAR"
-      },
-      {
-       "id": 660151,
-       "name": "Robert Tonyan",
-       "pos": "TE",
-       "salary": 1500,
-       "team": "PIT"
-      },
-      {
-       "id": 1395874,
-       "name": "Eli Heidenreich",
-       "pos": "RB",
-       "salary": 1500,
-       "team": "PIT"
-      },
-      {
-       "id": 920944,
-       "name": "Ben Skowronek",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "PIT"
-      }
-     ],
-     "slate": "LAR @ PIT, Fri Oct 23",
-     "teams": [
-      "LAR",
-      "PIT"
-     ]
-    },
-    {
-     "cap": 50000,
      "count": 54,
      "def": {
       "NO": 5400,
@@ -6283,6 +6058,364 @@
      "teams": [
       "CLE",
       "TEN"
+     ]
+    },
+    {
+     "cap": 50000,
+     "count": 51,
+     "def": {
+      "BAL": 5700,
+      "CIN": 5100
+     },
+     "players": [
+      {
+       "id": 1109979,
+       "name": "Ja'Marr Chase",
+       "pos": "WR",
+       "salary": 16500,
+       "team": "CIN"
+      },
+      {
+       "id": 732145,
+       "name": "Derrick Henry",
+       "pos": "RB",
+       "salary": 16200,
+       "team": "BAL"
+      },
+      {
+       "id": 878785,
+       "name": "Joe Burrow",
+       "pos": "QB",
+       "salary": 15000,
+       "team": "CIN"
+      },
+      {
+       "id": 877745,
+       "name": "Lamar Jackson",
+       "pos": "QB",
+       "salary": 14700,
+       "team": "BAL"
+      },
+      {
+       "id": 1177053,
+       "name": "Zay Flowers",
+       "pos": "WR",
+       "salary": 14100,
+       "team": "BAL"
+      },
+      {
+       "id": 978579,
+       "name": "Tee Higgins",
+       "pos": "WR",
+       "salary": 13500,
+       "team": "CIN"
+      },
+      {
+       "id": 913163,
+       "name": "Tyler Huntley",
+       "pos": "QB",
+       "salary": 13200,
+       "team": "BAL"
+      },
+      {
+       "id": 1123379,
+       "name": "Chase Brown",
+       "pos": "RB",
+       "salary": 12900,
+       "team": "CIN"
+      },
+      {
+       "id": 820699,
+       "name": "Mark Andrews",
+       "pos": "TE",
+       "salary": 10200,
+       "team": "BAL"
+      },
+      {
+       "id": 836152,
+       "name": "Mike Gesicki",
+       "pos": "TE",
+       "salary": 9600,
+       "team": "CIN"
+      },
+      {
+       "id": 1067089,
+       "name": "Sean Clifford",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "CIN"
+      },
+      {
+       "id": 273278,
+       "name": "Josh Johnson",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "CIN"
+      },
+      {
+       "id": 913829,
+       "name": "Skylar Thompson",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "BAL"
+      },
+      {
+       "id": 1169299,
+       "name": "Joe Fagnano",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "BAL"
+      },
+      {
+       "id": 216342,
+       "name": "Joe Flacco",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "CIN"
+      },
+      {
+       "id": 1108208,
+       "name": "Rashod Bateman",
+       "pos": "WR",
+       "salary": 8700,
+       "team": "BAL"
+      },
+      {
+       "id": 1458888,
+       "name": "Ja'Kobi Lane",
+       "pos": "WR",
+       "salary": 6600,
+       "team": "BAL"
+      },
+      {
+       "id": 923109,
+       "name": "Justice Hill",
+       "pos": "RB",
+       "salary": 6000,
+       "team": "BAL"
+      },
+      {
+       "id": 820734,
+       "name": "Samaje Perine",
+       "pos": "RB",
+       "salary": 5400,
+       "team": "CIN"
+      },
+      {
+       "id": 1406878,
+       "name": "Colbie Young",
+       "pos": "WR",
+       "salary": 4500,
+       "team": "CIN"
+      },
+      {
+       "id": 1133320,
+       "name": "Dohnte Meyers",
+       "pos": "WR",
+       "salary": 4200,
+       "team": "CIN"
+      },
+      {
+       "id": 1277914,
+       "name": "Devontez Walker",
+       "pos": "WR",
+       "salary": 3600,
+       "team": "BAL"
+      },
+      {
+       "id": 1215305,
+       "name": "Mitch Tinsley",
+       "pos": "WR",
+       "salary": 3300,
+       "team": "CIN"
+      },
+      {
+       "id": 606551,
+       "name": "Chris Moore",
+       "pos": "WR",
+       "salary": 3000,
+       "team": "BAL"
+      },
+      {
+       "id": 1319948,
+       "name": "Josh Cuevas",
+       "pos": "TE",
+       "salary": 2700,
+       "team": "BAL"
+      },
+      {
+       "id": 1164533,
+       "name": "Erick All Jr.",
+       "pos": "TE",
+       "salary": 2400,
+       "team": "CIN"
+      },
+      {
+       "id": 1228730,
+       "name": "Tahj Brooks",
+       "pos": "RB",
+       "salary": 2100,
+       "team": "CIN"
+      },
+      {
+       "id": 837824,
+       "name": "Drew Sample",
+       "pos": "TE",
+       "salary": 1800,
+       "team": "CIN"
+      },
+      {
+       "id": 1231033,
+       "name": "LaJohntay Wester",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "BAL"
+      },
+      {
+       "id": 1392584,
+       "name": "Elijah Sarratt",
+       "pos": "WR",
+       "salary": 1200,
+       "team": "BAL"
+      },
+      {
+       "id": 1229693,
+       "name": "Matt Hibner",
+       "pos": "TE",
+       "salary": 900,
+       "team": "BAL"
+      },
+      {
+       "id": 1229133,
+       "name": "Rasheen Ali",
+       "pos": "RB",
+       "salary": 600,
+       "team": "BAL"
+      },
+      {
+       "id": 1229055,
+       "name": "Kentrel Bullock",
+       "pos": "RB",
+       "salary": 300,
+       "team": "CIN"
+      },
+      {
+       "id": 1325830,
+       "name": "Lucas Scott",
+       "pos": "RB",
+       "salary": 300,
+       "team": "BAL"
+      },
+      {
+       "id": 1213345,
+       "name": "Kendall Milton",
+       "pos": "RB",
+       "salary": 300,
+       "team": "CIN"
+      },
+      {
+       "id": 912553,
+       "name": "Jonathan Ward",
+       "pos": "RB",
+       "salary": 300,
+       "team": "BAL"
+      },
+      {
+       "id": 1378284,
+       "name": "Adam Randall",
+       "pos": "RB",
+       "salary": 300,
+       "team": "BAL"
+      },
+      {
+       "id": 1124851,
+       "name": "Andrei Iosivas",
+       "pos": "WR",
+       "salary": 300,
+       "team": "CIN"
+      },
+      {
+       "id": 1286662,
+       "name": "Jordan Moore",
+       "pos": "WR",
+       "salary": 300,
+       "team": "CIN"
+      },
+      {
+       "id": 1402692,
+       "name": "Noah Thomas",
+       "pos": "WR",
+       "salary": 300,
+       "team": "CIN"
+      },
+      {
+       "id": 1323007,
+       "name": "Gage Larvadain",
+       "pos": "WR",
+       "salary": 300,
+       "team": "BAL"
+      },
+      {
+       "id": 1232057,
+       "name": "Ke'Shawn Williams",
+       "pos": "WR",
+       "salary": 300,
+       "team": "CIN"
+      },
+      {
+       "id": 1115394,
+       "name": "Tanner Hudson",
+       "pos": "TE",
+       "salary": 300,
+       "team": "CIN"
+      },
+      {
+       "id": 749968,
+       "name": "Durham Smythe",
+       "pos": "TE",
+       "salary": 300,
+       "team": "BAL"
+      },
+      {
+       "id": 1404295,
+       "name": "Ty Pezza",
+       "pos": "TE",
+       "salary": 300,
+       "team": "BAL"
+      },
+      {
+       "id": 1181739,
+       "name": "William Wagner",
+       "pos": "TE",
+       "salary": 300,
+       "team": "CIN"
+      },
+      {
+       "id": 1400852,
+       "name": "Jack Endries",
+       "pos": "TE",
+       "salary": 300,
+       "team": "CIN"
+      },
+      {
+       "id": 606488,
+       "name": "Nick Vannett",
+       "pos": "TE",
+       "salary": 300,
+       "team": "BAL"
+      },
+      {
+       "id": 1395857,
+       "name": "Josh Kattus",
+       "pos": "TE",
+       "salary": 300,
+       "team": "CIN"
+      }
+     ],
+     "slate": "BAL @ CIN, Sun Oct 25",
+     "teams": [
+      "BAL",
+      "CIN"
      ]
     }
    ],
