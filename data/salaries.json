@@ -3,7 +3,7 @@
   "dk",
   "fd"
  ],
- "generated": "2026-10-30T19:51:14+00:00",
+ "generated": "2026-10-31T19:05:29+00:00",
  "note": "Salaries for the next slate. DraftKings comes from its own draftables feed; FanDuel from the public FanDuel Research projections GraphQL endpoint. Captain and MVP rows are dropped \u2014 the app applies the 1.5x multiplier itself. sources.<book>.singles holds one block per single-game (Showdown/MVP) slate for that book, each with its own salary scale and its two teams.",
  "sources": {
   "dk": {
@@ -4582,231 +4582,6 @@
    "singles": [
     {
      "cap": 50000,
-     "count": 32,
-     "def": {
-      "MIN": 5400,
-      "PHI": 5700
-     },
-     "players": [
-      {
-       "id": 879799,
-       "name": "Kyler Murray",
-       "pos": "QB",
-       "salary": 16200,
-       "team": "MIN"
-      },
-      {
-       "id": 913271,
-       "name": "Jalen Hurts",
-       "pos": "QB",
-       "salary": 15300,
-       "team": "PHI"
-      },
-      {
-       "id": 1069535,
-       "name": "Justin Jefferson",
-       "pos": "WR",
-       "salary": 14400,
-       "team": "MIN"
-      },
-      {
-       "id": 883302,
-       "name": "Saquon Barkley",
-       "pos": "RB",
-       "salary": 13800,
-       "team": "PHI"
-      },
-      {
-       "id": 741314,
-       "name": "Aaron Jones Sr.",
-       "pos": "RB",
-       "salary": 13200,
-       "team": "MIN"
-      },
-      {
-       "id": 1060262,
-       "name": "DeVonta Smith",
-       "pos": "WR",
-       "salary": 12300,
-       "team": "PHI"
-      },
-      {
-       "id": 923915,
-       "name": "T.J. Hockenson",
-       "pos": "TE",
-       "salary": 11700,
-       "team": "MIN"
-      },
-      {
-       "id": 791365,
-       "name": "Dallas Goedert",
-       "pos": "TE",
-       "salary": 10800,
-       "team": "PHI"
-      },
-      {
-       "id": 1214250,
-       "name": "Jordan Addison",
-       "pos": "WR",
-       "salary": 10200,
-       "team": "MIN"
-      },
-      {
-       "id": 976220,
-       "name": "Hollywood Brown",
-       "pos": "WR",
-       "salary": 9300,
-       "team": "PHI"
-      },
-      {
-       "id": 322858,
-       "name": "Andy Dalton",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "PHI"
-      },
-      {
-       "id": 1287599,
-       "name": "J.J. McCarthy",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "MIN"
-      },
-      {
-       "id": 1441120,
-       "name": "Makai Lemon",
-       "pos": "WR",
-       "salary": 7200,
-       "team": "PHI"
-      },
-      {
-       "id": 867009,
-       "name": "Jauan Jennings",
-       "pos": "WR",
-       "salary": 6000,
-       "team": "MIN"
-      },
-      {
-       "id": 1286065,
-       "name": "Eli Stowers",
-       "pos": "TE",
-       "salary": 3600,
-       "team": "PHI"
-      },
-      {
-       "id": 740704,
-       "name": "Johnny Mundt",
-       "pos": "TE",
-       "salary": 3300,
-       "team": "PHI"
-      },
-      {
-       "id": 1216808,
-       "name": "Ben Yurosek",
-       "pos": "TE",
-       "salary": 3000,
-       "team": "MIN"
-      },
-      {
-       "id": 1325562,
-       "name": "Max Bredeson",
-       "pos": "RB",
-       "salary": 2700,
-       "team": "MIN"
-      },
-      {
-       "id": 1287587,
-       "name": "Tai Felton",
-       "pos": "WR",
-       "salary": 2400,
-       "team": "MIN"
-      },
-      {
-       "id": 1116001,
-       "name": "Jordan Mason",
-       "pos": "RB",
-       "salary": 2100,
-       "team": "MIN"
-      },
-      {
-       "id": 1390910,
-       "name": "Demond Claiborne",
-       "pos": "RB",
-       "salary": 1800,
-       "team": "MIN"
-      },
-      {
-       "id": 1287636,
-       "name": "Will Shipley",
-       "pos": "RB",
-       "salary": 1500,
-       "team": "PHI"
-      },
-      {
-       "id": 1287258,
-       "name": "Gavin Bartholomew",
-       "pos": "TE",
-       "salary": 1500,
-       "team": "MIN"
-      },
-      {
-       "id": 1228728,
-       "name": "Myles Price",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "MIN"
-      },
-      {
-       "id": 1223318,
-       "name": "Darius Cooper",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "PHI"
-      },
-      {
-       "id": 1128783,
-       "name": "Elijah Moore",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "PHI"
-      },
-      {
-       "id": 1172428,
-       "name": "Dontayvion Wicks",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "PHI"
-      },
-      {
-       "id": 1396942,
-       "name": "Dillon Bell",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "MIN"
-      },
-      {
-       "id": 1215035,
-       "name": "Tank Bigsby",
-       "pos": "RB",
-       "salary": 1500,
-       "team": "PHI"
-      },
-      {
-       "id": 976221,
-       "name": "Grant Calcaterra",
-       "pos": "TE",
-       "salary": 1500,
-       "team": "PHI"
-      }
-     ],
-     "slate": "MIN @ PHI, Fri Oct 30",
-     "teams": [
-      "MIN",
-      "PHI"
-     ]
-    },
-    {
-     "cap": 50000,
      "count": 50,
      "def": {
       "IND": 5100,
@@ -6572,6 +6347,364 @@
      "teams": [
       "ARI",
       "DAL"
+     ]
+    },
+    {
+     "cap": 50000,
+     "count": 51,
+     "def": {
+      "DET": 5400,
+      "MIN": 6000
+     },
+     "players": [
+      {
+       "id": 1214154,
+       "name": "Jahmyr Gibbs",
+       "pos": "RB",
+       "salary": 18000,
+       "team": "DET"
+      },
+      {
+       "id": 727837,
+       "name": "Jared Goff",
+       "pos": "QB",
+       "salary": 15900,
+       "team": "DET"
+      },
+      {
+       "id": 1127106,
+       "name": "Amon-Ra St. Brown",
+       "pos": "WR",
+       "salary": 15000,
+       "team": "DET"
+      },
+      {
+       "id": 879799,
+       "name": "Kyler Murray",
+       "pos": "QB",
+       "salary": 14400,
+       "team": "MIN"
+      },
+      {
+       "id": 1069535,
+       "name": "Justin Jefferson",
+       "pos": "WR",
+       "salary": 13500,
+       "team": "MIN"
+      },
+      {
+       "id": 741314,
+       "name": "Aaron Jones Sr.",
+       "pos": "RB",
+       "salary": 12900,
+       "team": "MIN"
+      },
+      {
+       "id": 1116001,
+       "name": "Jordan Mason",
+       "pos": "RB",
+       "salary": 12300,
+       "team": "MIN"
+      },
+      {
+       "id": 1175184,
+       "name": "Jameson Williams",
+       "pos": "WR",
+       "salary": 12000,
+       "team": "DET"
+      },
+      {
+       "id": 1168926,
+       "name": "Sam LaPorta",
+       "pos": "TE",
+       "salary": 10500,
+       "team": "DET"
+      },
+      {
+       "id": 923915,
+       "name": "T.J. Hockenson",
+       "pos": "TE",
+       "salary": 9900,
+       "team": "MIN"
+      },
+      {
+       "id": 1214250,
+       "name": "Jordan Addison",
+       "pos": "WR",
+       "salary": 9300,
+       "team": "MIN"
+      },
+      {
+       "id": 613866,
+       "name": "Carson Wentz",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "MIN"
+      },
+      {
+       "id": 1286214,
+       "name": "Luke Altmyer",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "DET"
+      },
+      {
+       "id": 1169329,
+       "name": "Max Brosmer",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "MIN"
+      },
+      {
+       "id": 741262,
+       "name": "Joshua Dobbs",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "DET"
+      },
+      {
+       "id": 867009,
+       "name": "Jauan Jennings",
+       "pos": "WR",
+       "salary": 5700,
+       "team": "MIN"
+      },
+      {
+       "id": 1441362,
+       "name": "Isaac TeSlaa",
+       "pos": "WR",
+       "salary": 5100,
+       "team": "DET"
+      },
+      {
+       "id": 1381164,
+       "name": "Sione Vaki",
+       "pos": "RB",
+       "salary": 4500,
+       "team": "DET"
+      },
+      {
+       "id": 976309,
+       "name": "DeeJay Dallas",
+       "pos": "RB",
+       "salary": 3600,
+       "team": "MIN"
+      },
+      {
+       "id": 1228728,
+       "name": "Myles Price",
+       "pos": "WR",
+       "salary": 3000,
+       "team": "MIN"
+      },
+      {
+       "id": 1287258,
+       "name": "Gavin Bartholomew",
+       "pos": "TE",
+       "salary": 2400,
+       "team": "MIN"
+      },
+      {
+       "id": 1390910,
+       "name": "Demond Claiborne",
+       "pos": "RB",
+       "salary": 2100,
+       "team": "MIN"
+      },
+      {
+       "id": 978120,
+       "name": "Brock Wright",
+       "pos": "TE",
+       "salary": 1800,
+       "team": "DET"
+      },
+      {
+       "id": 1287587,
+       "name": "Tai Felton",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "MIN"
+      },
+      {
+       "id": 1065052,
+       "name": "Tay Martin",
+       "pos": "WR",
+       "salary": 1200,
+       "team": "DET"
+      },
+      {
+       "id": 861278,
+       "name": "Tyler Conklin",
+       "pos": "TE",
+       "salary": 900,
+       "team": "DET"
+      },
+      {
+       "id": 1131457,
+       "name": "Jacob Saylors",
+       "pos": "RB",
+       "salary": 600,
+       "team": "DET"
+      },
+      {
+       "id": 1325562,
+       "name": "Max Bredeson",
+       "pos": "RB",
+       "salary": 300,
+       "team": "MIN"
+      },
+      {
+       "id": 1232898,
+       "name": "Jabari Small",
+       "pos": "RB",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 1106832,
+       "name": "Isiah Pacheco",
+       "pos": "RB",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 1106382,
+       "name": "Jeshaun Jones",
+       "pos": "WR",
+       "salary": 300,
+       "team": "MIN"
+      },
+      {
+       "id": 1272873,
+       "name": "Michael Briscoe",
+       "pos": "WR",
+       "salary": 300,
+       "team": "MIN"
+      },
+      {
+       "id": 1286480,
+       "name": "Dominic Lovett",
+       "pos": "WR",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 1396942,
+       "name": "Dillon Bell",
+       "pos": "WR",
+       "salary": 300,
+       "team": "MIN"
+      },
+      {
+       "id": 881670,
+       "name": "Lucky Jackson",
+       "pos": "WR",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 589984,
+       "name": "Odell Beckham Jr.",
+       "pos": "WR",
+       "salary": 300,
+       "team": "MIN"
+      },
+      {
+       "id": 1130538,
+       "name": "Lawrence Keys III",
+       "pos": "WR",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 1378910,
+       "name": "Kendrick Law",
+       "pos": "WR",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 837087,
+       "name": "Tom Kennedy",
+       "pos": "WR",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 612512,
+       "name": "DeAndre Carter",
+       "pos": "WR",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 881779,
+       "name": "Josh Oliver",
+       "pos": "TE",
+       "salary": 300,
+       "team": "MIN"
+      },
+      {
+       "id": 1216808,
+       "name": "Ben Yurosek",
+       "pos": "TE",
+       "salary": 300,
+       "team": "MIN"
+      },
+      {
+       "id": 1285915,
+       "name": "Jackson Meeks",
+       "pos": "TE",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 300580,
+       "name": "Andrew DePaola",
+       "pos": "TE",
+       "salary": 300,
+       "team": "MIN"
+      },
+      {
+       "id": 1399934,
+       "name": "Miles Kitselman",
+       "pos": "TE",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 1173254,
+       "name": "Thomas Gordon",
+       "pos": "TE",
+       "salary": 300,
+       "team": "DET"
+      },
+      {
+       "id": 1251513,
+       "name": "Cam Grandy",
+       "pos": "TE",
+       "salary": 300,
+       "team": "MIN"
+      },
+      {
+       "id": 1107536,
+       "name": "Devin Culp",
+       "pos": "TE",
+       "salary": 300,
+       "team": "MIN"
+      },
+      {
+       "id": 1315563,
+       "name": "Bryson Nesbit",
+       "pos": "TE",
+       "salary": 300,
+       "team": "MIN"
+      }
+     ],
+     "slate": "DET @ MIN, Sun Nov 01",
+     "teams": [
+      "DET",
+      "MIN"
      ]
     }
    ],
