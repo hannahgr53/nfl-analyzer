@@ -3,7 +3,7 @@
   "dk",
   "fd"
  ],
- "generated": "2026-10-31T19:05:29+00:00",
+ "generated": "2026-11-01T18:42:50+00:00",
  "note": "Salaries for the next slate. DraftKings comes from its own draftables feed; FanDuel from the public FanDuel Research projections GraphQL endpoint. Captain and MVP rows are dropped \u2014 the app applies the 1.5x multiplier itself. sources.<book>.singles holds one block per single-game (Showdown/MVP) slate for that book, each with its own salary scale and its two teams.",
  "sources": {
   "dk": {
@@ -6709,7 +6709,8 @@
     }
    ],
    "slate": "13-game DraftKings slate, Sun Nov 01",
-   "slateId": 155592
+   "slateId": 155592,
+   "stale": true
   },
   "fd": {
    "book": "FanDuel",
