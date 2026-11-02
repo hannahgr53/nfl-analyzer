@@ -3,7 +3,7 @@
   "dk",
   "fd"
  ],
- "generated": "2026-11-01T18:42:50+00:00",
+ "generated": "2026-11-02T22:40:17+00:00",
  "note": "Salaries for the next slate. DraftKings comes from its own draftables feed; FanDuel from the public FanDuel Research projections GraphQL endpoint. Captain and MVP rows are dropped \u2014 the app applies the 1.5x multiplier itself. sources.<book>.singles holds one block per single-game (Showdown/MVP) slate for that book, each with its own salary scale and its two teams.",
  "sources": {
   "dk": {
@@ -6715,7 +6715,7 @@
   "fd": {
    "book": "FanDuel",
    "cap": 60000,
-   "count": 303,
+   "count": 306,
    "def": {
     "ARI": 3200,
     "ATL": 3700,
@@ -7108,6 +7108,13 @@
      "team": "DAL"
     },
     {
+     "id": 4319,
+     "name": "Andy Dalton",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "ATL"
+    },
+    {
      "id": 53054,
      "name": "Austin Hooper",
      "pos": "TE",
@@ -7402,6 +7409,13 @@
      "team": "LV"
     },
     {
+     "id": 55771,
+     "name": "Aidan O'Connell",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "LV"
+    },
+    {
      "id": 55915,
      "name": "Adonai Mitchell",
      "pos": "WR",
@@ -7497,6 +7511,13 @@
      "name": "David Njoku",
      "pos": "TE",
      "salary": 4700,
+     "team": "LAC"
+    },
+    {
+     "id": 54175,
+     "name": "Gary Jennings Jr.",
+     "pos": "WR",
+     "salary": 4000,
      "team": "LAC"
     },
     {
@@ -8249,6 +8270,13 @@
      "team": "JAC"
     },
     {
+     "id": 55407,
+     "name": "Tim Jones",
+     "pos": "WR",
+     "salary": 4000,
+     "team": "JAC"
+    },
+    {
      "id": 55623,
      "name": "Anthony Richardson",
      "pos": "QB",
@@ -8520,13 +8548,6 @@
      "pos": "WR",
      "salary": 4700,
      "team": "TEN"
-    },
-    {
-     "id": 56334,
-     "name": "Mitchell Tinsley",
-     "pos": "WR",
-     "salary": 4500,
-     "team": "CIN"
     },
     {
      "id": 56349,
@@ -9162,7 +9183,7 @@
     {
      "book": "FanDuel",
      "cap": 60000,
-     "count": 27,
+     "count": 28,
      "def": {
       "IND": 6200,
       "JAC": 6800
@@ -9244,6 +9265,13 @@
        "id": 55394,
        "name": "Quintin Morris",
        "pos": "TE",
+       "salary": 1000,
+       "team": "JAC"
+      },
+      {
+       "id": 55407,
+       "name": "Tim Jones",
+       "pos": "WR",
        "salary": 1000,
        "team": "JAC"
       },
@@ -9357,7 +9385,7 @@
     {
      "book": "FanDuel",
      "cap": 60000,
-     "count": 31,
+     "count": 30,
      "def": {
       "CIN": 7200,
       "TEN": 5800
@@ -9532,13 +9560,6 @@
        "pos": "WR",
        "salary": 5400,
        "team": "TEN"
-      },
-      {
-       "id": 56334,
-       "name": "Mitchell Tinsley",
-       "pos": "WR",
-       "salary": 4200,
-       "team": "CIN"
       },
       {
        "id": 56349,
@@ -9775,7 +9796,7 @@
     {
      "book": "FanDuel",
      "cap": 60000,
-     "count": 29,
+     "count": 30,
      "def": {
       "LA": 6800,
       "LAC": 6200
@@ -9808,6 +9829,13 @@
        "id": 53429,
        "name": "David Njoku",
        "pos": "TE",
+       "salary": 1000,
+       "team": "LAC"
+      },
+      {
+       "id": 54175,
+       "name": "Gary Jennings Jr.",
+       "pos": "WR",
        "salary": 1000,
        "team": "LAC"
       },
