@@ -1,6 +1,6 @@
 {
  "curWeight": 1.0,
- "generated": "2026-11-03T18:47:54+00:00",
+ "generated": "2026-11-10T19:01:43+00:00",
  "note": "Offensive, defensive and dropback EPA per play from nflverse play-by-play. 100% of this rating is 2026 football, the rest 2025. Def EPA is EPA allowed, so a good defense is negative.",
  "season": 2026,
  "seasonsUsed": [
@@ -9,185 +9,185 @@
  ],
  "teams": {
   "ARI": {
-   "defEpa": 0.0732,
-   "offEpa": -0.0216,
-   "passEpa": -0.0233,
-   "plays": 549,
+   "defEpa": 0.0734,
+   "offEpa": -0.0358,
+   "passEpa": -0.0398,
+   "plays": 600,
    "source": "blend"
   },
   "ATL": {
-   "defEpa": -0.0347,
-   "offEpa": -0.0949,
-   "passEpa": -0.1612,
-   "plays": 470,
+   "defEpa": 0.0016,
+   "offEpa": -0.0731,
+   "passEpa": -0.1503,
+   "plays": 525,
    "source": "blend"
   },
   "BAL": {
-   "defEpa": 0.0134,
-   "offEpa": 0.0229,
-   "passEpa": 0.0821,
-   "plays": 474,
+   "defEpa": 0.0171,
+   "offEpa": -0.0148,
+   "passEpa": 0.0139,
+   "plays": 528,
    "source": "blend"
   },
   "BUF": {
-   "defEpa": 0.0628,
-   "offEpa": 0.1728,
-   "passEpa": 0.2156,
-   "plays": 429,
+   "defEpa": -0.0099,
+   "offEpa": 0.1405,
+   "passEpa": 0.1858,
+   "plays": 504,
    "source": "blend"
   },
   "CAR": {
-   "defEpa": 0.0285,
-   "offEpa": 0.031,
-   "passEpa": 0.0478,
-   "plays": 462,
+   "defEpa": 0.0303,
+   "offEpa": 0.0422,
+   "passEpa": 0.0605,
+   "plays": 524,
    "source": "blend"
   },
   "CHI": {
-   "defEpa": -0.0242,
-   "offEpa": 0.0629,
-   "passEpa": 0.1118,
-   "plays": 566,
+   "defEpa": -0.0491,
+   "offEpa": 0.0368,
+   "passEpa": 0.0651,
+   "plays": 624,
    "source": "blend"
   },
   "CIN": {
-   "defEpa": -0.0085,
-   "offEpa": 0.1154,
-   "passEpa": 0.2232,
-   "plays": 430,
+   "defEpa": 0.0051,
+   "offEpa": 0.1417,
+   "passEpa": 0.2533,
+   "plays": 484,
    "source": "blend"
   },
   "CLE": {
-   "defEpa": -0.0173,
-   "offEpa": -0.0793,
-   "passEpa": -0.0548,
-   "plays": 478,
+   "defEpa": -0.0202,
+   "offEpa": -0.0837,
+   "passEpa": -0.0376,
+   "plays": 547,
    "source": "blend"
   },
   "DAL": {
-   "defEpa": 0.126,
-   "offEpa": 0.091,
-   "passEpa": 0.1499,
-   "plays": 515,
+   "defEpa": 0.0912,
+   "offEpa": 0.0969,
+   "passEpa": 0.1512,
+   "plays": 585,
    "source": "blend"
   },
   "DEN": {
-   "defEpa": -0.0233,
-   "offEpa": -0.0218,
-   "passEpa": -0.0115,
-   "plays": 452,
+   "defEpa": -0.0082,
+   "offEpa": -0.0137,
+   "passEpa": 0.0142,
+   "plays": 517,
    "source": "blend"
   },
   "DET": {
-   "defEpa": 0.1098,
-   "offEpa": 0.1131,
-   "passEpa": 0.2468,
-   "plays": 462,
+   "defEpa": 0.0795,
+   "offEpa": 0.102,
+   "passEpa": 0.2216,
+   "plays": 517,
    "source": "blend"
   },
   "GB": {
-   "defEpa": -0.0688,
-   "offEpa": 0.0046,
-   "passEpa": 0.1267,
-   "plays": 490,
+   "defEpa": -0.0758,
+   "offEpa": 0.038,
+   "passEpa": 0.1783,
+   "plays": 555,
    "source": "blend"
   },
   "HOU": {
-   "defEpa": 0.0311,
-   "offEpa": 0.0267,
-   "passEpa": 0.1086,
-   "plays": 425,
+   "defEpa": 0.0028,
+   "offEpa": 0.0598,
+   "passEpa": 0.1549,
+   "plays": 489,
    "source": "blend"
   },
   "IND": {
-   "defEpa": 0.0652,
-   "offEpa": -0.1152,
-   "passEpa": -0.2151,
-   "plays": 514,
+   "defEpa": 0.0752,
+   "offEpa": -0.1247,
+   "passEpa": -0.2177,
+   "plays": 573,
    "source": "blend"
   },
   "JAX": {
-   "defEpa": -0.0991,
-   "offEpa": 0.1609,
-   "passEpa": 0.2703,
-   "plays": 408,
-   "source": "blend"
-  },
-  "KC": {
-   "defEpa": -0.0344,
-   "offEpa": 0.1255,
-   "passEpa": 0.1375,
-   "plays": 421,
-   "source": "blend"
-  },
-  "LA": {
-   "defEpa": -0.1034,
-   "offEpa": 0.046,
-   "passEpa": 0.062,
-   "plays": 522,
-   "source": "blend"
-  },
-  "LAC": {
-   "defEpa": -0.0404,
-   "offEpa": -0.2556,
-   "passEpa": -0.299,
-   "plays": 428,
-   "source": "blend"
-  },
-  "LV": {
-   "defEpa": 0.0783,
-   "offEpa": 0.0171,
-   "passEpa": 0.1774,
-   "plays": 502,
-   "source": "blend"
-  },
-  "MIA": {
-   "defEpa": 0.1311,
-   "offEpa": -0.0454,
-   "passEpa": -0.0872,
-   "plays": 397,
-   "source": "blend"
-  },
-  "MIN": {
-   "defEpa": -0.1686,
-   "offEpa": -0.0958,
-   "passEpa": -0.0694,
-   "plays": 402,
-   "source": "blend"
-  },
-  "NE": {
-   "defEpa": 0.0086,
-   "offEpa": 0.0635,
-   "passEpa": 0.1561,
-   "plays": 485,
-   "source": "blend"
-  },
-  "NO": {
-   "defEpa": 0.0751,
-   "offEpa": -0.0365,
-   "passEpa": 0.0057,
-   "plays": 458,
-   "source": "blend"
-  },
-  "NYG": {
-   "defEpa": 0.011,
-   "offEpa": 0.013,
-   "passEpa": 0.0496,
-   "plays": 456,
-   "source": "blend"
-  },
-  "NYJ": {
-   "defEpa": 0.0227,
-   "offEpa": 0.0439,
-   "passEpa": 0.1362,
+   "defEpa": -0.1277,
+   "offEpa": 0.1478,
+   "passEpa": 0.2732,
    "plays": 463,
    "source": "blend"
   },
+  "KC": {
+   "defEpa": -0.0674,
+   "offEpa": 0.1309,
+   "passEpa": 0.1485,
+   "plays": 485,
+   "source": "blend"
+  },
+  "LA": {
+   "defEpa": -0.1111,
+   "offEpa": 0.0406,
+   "passEpa": 0.0524,
+   "plays": 594,
+   "source": "blend"
+  },
+  "LAC": {
+   "defEpa": 0.003,
+   "offEpa": -0.245,
+   "passEpa": -0.2668,
+   "plays": 497,
+   "source": "blend"
+  },
+  "LV": {
+   "defEpa": 0.092,
+   "offEpa": -0.0145,
+   "passEpa": 0.1224,
+   "plays": 549,
+   "source": "blend"
+  },
+  "MIA": {
+   "defEpa": 0.1162,
+   "offEpa": -0.0636,
+   "passEpa": -0.0998,
+   "plays": 446,
+   "source": "blend"
+  },
+  "MIN": {
+   "defEpa": -0.1493,
+   "offEpa": -0.1618,
+   "passEpa": -0.1659,
+   "plays": 447,
+   "source": "blend"
+  },
+  "NE": {
+   "defEpa": 0.0427,
+   "offEpa": 0.041,
+   "passEpa": 0.0976,
+   "plays": 547,
+   "source": "blend"
+  },
+  "NO": {
+   "defEpa": 0.0495,
+   "offEpa": -0.0371,
+   "passEpa": -0.0164,
+   "plays": 529,
+   "source": "blend"
+  },
+  "NYG": {
+   "defEpa": -0.0303,
+   "offEpa": 0.0028,
+   "passEpa": 0.0528,
+   "plays": 519,
+   "source": "blend"
+  },
+  "NYJ": {
+   "defEpa": 0.039,
+   "offEpa": 0.0031,
+   "passEpa": 0.0836,
+   "plays": 525,
+   "source": "blend"
+  },
   "PHI": {
-   "defEpa": 0.1022,
-   "offEpa": -0.1269,
-   "passEpa": -0.1419,
-   "plays": 478,
+   "defEpa": 0.0837,
+   "offEpa": -0.1464,
+   "passEpa": -0.1751,
+   "plays": 544,
    "source": "blend"
   },
   "PIT": {
@@ -198,24 +198,24 @@
    "source": "blend"
   },
   "SEA": {
-   "defEpa": -0.0866,
-   "offEpa": -0.0538,
-   "passEpa": 0.0259,
-   "plays": 501,
+   "defEpa": -0.0965,
+   "offEpa": -0.0404,
+   "passEpa": 0.0403,
+   "plays": 559,
    "source": "blend"
   },
   "SF": {
-   "defEpa": -0.0426,
-   "offEpa": 0.1774,
-   "passEpa": 0.2473,
-   "plays": 401,
+   "defEpa": -0.0729,
+   "offEpa": 0.1798,
+   "passEpa": 0.2507,
+   "plays": 467,
    "source": "blend"
   },
   "TB": {
-   "defEpa": -0.1576,
-   "offEpa": -0.094,
-   "passEpa": -0.2337,
-   "plays": 491,
+   "defEpa": -0.1643,
+   "offEpa": -0.107,
+   "passEpa": -0.2493,
+   "plays": 556,
    "source": "blend"
   },
   "TEN": {
@@ -226,12 +226,12 @@
    "source": "blend"
   },
   "WAS": {
-   "defEpa": 0.0277,
-   "offEpa": -0.009,
-   "passEpa": -0.0085,
-   "plays": 435,
+   "defEpa": 0.0241,
+   "offEpa": -0.0285,
+   "passEpa": -0.0279,
+   "plays": 492,
    "source": "blend"
   }
  },
- "throughWeek": 8
+ "throughWeek": 9
 }
