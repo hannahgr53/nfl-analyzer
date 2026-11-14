@@ -3,7 +3,7 @@
   "dk",
   "fd"
  ],
- "generated": "2026-11-13T21:11:34+00:00",
+ "generated": "2026-11-14T19:41:18+00:00",
  "note": "Salaries for the next slate. DraftKings comes from its own draftables feed; FanDuel from the public FanDuel Research projections GraphQL endpoint. Captain and MVP rows are dropped \u2014 the app applies the 1.5x multiplier itself. sources.<book>.singles holds one block per single-game (Showdown/MVP) slate for that book, each with its own salary scale and its two teams.",
  "sources": {
   "dk": {
@@ -3306,7 +3306,7 @@
      "name": "Nikko Remigio",
      "pos": "WR",
      "salary": 3000,
-     "team": "KC"
+     "team": "HOU"
     },
     {
      "id": 1110301,
@@ -6369,7 +6369,7 @@
   "fd": {
    "book": "FanDuel",
    "cap": 60000,
-   "count": 291,
+   "count": 292,
    "def": {
     "ARI": 3400,
     "ATL": 3600,
@@ -8132,6 +8132,13 @@
      "team": "SEA"
     },
     {
+     "id": 55050,
+     "name": "Cody White",
+     "pos": "WR",
+     "salary": 4300,
+     "team": "LV"
+    },
+    {
      "id": 55238,
      "name": "Velus Jones",
      "pos": "RB",
@@ -8744,7 +8751,7 @@
     {
      "book": "FanDuel",
      "cap": 60000,
-     "count": 27,
+     "count": 28,
      "def": {
       "DET": 6400,
       "NE": 6200
@@ -8772,6 +8779,13 @@
        "pos": "WR",
        "salary": 6000,
        "team": "NE"
+      },
+      {
+       "id": 53876,
+       "name": "DeAndre Carter",
+       "pos": "WR",
+       "salary": 1000,
+       "team": "DET"
       },
       {
        "id": 53898,
