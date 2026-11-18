@@ -3,490 +3,450 @@
   "dk",
   "fd"
  ],
- "generated": "2026-11-16T23:17:06+00:00",
+ "generated": "2026-11-18T22:23:42+00:00",
  "note": "Salaries for the next slate. DraftKings comes from its own draftables feed; FanDuel from the public FanDuel Research projections GraphQL endpoint. Captain and MVP rows are dropped \u2014 the app applies the 1.5x multiplier itself. sources.<book>.singles holds one block per single-game (Showdown/MVP) slate for that book, each with its own salary scale and its two teams.",
  "sources": {
   "dk": {
    "book": "DraftKings",
    "cap": 50000,
-   "count": 99,
+   "count": 95,
    "def": {
-    "BAL": 3100,
-    "HOU": 3700,
-    "IND": 2100,
-    "LAC": 2300
+    "BAL": 3200,
+    "GB": 3000,
+    "NE": 3100,
+    "PHI": 2900,
+    "SF": 3300,
+    "TEN": 2800
    },
-   "games": 2,
-   "kickoff": 1794860100000.0,
+   "games": 3,
+   "kickoff": 1795089600000.0,
    "players": [
     {
-     "id": 1065406,
-     "name": "Jonathan Taylor",
+     "id": 830517,
+     "name": "Christian McCaffrey",
      "pos": "RB",
+     "salary": 8500,
+     "team": "SF"
+    },
+    {
+     "id": 1067918,
+     "name": "Christian Watson",
+     "pos": "WR",
+     "salary": 7900,
+     "team": "GB"
+    },
+    {
+     "id": 912137,
+     "name": "Jordan Love",
+     "pos": "QB",
      "salary": 7500,
-     "team": "IND"
-    },
-    {
-     "id": 1177053,
-     "name": "Zay Flowers",
-     "pos": "WR",
-     "salary": 7200,
-     "team": "BAL"
-    },
-    {
-     "id": 1074698,
-     "name": "Nico Collins",
-     "pos": "WR",
-     "salary": 7000,
-     "team": "HOU"
+     "team": "GB"
     },
     {
      "id": 732145,
      "name": "Derrick Henry",
      "pos": "RB",
-     "salary": 6500,
+     "salary": 7400,
      "team": "BAL"
     },
     {
-     "id": 1214084,
-     "name": "C.J. Stroud",
-     "pos": "QB",
-     "salary": 6000,
-     "team": "HOU"
-    },
-    {
-     "id": 1231652,
-     "name": "Woody Marks",
-     "pos": "RB",
-     "salary": 5700,
-     "team": "HOU"
-    },
-    {
-     "id": 1218643,
-     "name": "Ladd McConkey",
+     "id": 944826,
+     "name": "A.J. Brown",
      "pos": "WR",
-     "salary": 5500,
-     "team": "LAC"
-    },
-    {
-     "id": 946739,
-     "name": "David Montgomery",
-     "pos": "RB",
-     "salary": 5200,
-     "team": "HOU"
-    },
-    {
-     "id": 607047,
-     "name": "Jacoby Brissett",
-     "pos": "QB",
-     "salary": 5100,
-     "team": "BAL"
-    },
-    {
-     "id": 910562,
-     "name": "Justin Herbert",
-     "pos": "QB",
-     "salary": 5000,
-     "team": "LAC"
-    },
-    {
-     "id": 1213794,
-     "name": "Seth McGowan",
-     "pos": "RB",
-     "salary": 5000,
-     "team": "IND"
-    },
-    {
-     "id": 1107027,
-     "name": "Alec Pierce",
-     "pos": "WR",
-     "salary": 5000,
-     "team": "IND"
-    },
-    {
-     "id": 1398572,
-     "name": "Omarion Hampton",
-     "pos": "RB",
-     "salary": 4800,
-     "team": "LAC"
-    },
-    {
-     "id": 879981,
-     "name": "Daniel Jones",
-     "pos": "QB",
-     "salary": 4700,
-     "team": "IND"
-    },
-    {
-     "id": 1116817,
-     "name": "Emari Demercado",
-     "pos": "RB",
-     "salary": 4700,
-     "team": "HOU"
-    },
-    {
-     "id": 1229083,
-     "name": "Tyler Warren",
-     "pos": "TE",
-     "salary": 4700,
-     "team": "IND"
-    },
-    {
-     "id": 1213928,
-     "name": "DJ Uiagalelei",
-     "pos": "QB",
-     "salary": 4500,
-     "team": "LAC"
-    },
-    {
-     "id": 923109,
-     "name": "Justice Hill",
-     "pos": "RB",
-     "salary": 4500,
-     "team": "BAL"
-    },
-    {
-     "id": 1214824,
-     "name": "Kimani Vidal",
-     "pos": "RB",
-     "salary": 4500,
-     "team": "LAC"
-    },
-    {
-     "id": 1287828,
-     "name": "Marvin Harrison Jr.",
-     "pos": "WR",
-     "salary": 4500,
-     "team": "HOU"
-    },
-    {
-     "id": 1128222,
-     "name": "Tank Dell",
-     "pos": "WR",
-     "salary": 4400,
-     "team": "HOU"
-    },
-    {
-     "id": 1222789,
-     "name": "Keaton Mitchell",
-     "pos": "RB",
-     "salary": 4300,
-     "team": "LAC"
-    },
-    {
-     "id": 1213865,
-     "name": "Quentin Johnston",
-     "pos": "WR",
-     "salary": 4300,
-     "team": "LAC"
-    },
-    {
-     "id": 703015,
-     "name": "Dare Ogunbowale",
-     "pos": "RB",
-     "salary": 4200,
-     "team": "HOU"
-    },
-    {
-     "id": 1213636,
-     "name": "Xavier Hutchinson",
-     "pos": "WR",
-     "salary": 4200,
-     "team": "HOU"
-    },
-    {
-     "id": 1169299,
-     "name": "Joe Fagnano",
-     "pos": "QB",
-     "salary": 4100,
-     "team": "BAL"
-    },
-    {
-     "id": 1130975,
-     "name": "Trey Lance",
-     "pos": "QB",
-     "salary": 4000,
-     "team": "LAC"
-    },
-    {
-     "id": 1215022,
-     "name": "Anthony Richardson Sr.",
-     "pos": "QB",
-     "salary": 4000,
-     "team": "IND"
-    },
-    {
-     "id": 1290165,
-     "name": "Riley Leonard",
-     "pos": "QB",
-     "salary": 4000,
-     "team": "IND"
-    },
-    {
-     "id": 1060311,
-     "name": "Davis Mills",
-     "pos": "QB",
-     "salary": 4000,
-     "team": "HOU"
-    },
-    {
-     "id": 1164951,
-     "name": "Graham Mertz",
-     "pos": "QB",
-     "salary": 4000,
-     "team": "HOU"
-    },
-    {
-     "id": 1161818,
-     "name": "Kedon Slovis",
-     "pos": "QB",
-     "salary": 4000,
-     "team": "BAL"
+     "salary": 7300,
+     "team": "NE"
     },
     {
      "id": 877745,
      "name": "Lamar Jackson",
      "pos": "QB",
-     "salary": 4000,
+     "salary": 7100,
      "team": "BAL"
+    },
+    {
+     "id": 883302,
+     "name": "Saquon Barkley",
+     "pos": "RB",
+     "salary": 7000,
+     "team": "PHI"
+    },
+    {
+     "id": 944416,
+     "name": "Josh Jacobs",
+     "pos": "RB",
+     "salary": 7000,
+     "team": "GB"
+    },
+    {
+     "id": 1286803,
+     "name": "Drake Maye",
+     "pos": "QB",
+     "salary": 6500,
+     "team": "NE"
+    },
+    {
+     "id": 1174682,
+     "name": "Rhamondre Stevenson",
+     "pos": "RB",
+     "salary": 6400,
+     "team": "NE"
+    },
+    {
+     "id": 1177053,
+     "name": "Zay Flowers",
+     "pos": "WR",
+     "salary": 6400,
+     "team": "BAL"
+    },
+    {
+     "id": 593587,
+     "name": "Mike Evans",
+     "pos": "WR",
+     "salary": 6300,
+     "team": "SF"
+    },
+    {
+     "id": 1121761,
+     "name": "Brock Purdy",
+     "pos": "QB",
+     "salary": 6100,
+     "team": "SF"
+    },
+    {
+     "id": 1060262,
+     "name": "DeVonta Smith",
+     "pos": "WR",
+     "salary": 5700,
+     "team": "PHI"
+    },
+    {
+     "id": 913271,
+     "name": "Jalen Hurts",
+     "pos": "QB",
+     "salary": 5600,
+     "team": "PHI"
+    },
+    {
+     "id": 1379267,
+     "name": "Matthew Golden",
+     "pos": "WR",
+     "salary": 5400,
+     "team": "GB"
+    },
+    {
+     "id": 733672,
+     "name": "George Kittle",
+     "pos": "TE",
+     "salary": 5200,
+     "team": "SF"
+    },
+    {
+     "id": 1228691,
+     "name": "Cam Ward",
+     "pos": "QB",
+     "salary": 5100,
+     "team": "TEN"
+    },
+    {
+     "id": 880398,
+     "name": "Tony Pollard",
+     "pos": "RB",
+     "salary": 5100,
+     "team": "TEN"
+    },
+    {
+     "id": 973945,
+     "name": "Mac Jones",
+     "pos": "QB",
+     "salary": 5000,
+     "team": "SF"
+    },
+    {
+     "id": 322858,
+     "name": "Andy Dalton",
+     "pos": "QB",
+     "salary": 5000,
+     "team": "PHI"
+    },
+    {
+     "id": 399579,
+     "name": "Tyrod Taylor",
+     "pos": "QB",
+     "salary": 5000,
+     "team": "GB"
     },
     {
      "id": 913163,
      "name": "Tyler Huntley",
      "pos": "QB",
-     "salary": 4000,
+     "salary": 5000,
      "team": "BAL"
     },
     {
-     "id": 913829,
-     "name": "Skylar Thompson",
+     "id": 728169,
+     "name": "Mitchell Trubisky",
      "pos": "QB",
-     "salary": 4000,
-     "team": "BAL"
+     "salary": 5000,
+     "team": "TEN"
     },
     {
-     "id": 865844,
-     "name": "Jake Browning",
+     "id": 1060671,
+     "name": "Tommy DeVito",
      "pos": "QB",
-     "salary": 4000,
-     "team": "LAC"
+     "salary": 5000,
+     "team": "NE"
     },
     {
-     "id": 1303569,
-     "name": "DJ Giddens",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "IND"
-    },
-    {
-     "id": 1445256,
-     "name": "Davon Booth",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "IND"
-    },
-    {
-     "id": 1128295,
-     "name": "British Brooks",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "HOU"
-    },
-    {
-     "id": 1408785,
-     "name": "Joshua Pitsenberger",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "HOU"
-    },
-    {
-     "id": 1229133,
-     "name": "Rasheen Ali",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "BAL"
-    },
-    {
-     "id": 1378284,
-     "name": "Adam Randall",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "BAL"
-    },
-    {
-     "id": 1325830,
-     "name": "Lucas Scott",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "BAL"
-    },
-    {
-     "id": 1332922,
-     "name": "Amar Johnson",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "LAC"
-    },
-    {
-     "id": 1130595,
-     "name": "Scott Matlock",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "LAC"
-    },
-    {
-     "id": 880322,
-     "name": "Alec Ingold",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "LAC"
-    },
-    {
-     "id": 1213362,
-     "name": "Kayshon Boutte",
+     "id": 1164875,
+     "name": "Wan'Dale Robinson",
      "pos": "WR",
-     "salary": 4000,
-     "team": "HOU"
-    },
-    {
-     "id": 1214633,
-     "name": "Tre' Harris",
-     "pos": "WR",
-     "salary": 3900,
-     "team": "LAC"
-    },
-    {
-     "id": 830523,
-     "name": "Dalton Schultz",
-     "pos": "TE",
-     "salary": 3700,
-     "team": "HOU"
-    },
-    {
-     "id": 748554,
-     "name": "Laquon Treadwell",
-     "pos": "WR",
-     "salary": 3500,
-     "team": "IND"
+     "salary": 5000,
+     "team": "TEN"
     },
     {
      "id": 820699,
      "name": "Mark Andrews",
      "pos": "TE",
-     "salary": 3400,
+     "salary": 4700,
      "team": "BAL"
     },
     {
-     "id": 1458888,
-     "name": "Ja'Kobi Lane",
-     "pos": "WR",
-     "salary": 3300,
-     "team": "BAL"
+     "id": 1181874,
+     "name": "Tucker Kraft",
+     "pos": "TE",
+     "salary": 4600,
+     "team": "GB"
     },
     {
-     "id": 1166036,
-     "name": "Ashton Dulin",
+     "id": 1122653,
+     "name": "Romeo Doubs",
      "pos": "WR",
-     "salary": 3200,
-     "team": "IND"
+     "salary": 4500,
+     "team": "NE"
+    },
+    {
+     "id": 744425,
+     "name": "Hunter Henry",
+     "pos": "TE",
+     "salary": 4500,
+     "team": "NE"
+    },
+    {
+     "id": 791365,
+     "name": "Dallas Goedert",
+     "pos": "TE",
+     "salary": 4300,
+     "team": "PHI"
+    },
+    {
+     "id": 1441839,
+     "name": "Carnell Tate",
+     "pos": "WR",
+     "salary": 4200,
+     "team": "TEN"
+    },
+    {
+     "id": 1123398,
+     "name": "Jayden Reed",
+     "pos": "WR",
+     "salary": 4000,
+     "team": "GB"
+    },
+    {
+     "id": 1441120,
+     "name": "Makai Lemon",
+     "pos": "WR",
+     "salary": 3800,
+     "team": "PHI"
     },
     {
      "id": 1108208,
      "name": "Rashod Bateman",
      "pos": "WR",
+     "salary": 3700,
+     "team": "BAL"
+    },
+    {
+     "id": 1286818,
+     "name": "De'Zhaun Stribling",
+     "pos": "WR",
+     "salary": 3600,
+     "team": "SF"
+    },
+    {
+     "id": 835749,
+     "name": "Deebo Samuel Sr.",
+     "pos": "WR",
+     "salary": 3500,
+     "team": "SF"
+    },
+    {
+     "id": 923109,
+     "name": "Justice Hill",
+     "pos": "RB",
+     "salary": 3300,
+     "team": "BAL"
+    },
+    {
+     "id": 976220,
+     "name": "Hollywood Brown",
+     "pos": "WR",
+     "salary": 3300,
+     "team": "PHI"
+    },
+    {
+     "id": 1287837,
+     "name": "TreVeyon Henderson",
+     "pos": "RB",
+     "salary": 3200,
+     "team": "NE"
+    },
+    {
+     "id": 884013,
+     "name": "Calvin Ridley",
+     "pos": "WR",
+     "salary": 3200,
+     "team": "TEN"
+    },
+    {
+     "id": 1286438,
+     "name": "Gunnar Helm",
+     "pos": "TE",
+     "salary": 3200,
+     "team": "TEN"
+    },
+    {
+     "id": 1213414,
+     "name": "MarShawn Lloyd",
+     "pos": "RB",
+     "salary": 3100,
+     "team": "GB"
+    },
+    {
+     "id": 1458888,
+     "name": "Ja'Kobi Lane",
+     "pos": "WR",
      "salary": 3100,
      "team": "BAL"
     },
     {
-     "id": 1325624,
-     "name": "Oronde Gadsden II",
-     "pos": "TE",
-     "salary": 3100,
-     "team": "LAC"
+     "id": 1169430,
+     "name": "Tyjae Spears",
+     "pos": "RB",
+     "salary": 3000,
+     "team": "TEN"
     },
     {
-     "id": 1161661,
-     "name": "Anthony Gould",
-     "pos": "WR",
+     "id": 915066,
+     "name": "Reggie Gilliam",
+     "pos": "RB",
      "salary": 3000,
-     "team": "IND"
+     "team": "NE"
     },
     {
-     "id": 1287798,
-     "name": "Deion Burks",
-     "pos": "WR",
+     "id": 1215035,
+     "name": "Tank Bigsby",
+     "pos": "RB",
      "salary": 3000,
-     "team": "IND"
+     "team": "PHI"
     },
     {
-     "id": 883259,
-     "name": "Nick Westbrook-Ikhine",
-     "pos": "WR",
+     "id": 1215772,
+     "name": "Kaelon Black",
+     "pos": "RB",
      "salary": 3000,
-     "team": "IND"
+     "team": "SF"
     },
     {
-     "id": 949134,
-     "name": "Quez Watkins",
-     "pos": "WR",
+     "id": 1381902,
+     "name": "Kaleb Johnson",
+     "pos": "RB",
      "salary": 3000,
-     "team": "IND"
+     "team": "GB"
     },
     {
-     "id": 1063397,
-     "name": "D.J. Montgomery",
-     "pos": "WR",
+     "id": 1287636,
+     "name": "Will Shipley",
+     "pos": "RB",
      "salary": 3000,
-     "team": "IND"
+     "team": "PHI"
     },
     {
-     "id": 922026,
-     "name": "Mecole Hardman Jr.",
-     "pos": "WR",
+     "id": 1400657,
+     "name": "Jordan James",
+     "pos": "RB",
      "salary": 3000,
-     "team": "IND"
+     "team": "SF"
     },
     {
-     "id": 1127080,
-     "name": "Nikko Remigio",
-     "pos": "WR",
+     "id": 1229133,
+     "name": "Rasheen Ali",
+     "pos": "RB",
      "salary": 3000,
-     "team": "HOU"
+     "team": "BAL"
     },
     {
-     "id": 1274492,
-     "name": "Jayden Higgins",
-     "pos": "WR",
+     "id": 1379264,
+     "name": "Nick Singleton",
+     "pos": "RB",
      "salary": 3000,
-     "team": "HOU"
+     "team": "TEN"
     },
     {
-     "id": 1286370,
-     "name": "Jaylin Noel",
-     "pos": "WR",
+     "id": 1286050,
+     "name": "Corey Kiner",
+     "pos": "RB",
      "salary": 3000,
-     "team": "HOU"
+     "team": "NE"
     },
     {
-     "id": 1286652,
-     "name": "Lewis Bond",
-     "pos": "WR",
+     "id": 501150,
+     "name": "Kyle Juszczyk",
+     "pos": "RB",
      "salary": 3000,
-     "team": "HOU"
+     "team": "SF"
     },
     {
-     "id": 1170921,
-     "name": "Josh Kelly",
+     "id": 1175693,
+     "name": "DeMario Douglas",
      "pos": "WR",
      "salary": 3000,
-     "team": "HOU"
+     "team": "NE"
     },
     {
-     "id": 1113398,
-     "name": "Bryce Oliver",
+     "id": 865801,
+     "name": "Christian Kirk",
      "pos": "WR",
      "salary": 3000,
-     "team": "HOU"
+     "team": "SF"
+    },
+    {
+     "id": 702808,
+     "name": "Mack Hollins",
+     "pos": "WR",
+     "salary": 3000,
+     "team": "NE"
+    },
+    {
+     "id": 1172428,
+     "name": "Dontayvion Wicks",
+     "pos": "WR",
+     "salary": 3000,
+     "team": "PHI"
+    },
+    {
+     "id": 1215102,
+     "name": "Chimere Dike",
+     "pos": "WR",
+     "salary": 3000,
+     "team": "TEN"
+    },
+    {
+     "id": 1068803,
+     "name": "Bo Melton",
+     "pos": "WR",
+     "salary": 3000,
+     "team": "GB"
     },
     {
      "id": 1277914,
@@ -496,11 +456,39 @@
      "team": "BAL"
     },
     {
-     "id": 1231033,
-     "name": "LaJohntay Wester",
+     "id": 1395319,
+     "name": "Elic Ayomanor",
      "pos": "WR",
      "salary": 3000,
-     "team": "BAL"
+     "team": "TEN"
+    },
+    {
+     "id": 727279,
+     "name": "Demarcus Robinson",
+     "pos": "WR",
+     "salary": 3000,
+     "team": "SF"
+    },
+    {
+     "id": 1128783,
+     "name": "Elijah Moore",
+     "pos": "WR",
+     "salary": 3000,
+     "team": "PHI"
+    },
+    {
+     "id": 1227157,
+     "name": "Kyle Williams",
+     "pos": "WR",
+     "salary": 3000,
+     "team": "NE"
+    },
+    {
+     "id": 1176730,
+     "name": "Skyy Moore",
+     "pos": "WR",
+     "salary": 3000,
+     "team": "GB"
     },
     {
      "id": 1392584,
@@ -510,144 +498,46 @@
      "team": "BAL"
     },
     {
-     "id": 1323007,
-     "name": "Gage Larvadain",
+     "id": 881058,
+     "name": "K.J. Osborn",
+     "pos": "WR",
+     "salary": 3000,
+     "team": "TEN"
+    },
+    {
+     "id": 1231033,
+     "name": "LaJohntay Wester",
      "pos": "WR",
      "salary": 3000,
      "team": "BAL"
     },
     {
-     "id": 606551,
-     "name": "Chris Moore",
+     "id": 1213872,
+     "name": "Savion Williams",
      "pos": "WR",
      "salary": 3000,
-     "team": "BAL"
+     "team": "GB"
     },
     {
-     "id": 1214405,
-     "name": "KeAndre Lambert-Smith",
+     "id": 1222835,
+     "name": "Jordan Watkins",
      "pos": "WR",
      "salary": 3000,
-     "team": "LAC"
+     "team": "SF"
     },
     {
-     "id": 1399132,
-     "name": "Brenen Thompson",
+     "id": 1216288,
+     "name": "Efton Chism III",
      "pos": "WR",
      "salary": 3000,
-     "team": "LAC"
+     "team": "NE"
     },
     {
-     "id": 1113477,
-     "name": "Derius Davis",
+     "id": 1223318,
+     "name": "Darius Cooper",
      "pos": "WR",
      "salary": 3000,
-     "team": "LAC"
-    },
-    {
-     "id": 1162602,
-     "name": "Theo Wease Jr.",
-     "pos": "WR",
-     "salary": 3000,
-     "team": "LAC"
-    },
-    {
-     "id": 1315586,
-     "name": "Tejhaun Palmer",
-     "pos": "WR",
-     "salary": 3000,
-     "team": "LAC"
-    },
-    {
-     "id": 1225702,
-     "name": "Luke Grimm",
-     "pos": "WR",
-     "salary": 3000,
-     "team": "LAC"
-    },
-    {
-     "id": 1058648,
-     "name": "Charlie Kolar",
-     "pos": "TE",
-     "salary": 2600,
-     "team": "LAC"
-    },
-    {
-     "id": 1121873,
-     "name": "Will Mallory",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "IND"
-    },
-    {
-     "id": 1271740,
-     "name": "Drew Ogletree",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "IND"
-    },
-    {
-     "id": 689689,
-     "name": "Pharaoh Brown",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "IND"
-    },
-    {
-     "id": 712506,
-     "name": "Mo Alie-Cox",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "IND"
-    },
-    {
-     "id": 1212622,
-     "name": "Carson Towt",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "IND"
-    },
-    {
-     "id": 865573,
-     "name": "Foster Moreau",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "HOU"
-    },
-    {
-     "id": 1121871,
-     "name": "Brevin Jordan",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "HOU"
-    },
-    {
-     "id": 1405857,
-     "name": "Marlin Klein",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "HOU"
-    },
-    {
-     "id": 1175182,
-     "name": "Cade Stover",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "HOU"
-    },
-    {
-     "id": 1319948,
-     "name": "Josh Cuevas",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "BAL"
-    },
-    {
-     "id": 1229693,
-     "name": "Matt Hibner",
-     "pos": "TE",
-     "salary": 2500,
-     "team": "BAL"
+     "team": "PHI"
     },
     {
      "id": 749968,
@@ -657,1794 +547,1859 @@
      "team": "BAL"
     },
     {
-     "id": 606488,
-     "name": "Nick Vannett",
+     "id": 1319948,
+     "name": "Josh Cuevas",
      "pos": "TE",
      "salary": 2500,
      "team": "BAL"
     },
     {
-     "id": 1404295,
-     "name": "Ty Pezza",
+     "id": 1286065,
+     "name": "Eli Stowers",
+     "pos": "TE",
+     "salary": 2500,
+     "team": "PHI"
+    },
+    {
+     "id": 1068872,
+     "name": "Jake Tonges",
+     "pos": "TE",
+     "salary": 2500,
+     "team": "SF"
+    },
+    {
+     "id": 1122035,
+     "name": "Daniel Bellinger",
+     "pos": "TE",
+     "salary": 2500,
+     "team": "TEN"
+    },
+    {
+     "id": 743749,
+     "name": "Jonnu Smith",
+     "pos": "TE",
+     "salary": 2500,
+     "team": "GB"
+    },
+    {
+     "id": 1403969,
+     "name": "Eli Raridon",
+     "pos": "TE",
+     "salary": 2500,
+     "team": "NE"
+    },
+    {
+     "id": 1179790,
+     "name": "Luke Musgrave",
+     "pos": "TE",
+     "salary": 2500,
+     "team": "GB"
+    },
+    {
+     "id": 921050,
+     "name": "Kylen Granson",
+     "pos": "TE",
+     "salary": 2500,
+     "team": "TEN"
+    },
+    {
+     "id": 976221,
+     "name": "Grant Calcaterra",
+     "pos": "TE",
+     "salary": 2500,
+     "team": "PHI"
+    },
+    {
+     "id": 1125739,
+     "name": "Cameron Latu",
+     "pos": "TE",
+     "salary": 2500,
+     "team": "NE"
+    },
+    {
+     "id": 1229693,
+     "name": "Matt Hibner",
      "pos": "TE",
      "salary": 2500,
      "team": "BAL"
     },
     {
-     "id": 832098,
-     "name": "David Njoku",
+     "id": 946541,
+     "name": "Luke Farrell",
      "pos": "TE",
      "salary": 2500,
-     "team": "LAC"
+     "team": "SF"
     },
     {
-     "id": 1168753,
-     "name": "Patrick Herbert",
+     "id": 1107037,
+     "name": "Josh Whyle",
      "pos": "TE",
      "salary": 2500,
-     "team": "LAC"
+     "team": "GB"
+    },
+    {
+     "id": 740704,
+     "name": "Johnny Mundt",
+     "pos": "TE",
+     "salary": 2500,
+     "team": "PHI"
     }
    ],
    "single": false,
    "singles": [
     {
      "cap": 50000,
-     "count": 31,
+     "count": 30,
      "def": {
-      "CIN": 5400,
-      "CLE": 5700
+      "CHI": 5700,
+      "NYG": 5400
      },
      "players": [
       {
-       "id": 878785,
-       "name": "Joe Burrow",
+       "id": 1286445,
+       "name": "Caleb Williams",
        "pos": "QB",
        "salary": 16500,
-       "team": "CIN"
+       "team": "CHI"
       },
       {
-       "id": 1109979,
-       "name": "Ja'Marr Chase",
-       "pos": "WR",
-       "salary": 15900,
-       "team": "CIN"
-      },
-      {
-       "id": 1123379,
-       "name": "Chase Brown",
-       "pos": "RB",
-       "salary": 14100,
-       "team": "CIN"
-      },
-      {
-       "id": 1272321,
-       "name": "Shedeur Sanders",
+       "id": 1286260,
+       "name": "Jaxson Dart",
        "pos": "QB",
-       "salary": 13500,
-       "team": "CLE"
+       "salary": 15300,
+       "team": "NYG"
       },
       {
-       "id": 978579,
-       "name": "Tee Higgins",
+       "id": 1069808,
+       "name": "D'Andre Swift",
+       "pos": "RB",
+       "salary": 14700,
+       "team": "CHI"
+      },
+      {
+       "id": 1286059,
+       "name": "Malik Nabers",
+       "pos": "WR",
+       "salary": 13800,
+       "team": "NYG"
+      },
+      {
+       "id": 1213727,
+       "name": "Rome Odunze",
        "pos": "WR",
        "salary": 12900,
-       "team": "CIN"
+       "team": "CHI"
       },
       {
-       "id": 1383807,
-       "name": "Quinshon Judkins",
+       "id": 1280316,
+       "name": "Cam Skattebo",
        "pos": "RB",
-       "salary": 12600,
-       "team": "CLE"
+       "salary": 12300,
+       "team": "NYG"
       },
       {
-       "id": 973935,
-       "name": "Jerry Jeudy",
+       "id": 1377732,
+       "name": "Luther Burden III",
        "pos": "WR",
-       "salary": 12000,
-       "team": "CLE"
+       "salary": 11700,
+       "team": "CHI"
       },
       {
-       "id": 1441576,
-       "name": "KC Concepcion Jr.",
+       "id": 1378821,
+       "name": "Colston Loveland",
+       "pos": "TE",
+       "salary": 10800,
+       "team": "CHI"
+      },
+      {
+       "id": 912027,
+       "name": "Darnell Mooney",
        "pos": "WR",
-       "salary": 9900,
-       "team": "CLE"
+       "salary": 10200,
+       "team": "NYG"
       },
       {
-       "id": 1124851,
-       "name": "Andrei Iosivas",
-       "pos": "WR",
-       "salary": 9600,
-       "team": "CIN"
-      },
-      {
-       "id": 836152,
-       "name": "Mike Gesicki",
+       "id": 1125111,
+       "name": "Isaiah Likely",
        "pos": "TE",
        "salary": 9300,
-       "team": "CIN"
+       "team": "NYG"
       },
       {
-       "id": 216342,
-       "name": "Joe Flacco",
+       "id": 691536,
+       "name": "Jameis Winston",
        "pos": "QB",
        "salary": 9000,
-       "team": "CIN"
+       "team": "NYG"
       },
       {
-       "id": 828743,
-       "name": "Deshaun Watson",
+       "id": 1444140,
+       "name": "Tyson Bagent",
        "pos": "QB",
        "salary": 9000,
-       "team": "CLE"
+       "team": "CHI"
       },
       {
-       "id": 1394752,
-       "name": "Harold Fannin Jr.",
-       "pos": "TE",
-       "salary": 8100,
-       "team": "CLE"
+       "id": 692660,
+       "name": "Kalif Raymond",
+       "pos": "WR",
+       "salary": 6900,
+       "team": "CHI"
       },
       {
-       "id": 1379904,
-       "name": "Denzel Boston",
+       "id": 880557,
+       "name": "Darius Slayton",
        "pos": "WR",
        "salary": 6600,
-       "team": "CLE"
+       "team": "NYG"
       },
       {
-       "id": 837824,
-       "name": "Drew Sample",
-       "pos": "TE",
-       "salary": 3600,
-       "team": "CIN"
+       "id": 1109708,
+       "name": "Tyrone Tracy Jr.",
+       "pos": "RB",
+       "salary": 5100,
+       "team": "NYG"
       },
       {
-       "id": 1399910,
-       "name": "Dylan Sampson",
+       "id": 1250886,
+       "name": "Kyle Monangai",
        "pos": "RB",
        "salary": 3300,
-       "team": "CLE"
+       "team": "CHI"
       },
       {
-       "id": 1109731,
-       "name": "Blake Whiteheart",
+       "id": 1066765,
+       "name": "Cole Kmet",
        "pos": "TE",
        "salary": 3000,
-       "team": "CLE"
+       "team": "CHI"
       },
       {
-       "id": 1164533,
-       "name": "Erick All Jr.",
-       "pos": "TE",
+       "id": 1398153,
+       "name": "Zavion Thomas",
+       "pos": "WR",
        "salary": 2700,
-       "team": "CIN"
+       "team": "CHI"
       },
       {
-       "id": 1384626,
-       "name": "Carsen Ryan",
-       "pos": "TE",
+       "id": 1319589,
+       "name": "Malachi Fields",
+       "pos": "WR",
        "salary": 2400,
-       "team": "CLE"
+       "team": "NYG"
       },
       {
-       "id": 556483,
-       "name": "Michael Burton",
-       "pos": "RB",
+       "id": 1378156,
+       "name": "Sam Roush",
+       "pos": "TE",
        "salary": 2100,
-       "team": "CLE"
+       "team": "CHI"
       },
       {
-       "id": 1406878,
-       "name": "Colbie Young",
-       "pos": "WR",
+       "id": 1214414,
+       "name": "Theo Johnson",
+       "pos": "TE",
        "salary": 1800,
-       "team": "CIN"
+       "team": "NYG"
       },
       {
-       "id": 820734,
-       "name": "Samaje Perine",
+       "id": 1163265,
+       "name": "Roschon Johnson",
        "pos": "RB",
        "salary": 1500,
-       "team": "CIN"
+       "team": "CHI"
       },
       {
-       "id": 1215291,
-       "name": "Malachi Corley",
+       "id": 1465213,
+       "name": "Jahdae Walker",
        "pos": "WR",
        "salary": 1500,
-       "team": "CLE"
+       "team": "CHI"
       },
       {
-       "id": 1398503,
-       "name": "Isaiah Bond",
+       "id": 589984,
+       "name": "Odell Beckham Jr.",
        "pos": "WR",
        "salary": 1500,
-       "team": "CLE"
+       "team": "NYG"
       },
       {
-       "id": 1232057,
-       "name": "Ke'Shawn Williams",
+       "id": 867759,
+       "name": "Ray-Ray McCloud III",
        "pos": "WR",
        "salary": 1500,
-       "team": "CIN"
+       "team": "CHI"
       },
       {
-       "id": 1062546,
-       "name": "Tylan Wallace",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "CLE"
-      },
-      {
-       "id": 1228730,
-       "name": "Tahj Brooks",
+       "id": 973964,
+       "name": "Najee Harris",
        "pos": "RB",
        "salary": 1500,
-       "team": "CIN"
+       "team": "NYG"
       },
       {
-       "id": 1400852,
-       "name": "Jack Endries",
+       "id": 563293,
+       "name": "Chris Manhertz",
        "pos": "TE",
        "salary": 1500,
-       "team": "CIN"
+       "team": "NYG"
       },
       {
-       "id": 1285895,
-       "name": "Raheim Sanders",
+       "id": 658389,
+       "name": "Patrick Ricard",
        "pos": "RB",
        "salary": 1500,
-       "team": "CLE"
+       "team": "NYG"
       }
      ],
-     "slate": "CIN @ CLE, Tue Nov 17",
+     "slate": "CHI @ NYG, Wed Nov 18",
      "teams": [
-      "CIN",
-      "CLE"
+      "CHI",
+      "NYG"
      ]
     },
     {
      "cap": 50000,
-     "count": 50,
+     "count": 32,
      "def": {
-      "BAL": 6000,
-      "LAC": 5100
+      "NYJ": 5400,
+      "PIT": 6300
      },
      "players": [
       {
-       "id": 1177053,
-       "name": "Zay Flowers",
-       "pos": "WR",
-       "salary": 15600,
-       "team": "BAL"
+       "id": 213957,
+       "name": "Aaron Rodgers",
+       "pos": "QB",
+       "salary": 16500,
+       "team": "PIT"
       },
       {
-       "id": 732145,
-       "name": "Derrick Henry",
+       "id": 1162537,
+       "name": "Breece Hall",
        "pos": "RB",
-       "salary": 15000,
-       "team": "BAL"
+       "salary": 15300,
+       "team": "NYJ"
       },
       {
-       "id": 607047,
-       "name": "Jacoby Brissett",
+       "id": 945633,
+       "name": "DK Metcalf",
+       "pos": "WR",
+       "salary": 14400,
+       "team": "PIT"
+      },
+      {
+       "id": 513856,
+       "name": "Geno Smith",
        "pos": "QB",
        "salary": 13800,
-       "team": "BAL"
+       "team": "NYJ"
       },
       {
-       "id": 910562,
-       "name": "Justin Herbert",
-       "pos": "QB",
-       "salary": 13500,
-       "team": "LAC"
-      },
-      {
-       "id": 1218643,
-       "name": "Ladd McConkey",
+       "id": 1164889,
+       "name": "Garrett Wilson",
        "pos": "WR",
-       "salary": 12600,
-       "team": "LAC"
+       "salary": 12900,
+       "team": "NYJ"
       },
       {
-       "id": 1169299,
-       "name": "Joe Fagnano",
-       "pos": "QB",
-       "salary": 12300,
-       "team": "BAL"
-      },
-      {
-       "id": 1213928,
-       "name": "DJ Uiagalelei",
-       "pos": "QB",
-       "salary": 12000,
-       "team": "LAC"
-      },
-      {
-       "id": 1398572,
-       "name": "Omarion Hampton",
-       "pos": "RB",
-       "salary": 11700,
-       "team": "LAC"
-      },
-      {
-       "id": 1213865,
-       "name": "Quentin Johnston",
-       "pos": "WR",
-       "salary": 11100,
-       "team": "LAC"
-      },
-      {
-       "id": 1214633,
-       "name": "Tre' Harris",
-       "pos": "WR",
-       "salary": 10200,
-       "team": "LAC"
-      },
-      {
-       "id": 820699,
-       "name": "Mark Andrews",
+       "id": 1116662,
+       "name": "Pat Freiermuth",
        "pos": "TE",
-       "salary": 9600,
-       "team": "BAL"
+       "salary": 12000,
+       "team": "PIT"
       },
       {
-       "id": 1130975,
-       "name": "Trey Lance",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "LAC"
-      },
-      {
-       "id": 877745,
-       "name": "Lamar Jackson",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "BAL"
-      },
-      {
-       "id": 913163,
-       "name": "Tyler Huntley",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "BAL"
-      },
-      {
-       "id": 913829,
-       "name": "Skylar Thompson",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "BAL"
-      },
-      {
-       "id": 865844,
-       "name": "Jake Browning",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "LAC"
-      },
-      {
-       "id": 1161818,
-       "name": "Kedon Slovis",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "BAL"
-      },
-      {
-       "id": 1214824,
-       "name": "Kimani Vidal",
-       "pos": "RB",
-       "salary": 8700,
-       "team": "LAC"
-      },
-      {
-       "id": 923109,
-       "name": "Justice Hill",
-       "pos": "RB",
-       "salary": 7500,
-       "team": "BAL"
-      },
-      {
-       "id": 1222789,
-       "name": "Keaton Mitchell",
-       "pos": "RB",
-       "salary": 7200,
-       "team": "LAC"
-      },
-      {
-       "id": 1458888,
-       "name": "Ja'Kobi Lane",
+       "id": 1285908,
+       "name": "Adonai Mitchell",
        "pos": "WR",
-       "salary": 6600,
-       "team": "BAL"
+       "salary": 11400,
+       "team": "NYJ"
       },
       {
-       "id": 1108208,
-       "name": "Rashod Bateman",
+       "id": 933480,
+       "name": "Rico Dowdle",
+       "pos": "RB",
+       "salary": 10800,
+       "team": "PIT"
+      },
+      {
+       "id": 1229669,
+       "name": "Roman Wilson",
+       "pos": "WR",
+       "salary": 9300,
+       "team": "PIT"
+      },
+      {
+       "id": 1378287,
+       "name": "Cade Klubnik",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "NYJ"
+      },
+      {
+       "id": 823220,
+       "name": "Mason Rudolph",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "PIT"
+      },
+      {
+       "id": 911348,
+       "name": "Michael Pittman Jr.",
+       "pos": "WR",
+       "salary": 7200,
+       "team": "PIT"
+      },
+      {
+       "id": 1444547,
+       "name": "Kenyon Sadiq",
+       "pos": "TE",
+       "salary": 6600,
+       "team": "NYJ"
+      },
+      {
+       "id": 1176443,
+       "name": "Jaylen Warren",
+       "pos": "RB",
+       "salary": 6000,
+       "team": "PIT"
+      },
+      {
+       "id": 1394825,
+       "name": "Omar Cooper Jr.",
        "pos": "WR",
        "salary": 5700,
-       "team": "BAL"
+       "team": "NYJ"
       },
       {
-       "id": 1325624,
-       "name": "Oronde Gadsden II",
-       "pos": "TE",
-       "salary": 4500,
-       "team": "LAC"
-      },
-      {
-       "id": 1058648,
-       "name": "Charlie Kolar",
-       "pos": "TE",
-       "salary": 3900,
-       "team": "LAC"
-      },
-      {
-       "id": 832098,
-       "name": "David Njoku",
+       "id": 1381263,
+       "name": "Mason Taylor",
        "pos": "TE",
        "salary": 3600,
-       "team": "LAC"
+       "team": "NYJ"
       },
       {
-       "id": 1214405,
-       "name": "KeAndre Lambert-Smith",
+       "id": 1325231,
+       "name": "Braelon Allen",
+       "pos": "RB",
+       "salary": 3300,
+       "team": "NYJ"
+      },
+      {
+       "id": 1380613,
+       "name": "Germie Bernard",
        "pos": "WR",
        "salary": 3000,
-       "team": "LAC"
+       "team": "PIT"
       },
       {
-       "id": 1277914,
-       "name": "Devontez Walker",
-       "pos": "WR",
-       "salary": 2700,
-       "team": "BAL"
-      },
-      {
-       "id": 1319948,
-       "name": "Josh Cuevas",
-       "pos": "TE",
-       "salary": 2400,
-       "team": "BAL"
-      },
-      {
-       "id": 1229133,
-       "name": "Rasheen Ali",
+       "id": 1244224,
+       "name": "Riley Nowakowski",
        "pos": "RB",
-       "salary": 2100,
-       "team": "BAL"
+       "salary": 2700,
+       "team": "PIT"
       },
       {
-       "id": 1231033,
-       "name": "LaJohntay Wester",
+       "id": 824428,
+       "name": "Andrew Beck",
+       "pos": "RB",
+       "salary": 2400,
+       "team": "NYJ"
+      },
+      {
+       "id": 838179,
+       "name": "Tim Patrick",
        "pos": "WR",
-       "salary": 1800,
-       "team": "BAL"
+       "salary": 2100,
+       "team": "NYJ"
       },
       {
-       "id": 1399132,
-       "name": "Brenen Thompson",
+       "id": 1218658,
+       "name": "Darnell Washington",
+       "pos": "TE",
+       "salary": 1800,
+       "team": "PIT"
+      },
+      {
+       "id": 920944,
+       "name": "Ben Skowronek",
        "pos": "WR",
        "salary": 1500,
-       "team": "LAC"
+       "team": "PIT"
       },
       {
-       "id": 1392584,
-       "name": "Elijah Sarratt",
-       "pos": "WR",
-       "salary": 1200,
-       "team": "BAL"
-      },
-      {
-       "id": 1229693,
-       "name": "Matt Hibner",
-       "pos": "TE",
-       "salary": 900,
-       "team": "BAL"
-      },
-      {
-       "id": 1113477,
-       "name": "Derius Davis",
-       "pos": "WR",
-       "salary": 600,
-       "team": "LAC"
-      },
-      {
-       "id": 880322,
-       "name": "Alec Ingold",
-       "pos": "RB",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 1378284,
-       "name": "Adam Randall",
-       "pos": "RB",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 1130595,
-       "name": "Scott Matlock",
-       "pos": "RB",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 1332922,
-       "name": "Amar Johnson",
-       "pos": "RB",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 1325830,
-       "name": "Lucas Scott",
-       "pos": "RB",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 606551,
-       "name": "Chris Moore",
-       "pos": "WR",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 1162602,
-       "name": "Theo Wease Jr.",
-       "pos": "WR",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 1225702,
-       "name": "Luke Grimm",
-       "pos": "WR",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 1323007,
-       "name": "Gage Larvadain",
-       "pos": "WR",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 1315586,
-       "name": "Tejhaun Palmer",
-       "pos": "WR",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 749968,
-       "name": "Durham Smythe",
-       "pos": "TE",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 1404295,
-       "name": "Ty Pezza",
-       "pos": "TE",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 606488,
-       "name": "Nick Vannett",
-       "pos": "TE",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 1168753,
-       "name": "Patrick Herbert",
-       "pos": "TE",
-       "salary": 300,
-       "team": "LAC"
-      }
-     ],
-     "slate": "BAL @ LAC, Mon Nov 16",
-     "teams": [
-      "BAL",
-      "LAC"
-     ]
-    },
-    {
-     "cap": 50000,
-     "count": 50,
-     "def": {
-      "BAL": 6000,
-      "LAC": 5100
-     },
-     "players": [
-      {
-       "id": 1177053,
-       "name": "Zay Flowers",
-       "pos": "WR",
-       "salary": 15600,
-       "team": "BAL"
-      },
-      {
-       "id": 732145,
-       "name": "Derrick Henry",
-       "pos": "RB",
-       "salary": 15000,
-       "team": "BAL"
-      },
-      {
-       "id": 607047,
-       "name": "Jacoby Brissett",
-       "pos": "QB",
-       "salary": 13800,
-       "team": "BAL"
-      },
-      {
-       "id": 910562,
-       "name": "Justin Herbert",
-       "pos": "QB",
-       "salary": 13500,
-       "team": "LAC"
-      },
-      {
-       "id": 1218643,
-       "name": "Ladd McConkey",
-       "pos": "WR",
-       "salary": 12600,
-       "team": "LAC"
-      },
-      {
-       "id": 1169299,
-       "name": "Joe Fagnano",
-       "pos": "QB",
-       "salary": 12300,
-       "team": "BAL"
-      },
-      {
-       "id": 1213928,
-       "name": "DJ Uiagalelei",
-       "pos": "QB",
-       "salary": 12000,
-       "team": "LAC"
-      },
-      {
-       "id": 1398572,
-       "name": "Omarion Hampton",
-       "pos": "RB",
-       "salary": 11700,
-       "team": "LAC"
-      },
-      {
-       "id": 1213865,
-       "name": "Quentin Johnston",
-       "pos": "WR",
-       "salary": 11100,
-       "team": "LAC"
-      },
-      {
-       "id": 1214633,
-       "name": "Tre' Harris",
-       "pos": "WR",
-       "salary": 10200,
-       "team": "LAC"
-      },
-      {
-       "id": 820699,
-       "name": "Mark Andrews",
-       "pos": "TE",
-       "salary": 9600,
-       "team": "BAL"
-      },
-      {
-       "id": 913163,
-       "name": "Tyler Huntley",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "BAL"
-      },
-      {
-       "id": 1130975,
-       "name": "Trey Lance",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "LAC"
-      },
-      {
-       "id": 1161818,
-       "name": "Kedon Slovis",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "BAL"
-      },
-      {
-       "id": 865844,
-       "name": "Jake Browning",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "LAC"
-      },
-      {
-       "id": 913829,
-       "name": "Skylar Thompson",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "BAL"
-      },
-      {
-       "id": 877745,
-       "name": "Lamar Jackson",
-       "pos": "QB",
-       "salary": 9000,
-       "team": "BAL"
-      },
-      {
-       "id": 1214824,
-       "name": "Kimani Vidal",
-       "pos": "RB",
-       "salary": 8700,
-       "team": "LAC"
-      },
-      {
-       "id": 923109,
-       "name": "Justice Hill",
-       "pos": "RB",
-       "salary": 7500,
-       "team": "BAL"
-      },
-      {
-       "id": 1222789,
-       "name": "Keaton Mitchell",
-       "pos": "RB",
-       "salary": 7200,
-       "team": "LAC"
-      },
-      {
-       "id": 1458888,
-       "name": "Ja'Kobi Lane",
-       "pos": "WR",
-       "salary": 6600,
-       "team": "BAL"
-      },
-      {
-       "id": 1108208,
-       "name": "Rashod Bateman",
-       "pos": "WR",
-       "salary": 5700,
-       "team": "BAL"
-      },
-      {
-       "id": 1325624,
-       "name": "Oronde Gadsden II",
-       "pos": "TE",
-       "salary": 4500,
-       "team": "LAC"
-      },
-      {
-       "id": 1058648,
-       "name": "Charlie Kolar",
-       "pos": "TE",
-       "salary": 3900,
-       "team": "LAC"
-      },
-      {
-       "id": 832098,
-       "name": "David Njoku",
-       "pos": "TE",
-       "salary": 3600,
-       "team": "LAC"
-      },
-      {
-       "id": 1214405,
-       "name": "KeAndre Lambert-Smith",
-       "pos": "WR",
-       "salary": 3000,
-       "team": "LAC"
-      },
-      {
-       "id": 1277914,
-       "name": "Devontez Walker",
-       "pos": "WR",
-       "salary": 2700,
-       "team": "BAL"
-      },
-      {
-       "id": 1319948,
-       "name": "Josh Cuevas",
-       "pos": "TE",
-       "salary": 2400,
-       "team": "BAL"
-      },
-      {
-       "id": 1229133,
-       "name": "Rasheen Ali",
-       "pos": "RB",
-       "salary": 2100,
-       "team": "BAL"
-      },
-      {
-       "id": 1231033,
-       "name": "LaJohntay Wester",
-       "pos": "WR",
-       "salary": 1800,
-       "team": "BAL"
-      },
-      {
-       "id": 1399132,
-       "name": "Brenen Thompson",
+       "id": 1176432,
+       "name": "Isaiah Williams",
        "pos": "WR",
        "salary": 1500,
-       "team": "LAC"
+       "team": "NYJ"
       },
       {
-       "id": 1392584,
-       "name": "Elijah Sarratt",
+       "id": 1383993,
+       "name": "Kaden Wetjen",
        "pos": "WR",
-       "salary": 1200,
-       "team": "BAL"
+       "salary": 1500,
+       "team": "PIT"
       },
       {
-       "id": 1229693,
-       "name": "Matt Hibner",
+       "id": 975503,
+       "name": "Jelani Woods",
        "pos": "TE",
-       "salary": 900,
-       "team": "BAL"
+       "salary": 1500,
+       "team": "NYJ"
       },
       {
-       "id": 1113477,
-       "name": "Derius Davis",
+       "id": 1218653,
+       "name": "Arian Smith",
        "pos": "WR",
-       "salary": 600,
-       "team": "LAC"
+       "salary": 1500,
+       "team": "NYJ"
       },
       {
-       "id": 1315586,
-       "name": "Tejhaun Palmer",
-       "pos": "WR",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 1225702,
-       "name": "Luke Grimm",
-       "pos": "WR",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 1130595,
-       "name": "Scott Matlock",
+       "id": 1395874,
+       "name": "Eli Heidenreich",
        "pos": "RB",
-       "salary": 300,
-       "team": "LAC"
+       "salary": 1500,
+       "team": "PIT"
       },
       {
-       "id": 1325830,
-       "name": "Lucas Scott",
-       "pos": "RB",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 880322,
-       "name": "Alec Ingold",
-       "pos": "RB",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 1332922,
-       "name": "Amar Johnson",
-       "pos": "RB",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 1378284,
-       "name": "Adam Randall",
-       "pos": "RB",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 606488,
-       "name": "Nick Vannett",
+       "id": 660151,
+       "name": "Robert Tonyan",
        "pos": "TE",
-       "salary": 300,
-       "team": "BAL"
+       "salary": 1500,
+       "team": "PIT"
       },
       {
-       "id": 749968,
-       "name": "Durham Smythe",
-       "pos": "TE",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 606551,
-       "name": "Chris Moore",
-       "pos": "WR",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 1162602,
-       "name": "Theo Wease Jr.",
-       "pos": "WR",
-       "salary": 300,
-       "team": "LAC"
-      },
-      {
-       "id": 1404295,
-       "name": "Ty Pezza",
-       "pos": "TE",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 1323007,
-       "name": "Gage Larvadain",
-       "pos": "WR",
-       "salary": 300,
-       "team": "BAL"
-      },
-      {
-       "id": 1168753,
-       "name": "Patrick Herbert",
-       "pos": "TE",
-       "salary": 300,
-       "team": "LAC"
+       "id": 1271609,
+       "name": "Isaiah Davis",
+       "pos": "RB",
+       "salary": 1500,
+       "team": "NYJ"
       }
      ],
-     "slate": "BAL @ LAC, Mon Nov 16",
+     "slate": "NYJ @ PIT, Wed Nov 18",
      "teams": [
-      "BAL",
-      "LAC"
+      "NYJ",
+      "PIT"
      ]
     },
     {
      "cap": 50000,
      "count": 31,
      "def": {
-      "BUF": 5400,
-      "DAL": 5700
+      "ATL": 5400,
+      "TB": 6000
      },
      "players": [
       {
-       "id": 868199,
-       "name": "Josh Allen",
-       "pos": "QB",
-       "salary": 17100,
-       "team": "BUF"
-      },
-      {
-       "id": 591816,
-       "name": "Dak Prescott",
-       "pos": "QB",
-       "salary": 15900,
-       "team": "DAL"
-      },
-      {
-       "id": 1131012,
-       "name": "James Cook III",
+       "id": 1228244,
+       "name": "Bijan Robinson",
        "pos": "RB",
-       "salary": 15000,
-       "team": "BUF"
+       "salary": 16500,
+       "team": "ATL"
       },
       {
-       "id": 1062020,
-       "name": "CeeDee Lamb",
+       "id": 748070,
+       "name": "Baker Mayfield",
+       "pos": "QB",
+       "salary": 15600,
+       "team": "TB"
+      },
+      {
+       "id": 973947,
+       "name": "Tua Tagovailoa",
+       "pos": "QB",
+       "salary": 14400,
+       "team": "ATL"
+      },
+      {
+       "id": 835127,
+       "name": "Chris Godwin Jr.",
        "pos": "WR",
-       "salary": 13800,
-       "team": "DAL"
+       "salary": 13500,
+       "team": "TB"
       },
       {
-       "id": 1107881,
-       "name": "Javonte Williams",
+       "id": 1287923,
+       "name": "Bucky Irving",
        "pos": "RB",
-       "salary": 13200,
-       "team": "DAL"
+       "salary": 12900,
+       "team": "TB"
       },
       {
-       "id": 1065361,
-       "name": "Jake Ferguson",
-       "pos": "TE",
+       "id": 1178741,
+       "name": "Drake London",
+       "pos": "WR",
+       "salary": 12000,
+       "team": "ATL"
+      },
+      {
+       "id": 1287825,
+       "name": "Emeka Egbuka",
+       "pos": "WR",
        "salary": 11400,
-       "team": "DAL"
+       "team": "TB"
       },
       {
-       "id": 877790,
-       "name": "DJ Moore",
-       "pos": "WR",
-       "salary": 10800,
-       "team": "BUF"
-      },
-      {
-       "id": 1130603,
-       "name": "Khalil Shakir",
-       "pos": "WR",
+       "id": 1123026,
+       "name": "Kyle Pitts Sr.",
+       "pos": "TE",
        "salary": 10500,
-       "team": "BUF"
+       "team": "ATL"
       },
       {
-       "id": 1172053,
-       "name": "George Pickens",
+       "id": 1121878,
+       "name": "Jahan Dotson",
        "pos": "WR",
-       "salary": 10200,
-       "team": "DAL"
+       "salary": 9900,
+       "team": "ATL"
       },
       {
-       "id": 1135513,
-       "name": "Dalton Kincaid",
+       "id": 1049263,
+       "name": "Cade Otton",
        "pos": "TE",
        "salary": 9300,
-       "team": "BUF"
+       "team": "TB"
       },
       {
-       "id": 1168245,
-       "name": "Sam Howell",
+       "id": 1107478,
+       "name": "Michael Penix Jr.",
        "pos": "QB",
        "salary": 9000,
-       "team": "DAL"
+       "team": "ATL"
       },
       {
-       "id": 822350,
-       "name": "Kyle Allen",
+       "id": 1225681,
+       "name": "Jalon Daniels",
        "pos": "QB",
        "salary": 9000,
-       "team": "BUF"
+       "team": "TB"
       },
       {
-       "id": 1322431,
-       "name": "Keon Coleman",
+       "id": 1213726,
+       "name": "Jalen McMillan",
        "pos": "WR",
        "salary": 7200,
-       "team": "BUF"
+       "team": "TB"
       },
       {
-       "id": 1393832,
-       "name": "Ryan Flournoy",
+       "id": 883976,
+       "name": "Olamide Zaccheaus",
        "pos": "WR",
        "salary": 6600,
-       "team": "DAL"
+       "team": "ATL"
       },
       {
-       "id": 1130242,
-       "name": "Luke Schoonmaker",
+       "id": 1130705,
+       "name": "Kenny Gainwell",
+       "pos": "RB",
+       "salary": 5700,
+       "team": "TB"
+      },
+      {
+       "id": 922040,
+       "name": "Charlie Woerner",
        "pos": "TE",
        "salary": 3600,
-       "team": "DAL"
+       "team": "ATL"
       },
       {
-       "id": 1182649,
-       "name": "Jackson Hawes",
+       "id": 1130260,
+       "name": "Payne Durham",
        "pos": "TE",
        "salary": 3300,
-       "team": "BUF"
+       "team": "TB"
       },
       {
-       "id": 1130976,
-       "name": "Hunter Luepke",
-       "pos": "RB",
-       "salary": 3000,
-       "team": "DAL"
-      },
-      {
-       "id": 1325234,
-       "name": "Skyler Bell",
-       "pos": "WR",
-       "salary": 2700,
-       "team": "BUF"
-      },
-      {
-       "id": 884083,
-       "name": "Dawson Knox",
+       "id": 739424,
+       "name": "Austin Hooper",
        "pos": "TE",
-       "salary": 2400,
-       "team": "BUF"
+       "salary": 3000,
+       "team": "ATL"
       },
       {
-       "id": 975028,
-       "name": "Malik Davis",
+       "id": 911239,
+       "name": "Ko Kieft",
+       "pos": "TE",
+       "salary": 2700,
+       "team": "TB"
+      },
+      {
+       "id": 1228633,
+       "name": "Sean Tucker",
        "pos": "RB",
-       "salary": 2100,
-       "team": "DAL"
+       "salary": 2400,
+       "team": "TB"
       },
       {
-       "id": 865958,
-       "name": "KaVontae Turpin",
+       "id": 1326555,
+       "name": "Bauer Sharp",
+       "pos": "TE",
+       "salary": 2100,
+       "team": "TB"
+      },
+      {
+       "id": 1412326,
+       "name": "Kameron Johnson",
        "pos": "WR",
        "salary": 1800,
-       "team": "DAL"
+       "team": "TB"
       },
       {
-       "id": 1165229,
-       "name": "Ray Davis",
+       "id": 973966,
+       "name": "Brian Robinson Jr.",
        "pos": "RB",
        "salary": 1500,
-       "team": "BUF"
+       "team": "ATL"
       },
       {
-       "id": 1116817,
-       "name": "Emari Demercado",
+       "id": 1108534,
+       "name": "Dylan Drummond",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "ATL"
+      },
+      {
+       "id": 1521285,
+       "name": "Ted Hurst III",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "TB"
+      },
+      {
+       "id": 1287705,
+       "name": "Beaux Collins",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "ATL"
+      },
+      {
+       "id": 1441110,
+       "name": "Zachariah Branch",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "ATL"
+      },
+      {
+       "id": 1214837,
+       "name": "Tez Johnson",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "TB"
+      },
+      {
+       "id": 1168918,
+       "name": "Tyler Goodson",
        "pos": "RB",
        "salary": 1500,
-       "team": "DAL"
-      },
-      {
-       "id": 1389217,
-       "name": "Camden Brown",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "DAL"
-      },
-      {
-       "id": 1059612,
-       "name": "Joshua Palmer",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "BUF"
-      },
-      {
-       "id": 1176782,
-       "name": "Jonathan Mingo",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "DAL"
-      },
-      {
-       "id": 877784,
-       "name": "Ty Johnson",
-       "pos": "RB",
-       "salary": 1500,
-       "team": "BUF"
-      },
-      {
-       "id": 1108202,
-       "name": "Brevyn Spann-Ford",
-       "pos": "TE",
-       "salary": 1500,
-       "team": "DAL"
-      },
-      {
-       "id": 973949,
-       "name": "Tyrell Shavers",
-       "pos": "WR",
-       "salary": 1500,
-       "team": "BUF"
+       "team": "ATL"
       }
      ],
-     "slate": "BUF @ DAL, Tue Nov 17",
+     "slate": "ATL @ TB, Wed Nov 18",
      "teams": [
-      "BUF",
-      "DAL"
+      "ATL",
+      "TB"
+     ]
+    },
+    {
+     "cap": 50000,
+     "count": 32,
+     "def": {
+      "GB": 5100,
+      "SF": 5400
+     },
+     "players": [
+      {
+       "id": 830517,
+       "name": "Christian McCaffrey",
+       "pos": "RB",
+       "salary": 17100,
+       "team": "SF"
+      },
+      {
+       "id": 912137,
+       "name": "Jordan Love",
+       "pos": "QB",
+       "salary": 15900,
+       "team": "GB"
+      },
+      {
+       "id": 1067918,
+       "name": "Christian Watson",
+       "pos": "WR",
+       "salary": 15000,
+       "team": "GB"
+      },
+      {
+       "id": 1121761,
+       "name": "Brock Purdy",
+       "pos": "QB",
+       "salary": 14400,
+       "team": "SF"
+      },
+      {
+       "id": 944416,
+       "name": "Josh Jacobs",
+       "pos": "RB",
+       "salary": 13500,
+       "team": "GB"
+      },
+      {
+       "id": 593587,
+       "name": "Mike Evans",
+       "pos": "WR",
+       "salary": 12300,
+       "team": "SF"
+      },
+      {
+       "id": 1379267,
+       "name": "Matthew Golden",
+       "pos": "WR",
+       "salary": 11100,
+       "team": "GB"
+      },
+      {
+       "id": 733672,
+       "name": "George Kittle",
+       "pos": "TE",
+       "salary": 10500,
+       "team": "SF"
+      },
+      {
+       "id": 1181874,
+       "name": "Tucker Kraft",
+       "pos": "TE",
+       "salary": 9900,
+       "team": "GB"
+      },
+      {
+       "id": 1123398,
+       "name": "Jayden Reed",
+       "pos": "WR",
+       "salary": 9300,
+       "team": "GB"
+      },
+      {
+       "id": 973945,
+       "name": "Mac Jones",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "SF"
+      },
+      {
+       "id": 399579,
+       "name": "Tyrod Taylor",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "GB"
+      },
+      {
+       "id": 1286818,
+       "name": "De'Zhaun Stribling",
+       "pos": "WR",
+       "salary": 6900,
+       "team": "SF"
+      },
+      {
+       "id": 835749,
+       "name": "Deebo Samuel Sr.",
+       "pos": "WR",
+       "salary": 6300,
+       "team": "SF"
+      },
+      {
+       "id": 743749,
+       "name": "Jonnu Smith",
+       "pos": "TE",
+       "salary": 4200,
+       "team": "GB"
+      },
+      {
+       "id": 1068803,
+       "name": "Bo Melton",
+       "pos": "WR",
+       "salary": 3300,
+       "team": "GB"
+      },
+      {
+       "id": 501150,
+       "name": "Kyle Juszczyk",
+       "pos": "RB",
+       "salary": 3000,
+       "team": "SF"
+      },
+      {
+       "id": 1068872,
+       "name": "Jake Tonges",
+       "pos": "TE",
+       "salary": 2700,
+       "team": "SF"
+      },
+      {
+       "id": 1107037,
+       "name": "Josh Whyle",
+       "pos": "TE",
+       "salary": 2400,
+       "team": "GB"
+      },
+      {
+       "id": 1179790,
+       "name": "Luke Musgrave",
+       "pos": "TE",
+       "salary": 2100,
+       "team": "GB"
+      },
+      {
+       "id": 1215772,
+       "name": "Kaelon Black",
+       "pos": "RB",
+       "salary": 1800,
+       "team": "SF"
+      },
+      {
+       "id": 1213414,
+       "name": "MarShawn Lloyd",
+       "pos": "RB",
+       "salary": 1500,
+       "team": "GB"
+      },
+      {
+       "id": 1222835,
+       "name": "Jordan Watkins",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "SF"
+      },
+      {
+       "id": 727279,
+       "name": "Demarcus Robinson",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "SF"
+      },
+      {
+       "id": 946541,
+       "name": "Luke Farrell",
+       "pos": "TE",
+       "salary": 1500,
+       "team": "SF"
+      },
+      {
+       "id": 1213872,
+       "name": "Savion Williams",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "GB"
+      },
+      {
+       "id": 865801,
+       "name": "Christian Kirk",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "SF"
+      },
+      {
+       "id": 1176730,
+       "name": "Skyy Moore",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "GB"
+      },
+      {
+       "id": 1381902,
+       "name": "Kaleb Johnson",
+       "pos": "RB",
+       "salary": 1500,
+       "team": "GB"
+      },
+      {
+       "id": 1400657,
+       "name": "Jordan James",
+       "pos": "RB",
+       "salary": 1500,
+       "team": "SF"
+      }
+     ],
+     "slate": "GB @ SF, Thu Nov 19",
+     "teams": [
+      "GB",
+      "SF"
+     ]
+    },
+    {
+     "cap": 50000,
+     "count": 31,
+     "def": {
+      "PHI": 5400,
+      "TEN": 5100
+     },
+     "players": [
+      {
+       "id": 883302,
+       "name": "Saquon Barkley",
+       "pos": "RB",
+       "salary": 16500,
+       "team": "PHI"
+      },
+      {
+       "id": 913271,
+       "name": "Jalen Hurts",
+       "pos": "QB",
+       "salary": 15900,
+       "team": "PHI"
+      },
+      {
+       "id": 1228691,
+       "name": "Cam Ward",
+       "pos": "QB",
+       "salary": 15300,
+       "team": "TEN"
+      },
+      {
+       "id": 1060262,
+       "name": "DeVonta Smith",
+       "pos": "WR",
+       "salary": 14400,
+       "team": "PHI"
+      },
+      {
+       "id": 880398,
+       "name": "Tony Pollard",
+       "pos": "RB",
+       "salary": 13200,
+       "team": "TEN"
+      },
+      {
+       "id": 1164875,
+       "name": "Wan'Dale Robinson",
+       "pos": "WR",
+       "salary": 12300,
+       "team": "TEN"
+      },
+      {
+       "id": 791365,
+       "name": "Dallas Goedert",
+       "pos": "TE",
+       "salary": 11400,
+       "team": "PHI"
+      },
+      {
+       "id": 1441839,
+       "name": "Carnell Tate",
+       "pos": "WR",
+       "salary": 10500,
+       "team": "TEN"
+      },
+      {
+       "id": 1441120,
+       "name": "Makai Lemon",
+       "pos": "WR",
+       "salary": 9900,
+       "team": "PHI"
+      },
+      {
+       "id": 976220,
+       "name": "Hollywood Brown",
+       "pos": "WR",
+       "salary": 9300,
+       "team": "PHI"
+      },
+      {
+       "id": 322858,
+       "name": "Andy Dalton",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "PHI"
+      },
+      {
+       "id": 728169,
+       "name": "Mitchell Trubisky",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "TEN"
+      },
+      {
+       "id": 1286438,
+       "name": "Gunnar Helm",
+       "pos": "TE",
+       "salary": 6900,
+       "team": "TEN"
+      },
+      {
+       "id": 884013,
+       "name": "Calvin Ridley",
+       "pos": "WR",
+       "salary": 6600,
+       "team": "TEN"
+      },
+      {
+       "id": 1169430,
+       "name": "Tyjae Spears",
+       "pos": "RB",
+       "salary": 3600,
+       "team": "TEN"
+      },
+      {
+       "id": 1122035,
+       "name": "Daniel Bellinger",
+       "pos": "TE",
+       "salary": 2700,
+       "team": "TEN"
+      },
+      {
+       "id": 1286065,
+       "name": "Eli Stowers",
+       "pos": "TE",
+       "salary": 2400,
+       "team": "PHI"
+      },
+      {
+       "id": 740704,
+       "name": "Johnny Mundt",
+       "pos": "TE",
+       "salary": 2100,
+       "team": "PHI"
+      },
+      {
+       "id": 1215035,
+       "name": "Tank Bigsby",
+       "pos": "RB",
+       "salary": 1800,
+       "team": "PHI"
+      },
+      {
+       "id": 1287636,
+       "name": "Will Shipley",
+       "pos": "RB",
+       "salary": 1500,
+       "team": "PHI"
+      },
+      {
+       "id": 1379264,
+       "name": "Nick Singleton",
+       "pos": "RB",
+       "salary": 1500,
+       "team": "TEN"
+      },
+      {
+       "id": 881058,
+       "name": "K.J. Osborn",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "TEN"
+      },
+      {
+       "id": 1223318,
+       "name": "Darius Cooper",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "PHI"
+      },
+      {
+       "id": 1215102,
+       "name": "Chimere Dike",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "TEN"
+      },
+      {
+       "id": 1128783,
+       "name": "Elijah Moore",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "PHI"
+      },
+      {
+       "id": 1172428,
+       "name": "Dontayvion Wicks",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "PHI"
+      },
+      {
+       "id": 1395319,
+       "name": "Elic Ayomanor",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "TEN"
+      },
+      {
+       "id": 921050,
+       "name": "Kylen Granson",
+       "pos": "TE",
+       "salary": 1500,
+       "team": "TEN"
+      },
+      {
+       "id": 976221,
+       "name": "Grant Calcaterra",
+       "pos": "TE",
+       "salary": 1500,
+       "team": "PHI"
+      }
+     ],
+     "slate": "PHI @ TEN, Thu Nov 19",
+     "teams": [
+      "PHI",
+      "TEN"
+     ]
+    },
+    {
+     "cap": 50000,
+     "count": 32,
+     "def": {
+      "BAL": 5400,
+      "NE": 5100
+     },
+     "players": [
+      {
+       "id": 877745,
+       "name": "Lamar Jackson",
+       "pos": "QB",
+       "salary": 16800,
+       "team": "BAL"
+      },
+      {
+       "id": 1286803,
+       "name": "Drake Maye",
+       "pos": "QB",
+       "salary": 15900,
+       "team": "NE"
+      },
+      {
+       "id": 732145,
+       "name": "Derrick Henry",
+       "pos": "RB",
+       "salary": 15300,
+       "team": "BAL"
+      },
+      {
+       "id": 944826,
+       "name": "A.J. Brown",
+       "pos": "WR",
+       "salary": 14700,
+       "team": "NE"
+      },
+      {
+       "id": 1174682,
+       "name": "Rhamondre Stevenson",
+       "pos": "RB",
+       "salary": 13200,
+       "team": "NE"
+      },
+      {
+       "id": 1177053,
+       "name": "Zay Flowers",
+       "pos": "WR",
+       "salary": 12300,
+       "team": "BAL"
+      },
+      {
+       "id": 820699,
+       "name": "Mark Andrews",
+       "pos": "TE",
+       "salary": 11400,
+       "team": "BAL"
+      },
+      {
+       "id": 1122653,
+       "name": "Romeo Doubs",
+       "pos": "WR",
+       "salary": 10500,
+       "team": "NE"
+      },
+      {
+       "id": 744425,
+       "name": "Hunter Henry",
+       "pos": "TE",
+       "salary": 9900,
+       "team": "NE"
+      },
+      {
+       "id": 1108208,
+       "name": "Rashod Bateman",
+       "pos": "WR",
+       "salary": 9300,
+       "team": "BAL"
+      },
+      {
+       "id": 913163,
+       "name": "Tyler Huntley",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "BAL"
+      },
+      {
+       "id": 1060671,
+       "name": "Tommy DeVito",
+       "pos": "QB",
+       "salary": 9000,
+       "team": "NE"
+      },
+      {
+       "id": 1175693,
+       "name": "DeMario Douglas",
+       "pos": "WR",
+       "salary": 6600,
+       "team": "NE"
+      },
+      {
+       "id": 1458888,
+       "name": "Ja'Kobi Lane",
+       "pos": "WR",
+       "salary": 5700,
+       "team": "BAL"
+      },
+      {
+       "id": 1287837,
+       "name": "TreVeyon Henderson",
+       "pos": "RB",
+       "salary": 4800,
+       "team": "NE"
+      },
+      {
+       "id": 923109,
+       "name": "Justice Hill",
+       "pos": "RB",
+       "salary": 3600,
+       "team": "BAL"
+      },
+      {
+       "id": 1319948,
+       "name": "Josh Cuevas",
+       "pos": "TE",
+       "salary": 2700,
+       "team": "BAL"
+      },
+      {
+       "id": 749968,
+       "name": "Durham Smythe",
+       "pos": "TE",
+       "salary": 2400,
+       "team": "BAL"
+      },
+      {
+       "id": 915066,
+       "name": "Reggie Gilliam",
+       "pos": "RB",
+       "salary": 2100,
+       "team": "NE"
+      },
+      {
+       "id": 1403969,
+       "name": "Eli Raridon",
+       "pos": "TE",
+       "salary": 1800,
+       "team": "NE"
+      },
+      {
+       "id": 1216288,
+       "name": "Efton Chism III",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "NE"
+      },
+      {
+       "id": 1227157,
+       "name": "Kyle Williams",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "NE"
+      },
+      {
+       "id": 1231033,
+       "name": "LaJohntay Wester",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "BAL"
+      },
+      {
+       "id": 1229693,
+       "name": "Matt Hibner",
+       "pos": "TE",
+       "salary": 1500,
+       "team": "BAL"
+      },
+      {
+       "id": 1277914,
+       "name": "Devontez Walker",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "BAL"
+      },
+      {
+       "id": 702808,
+       "name": "Mack Hollins",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "NE"
+      },
+      {
+       "id": 1392584,
+       "name": "Elijah Sarratt",
+       "pos": "WR",
+       "salary": 1500,
+       "team": "BAL"
+      },
+      {
+       "id": 1229133,
+       "name": "Rasheen Ali",
+       "pos": "RB",
+       "salary": 1500,
+       "team": "BAL"
+      },
+      {
+       "id": 1286050,
+       "name": "Corey Kiner",
+       "pos": "RB",
+       "salary": 1500,
+       "team": "NE"
+      },
+      {
+       "id": 1125739,
+       "name": "Cameron Latu",
+       "pos": "TE",
+       "salary": 1500,
+       "team": "NE"
+      }
+     ],
+     "slate": "BAL @ NE, Thu Nov 19",
+     "teams": [
+      "BAL",
+      "NE"
      ]
     }
    ],
-   "slate": "2-game DraftKings slate, Mon Nov 16",
-   "slateId": 156457
+   "slate": "3-game DraftKings slate, Thu Nov 19",
+   "slateId": 156704
   },
   "fd": {
    "book": "FanDuel",
    "cap": 60000,
-   "count": 292,
+   "count": 272,
    "def": {
-    "ARI": 3400,
-    "ATL": 3600,
-    "BUF": 4600,
-    "CAR": 3700,
-    "CLE": 4000,
-    "DAL": 3500,
-    "GB": 4200,
-    "HOU": 5000,
-    "IND": 4100,
-    "JAC": 4900,
-    "KC": 4700,
-    "LA": 4500,
-    "LV": 3800,
-    "MIA": 3300,
-    "MIN": 4400,
-    "NO": 3900,
-    "NYJ": 3100,
-    "SEA": 4800,
-    "SF": 4300,
+    "ARI": 3000,
+    "BAL": 4100,
+    "BUF": 4900,
+    "CAR": 3600,
+    "CHI": 4200,
+    "DAL": 4500,
+    "DEN": 4400,
+    "DET": 4700,
+    "JAC": 4300,
+    "KC": 5000,
+    "LAC": 3500,
+    "LV": 3700,
+    "MIA": 3100,
+    "NO": 3300,
+    "NYG": 3800,
+    "NYJ": 3900,
+    "PHI": 4000,
+    "PIT": 4800,
+    "TB": 3400,
     "TEN": 3200
    },
    "games": 10,
-   "kickoff": 1794765600000.0,
+   "kickoff": 1795381500000.0,
    "players": [
     {
-     "id": 4371,
-     "name": "Tyrod Taylor",
-     "pos": "QB",
-     "salary": 6000,
-     "team": "GB"
-    },
-    {
-     "id": 4490,
-     "name": "Kirk Cousins",
-     "pos": "QB",
-     "salary": 7100,
-     "team": "MIN"
-    },
-    {
-     "id": 53077,
-     "name": "Carson Wentz",
-     "pos": "QB",
-     "salary": 7200,
-     "team": "MIN"
-    },
-    {
-     "id": 53454,
-     "name": "Aaron Jones",
-     "pos": "RB",
-     "salary": 5700,
-     "team": "MIN"
-    },
-    {
-     "id": 53510,
-     "name": "Jonnu Smith",
-     "pos": "TE",
-     "salary": 4200,
-     "team": "GB"
-    },
-    {
-     "id": 54125,
-     "name": "Kyler Murray",
-     "pos": "QB",
-     "salary": 7200,
-     "team": "MIN"
-    },
-    {
-     "id": 54137,
-     "name": "T.J. Hockenson",
-     "pos": "TE",
-     "salary": 5200,
-     "team": "MIN"
-    },
-    {
-     "id": 54151,
-     "name": "Josh Jacobs",
-     "pos": "RB",
-     "salary": 6900,
-     "team": "GB"
-    },
-    {
-     "id": 54399,
-     "name": "Josh Oliver",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "MIN"
-    },
-    {
-     "id": 54532,
-     "name": "Justin Jefferson",
-     "pos": "WR",
-     "salary": 8100,
-     "team": "MIN"
-    },
-    {
-     "id": 54553,
-     "name": "DeeJay Dallas",
-     "pos": "RB",
-     "salary": 4700,
-     "team": "MIN"
-    },
-    {
-     "id": 54886,
-     "name": "Jordan Love",
-     "pos": "QB",
-     "salary": 8100,
-     "team": "GB"
-    },
-    {
-     "id": 54987,
-     "name": "Jauan Jennings",
-     "pos": "WR",
-     "salary": 5100,
-     "team": "MIN"
-    },
-    {
-     "id": 55247,
-     "name": "Christian Watson",
-     "pos": "WR",
-     "salary": 7600,
-     "team": "GB"
-    },
-    {
-     "id": 55256,
-     "name": "Skyy Moore",
-     "pos": "WR",
-     "salary": 4500,
-     "team": "GB"
-    },
-    {
-     "id": 55328,
-     "name": "Jordan Mason",
-     "pos": "RB",
-     "salary": 5900,
-     "team": "MIN"
-    },
-    {
-     "id": 55378,
-     "name": "Pierre Strong Jr.",
-     "pos": "RB",
-     "salary": 5400,
-     "team": "GB"
-    },
-    {
-     "id": 55613,
-     "name": "Jordan Addison",
-     "pos": "WR",
-     "salary": 5700,
-     "team": "MIN"
-    },
-    {
-     "id": 55614,
-     "name": "Jayden Reed",
-     "pos": "WR",
-     "salary": 4000,
-     "team": "GB"
-    },
-    {
-     "id": 55615,
-     "name": "Tucker Kraft",
-     "pos": "TE",
-     "salary": 5400,
-     "team": "GB"
-    },
-    {
-     "id": 55742,
-     "name": "Josh Whyle",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "GB"
-    },
-    {
-     "id": 55751,
-     "name": "Chris Brooks",
-     "pos": "RB",
-     "salary": 4500,
-     "team": "GB"
-    },
-    {
-     "id": 55760,
-     "name": "John FitzPatrick",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "GB"
-    },
-    {
-     "id": 55914,
-     "name": "MarShawn Lloyd",
-     "pos": "RB",
-     "salary": 5200,
-     "team": "GB"
-    },
-    {
-     "id": 56262,
-     "name": "Matthew Golden",
-     "pos": "WR",
-     "salary": 7300,
-     "team": "GB"
-    },
-    {
-     "id": 56277,
-     "name": "Kaleb Johnson",
-     "pos": "RB",
-     "salary": 5800,
-     "team": "GB"
-    },
-    {
-     "id": 56281,
-     "name": "Tai Felton",
-     "pos": "WR",
-     "salary": 4300,
-     "team": "MIN"
-    },
-    {
-     "id": 56328,
-     "name": "Savion Williams",
-     "pos": "WR",
-     "salary": 4700,
-     "team": "GB"
-    },
-    {
-     "id": 56801,
-     "name": "J. Michael Sturdivant",
-     "pos": "WR",
-     "salary": 4400,
-     "team": "GB"
-    },
-    {
-     "id": 56807,
-     "name": "Demond Claiborne",
-     "pos": "RB",
-     "salary": 4300,
-     "team": "MIN"
-    },
-    {
-     "id": 56814,
-     "name": "Dillon Bell",
-     "pos": "WR",
-     "salary": 4000,
-     "team": "MIN"
-    },
-    {
-     "id": 52114,
-     "name": "Keenan Allen",
-     "pos": "WR",
-     "salary": 6000,
-     "team": "SF"
-    },
-    {
-     "id": 52158,
-     "name": "Kyle Juszczyk",
-     "pos": "RB",
-     "salary": 4200,
-     "team": "SF"
-    },
-    {
-     "id": 52418,
-     "name": "Mike Evans",
-     "pos": "WR",
-     "salary": 7400,
-     "team": "SF"
-    },
-    {
-     "id": 52427,
-     "name": "Brandin Cooks",
-     "pos": "WR",
-     "salary": 5100,
-     "team": "SF"
-    },
-    {
-     "id": 53101,
-     "name": "Dak Prescott",
-     "pos": "QB",
-     "salary": 7900,
-     "team": "DAL"
-    },
-    {
-     "id": 53230,
-     "name": "Demarcus Robinson",
-     "pos": "WR",
-     "salary": 5400,
-     "team": "SF"
-    },
-    {
-     "id": 53425,
-     "name": "Christian McCaffrey",
-     "pos": "RB",
-     "salary": 9000,
-     "team": "SF"
-    },
-    {
-     "id": 53461,
-     "name": "George Kittle",
-     "pos": "TE",
-     "salary": 6600,
-     "team": "SF"
-    },
-    {
-     "id": 53770,
-     "name": "Christian Kirk",
-     "pos": "WR",
-     "salary": 4000,
-     "team": "SF"
-    },
-    {
-     "id": 54158,
-     "name": "Deebo Samuel",
-     "pos": "WR",
-     "salary": 6500,
-     "team": "SF"
-    },
-    {
-     "id": 54517,
-     "name": "CeeDee Lamb",
-     "pos": "WR",
-     "salary": 9000,
-     "team": "DAL"
-    },
-    {
-     "id": 54867,
-     "name": "Javonte Williams",
-     "pos": "RB",
-     "salary": 7700,
-     "team": "DAL"
-    },
-    {
-     "id": 54872,
-     "name": "Mac Jones",
-     "pos": "QB",
-     "salary": 6000,
-     "team": "SF"
-    },
-    {
-     "id": 54992,
-     "name": "Luke Farrell",
-     "pos": "TE",
-     "salary": 4400,
-     "team": "SF"
-    },
-    {
-     "id": 55267,
-     "name": "George Pickens",
-     "pos": "WR",
-     "salary": 7000,
-     "team": "DAL"
-    },
-    {
-     "id": 55345,
-     "name": "KaVontae Turpin",
-     "pos": "WR",
-     "salary": 4500,
-     "team": "DAL"
-    },
-    {
-     "id": 55396,
-     "name": "Jake Ferguson",
-     "pos": "TE",
-     "salary": 5200,
-     "team": "DAL"
-    },
-    {
-     "id": 55455,
-     "name": "Brock Purdy",
-     "pos": "QB",
-     "salary": 8700,
-     "team": "SF"
-    },
-    {
-     "id": 55492,
-     "name": "Malik Davis",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "DAL"
-    },
-    {
-     "id": 55563,
-     "name": "Sam Howell",
-     "pos": "QB",
-     "salary": 6000,
-     "team": "DAL"
-    },
-    {
-     "id": 55587,
-     "name": "Jonathan Mingo",
-     "pos": "WR",
-     "salary": 4300,
-     "team": "DAL"
-    },
-    {
-     "id": 55592,
-     "name": "Luke Schoonmaker",
-     "pos": "TE",
-     "salary": 4200,
-     "team": "DAL"
-    },
-    {
-     "id": 55724,
-     "name": "Hunter Luepke",
-     "pos": "RB",
-     "salary": 4200,
-     "team": "DAL"
-    },
-    {
-     "id": 55780,
-     "name": "Brayden Willis",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "SF"
-    },
-    {
-     "id": 55869,
-     "name": "Tyler Goodson",
-     "pos": "RB",
-     "salary": 5000,
-     "team": "DAL"
-    },
-    {
-     "id": 56051,
-     "name": "Jacob Cowing",
-     "pos": "WR",
-     "salary": 5300,
-     "team": "SF"
-    },
-    {
-     "id": 56075,
-     "name": "Brevyn Spann-Ford",
-     "pos": "TE",
-     "salary": 4500,
-     "team": "DAL"
-    },
-    {
-     "id": 56139,
-     "name": "Ryan Flournoy",
-     "pos": "WR",
-     "salary": 5500,
-     "team": "DAL"
-    },
-    {
-     "id": 53069,
-     "name": "Laquon Treadwell",
-     "pos": "WR",
-     "salary": 4500,
-     "team": "IND"
-    },
-    {
-     "id": 53973,
-     "name": "Mo Alie-Cox",
-     "pos": "TE",
-     "salary": 4200,
-     "team": "IND"
-    },
-    {
-     "id": 54168,
-     "name": "Daniel Jones",
-     "pos": "QB",
-     "salary": 6500,
-     "team": "IND"
-    },
-    {
-     "id": 54348,
-     "name": "Ashton Dulin",
-     "pos": "WR",
-     "salary": 4400,
-     "team": "IND"
-    },
-    {
-     "id": 54525,
-     "name": "Jonathan Taylor",
-     "pos": "RB",
-     "salary": 8100,
-     "team": "IND"
-    },
-    {
-     "id": 55243,
-     "name": "Jalen Tolbert",
-     "pos": "WR",
-     "salary": 4200,
-     "team": "MIA"
-    },
-    {
-     "id": 55253,
-     "name": "Alec Pierce",
-     "pos": "WR",
-     "salary": 5400,
-     "team": "IND"
-    },
-    {
-     "id": 55391,
-     "name": "Malik Willis",
+     "id": 52081,
+     "name": "Geno Smith",
      "pos": "QB",
      "salary": 6700,
-     "team": "MIA"
+     "team": "NYJ"
     },
     {
-     "id": 55475,
-     "name": "Greg Dulcich",
+     "id": 53429,
+     "name": "David Njoku",
      "pos": "TE",
-     "salary": 4800,
-     "team": "MIA"
+     "salary": 4700,
+     "team": "LAC"
     },
     {
-     "id": 55623,
-     "name": "Anthony Richardson",
-     "pos": "QB",
-     "salary": 6300,
-     "team": "IND"
-    },
-    {
-     "id": 55667,
-     "name": "Andrew Ogletree",
-     "pos": "TE",
-     "salary": 4100,
-     "team": "IND"
-    },
-    {
-     "id": 55725,
-     "name": "Will Mallory",
-     "pos": "TE",
-     "salary": 4100,
-     "team": "IND"
-    },
-    {
-     "id": 55981,
-     "name": "Anthony Gould",
+     "id": 53848,
+     "name": "Tim Patrick",
      "pos": "WR",
      "salary": 4200,
-     "team": "IND"
+     "team": "NYJ"
     },
     {
-     "id": 55982,
-     "name": "Jaylen Wright",
+     "id": 54321,
+     "name": "Andrew Beck",
      "pos": "RB",
-     "salary": 4700,
-     "team": "MIA"
+     "salary": 4000,
+     "team": "NYJ"
     },
     {
-     "id": 56117,
-     "name": "Malik Washington",
+     "id": 54334,
+     "name": "Alec Ingold",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "LAC"
+    },
+    {
+     "id": 54537,
+     "name": "Justin Herbert",
+     "pos": "QB",
+     "salary": 6900,
+     "team": "LAC"
+    },
+    {
+     "id": 54879,
+     "name": "Trey Lance",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "LAC"
+    },
+    {
+     "id": 55120,
+     "name": "Kene Nwangwu",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "NYJ"
+    },
+    {
+     "id": 55235,
+     "name": "Breece Hall",
+     "pos": "RB",
+     "salary": 7100,
+     "team": "NYJ"
+    },
+    {
+     "id": 55264,
+     "name": "Garrett Wilson",
+     "pos": "WR",
+     "salary": 7400,
+     "team": "NYJ"
+    },
+    {
+     "id": 55359,
+     "name": "Jeremy Ruckert",
+     "pos": "TE",
+     "salary": 4100,
+     "team": "NYJ"
+    },
+    {
+     "id": 55399,
+     "name": "Jelani Woods",
+     "pos": "TE",
+     "salary": 4000,
+     "team": "NYJ"
+    },
+    {
+     "id": 55566,
+     "name": "Charlie Kolar",
+     "pos": "TE",
+     "salary": 4400,
+     "team": "LAC"
+    },
+    {
+     "id": 55579,
+     "name": "Quentin Johnston",
+     "pos": "WR",
+     "salary": 5200,
+     "team": "LAC"
+    },
+    {
+     "id": 55644,
+     "name": "Derius Davis",
+     "pos": "WR",
+     "salary": 4500,
+     "team": "LAC"
+    },
+    {
+     "id": 55819,
+     "name": "Keaton Mitchell",
+     "pos": "RB",
+     "salary": 5100,
+     "team": "LAC"
+    },
+    {
+     "id": 55915,
+     "name": "Adonai Mitchell",
      "pos": "WR",
      "salary": 5600,
-     "team": "MIA"
+     "team": "NYJ"
     },
     {
-     "id": 56244,
-     "name": "Jared Wayne",
+     "id": 55930,
+     "name": "Ladd McConkey",
      "pos": "WR",
-     "salary": 4200,
-     "team": "MIA"
+     "salary": 6200,
+     "team": "LAC"
     },
     {
-     "id": 56254,
-     "name": "Tyler Warren",
-     "pos": "TE",
-     "salary": 5300,
-     "team": "IND"
-    },
-    {
-     "id": 56294,
-     "name": "Ollie Gordon II",
+     "id": 55977,
+     "name": "Braelon Allen",
      "pos": "RB",
-     "salary": 6400,
-     "team": "MIA"
+     "salary": 5900,
+     "team": "NYJ"
     },
     {
-     "id": 56296,
-     "name": "DJ Giddens",
+     "id": 55986,
+     "name": "Kimani Vidal",
+     "pos": "RB",
+     "salary": 5400,
+     "team": "LAC"
+    },
+    {
+     "id": 56086,
+     "name": "Isaiah Davis",
      "pos": "RB",
      "salary": 4400,
-     "team": "IND"
+     "team": "NYJ"
     },
     {
-     "id": 56461,
-     "name": "Brady Cook",
+     "id": 56165,
+     "name": "Isaiah Williams",
+     "pos": "WR",
+     "salary": 5000,
+     "team": "NYJ"
+    },
+    {
+     "id": 56261,
+     "name": "Omarion Hampton",
+     "pos": "RB",
+     "salary": 5700,
+     "team": "LAC"
+    },
+    {
+     "id": 56283,
+     "name": "Mason Taylor",
+     "pos": "TE",
+     "salary": 4800,
+     "team": "NYJ"
+    },
+    {
+     "id": 56287,
+     "name": "Tre Harris",
+     "pos": "WR",
+     "salary": 5800,
+     "team": "LAC"
+    },
+    {
+     "id": 56366,
+     "name": "KeAndre Lambert-Smith",
+     "pos": "WR",
+     "salary": 4800,
+     "team": "LAC"
+    },
+    {
+     "id": 53441,
+     "name": "Evan Engram",
+     "pos": "TE",
+     "salary": 4800,
+     "team": "DEN"
+    },
+    {
+     "id": 53781,
+     "name": "Courtland Sutton",
+     "pos": "WR",
+     "salary": 6300,
+     "team": "DEN"
+    },
+    {
+     "id": 53897,
+     "name": "Ian Thomas",
+     "pos": "TE",
+     "salary": 4000,
+     "team": "LV"
+    },
+    {
+     "id": 54313,
+     "name": "Jarrett Stidham",
      "pos": "QB",
      "salary": 6000,
-     "team": "MIA"
+     "team": "DEN"
     },
     {
-     "id": 56511,
-     "name": "Riley Leonard",
+     "id": 54340,
+     "name": "Lil'Jordan Humphrey",
+     "pos": "WR",
+     "salary": 4200,
+     "team": "DEN"
+    },
+    {
+     "id": 54503,
+     "name": "J.K. Dobbins",
+     "pos": "RB",
+     "salary": 5400,
+     "team": "DEN"
+    },
+    {
+     "id": 54566,
+     "name": "Adam Trautman",
+     "pos": "TE",
+     "salary": 4200,
+     "team": "DEN"
+    },
+    {
+     "id": 54871,
+     "name": "Jaylen Waddle",
+     "pos": "WR",
+     "salary": 6000,
+     "team": "DEN"
+    },
+    {
+     "id": 55050,
+     "name": "Cody White",
+     "pos": "WR",
+     "salary": 4900,
+     "team": "LV"
+    },
+    {
+     "id": 55122,
+     "name": "Sam Ehlinger",
      "pos": "QB",
      "salary": 6000,
-     "team": "IND"
+     "team": "DEN"
     },
     {
-     "id": 46,
-     "name": "Matthew Stafford",
-     "pos": "QB",
-     "salary": 7400,
-     "team": "LA"
+     "id": 55159,
+     "name": "Adam Prentice",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "DEN"
     },
     {
-     "id": 52438,
-     "name": "Davante Adams",
+     "id": 55306,
+     "name": "Connor Heyward",
+     "pos": "TE",
+     "salary": 4000,
+     "team": "LV"
+    },
+    {
+     "id": 55424,
+     "name": "Jalen Nailor",
+     "pos": "WR",
+     "salary": 4700,
+     "team": "LV"
+    },
+    {
+     "id": 55490,
+     "name": "Dareke Young",
      "pos": "WR",
      "salary": 4000,
-     "team": "LA"
+     "team": "LV"
     },
     {
-     "id": 53085,
-     "name": "Tyler Higbee",
+     "id": 55552,
+     "name": "Tyler Badie",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "DEN"
+    },
+    {
+     "id": 55578,
+     "name": "Michael Mayer",
      "pos": "TE",
-     "salary": 4600,
-     "team": "LA"
+     "salary": 5100,
+     "team": "LV"
+    },
+    {
+     "id": 55594,
+     "name": "Marvin Mims",
+     "pos": "WR",
+     "salary": 4700,
+     "team": "DEN"
+    },
+    {
+     "id": 55732,
+     "name": "Tre Tucker",
+     "pos": "WR",
+     "salary": 5300,
+     "team": "LV"
+    },
+    {
+     "id": 55761,
+     "name": "Nate Adkins",
+     "pos": "TE",
+     "salary": 4100,
+     "team": "DEN"
+    },
+    {
+     "id": 55913,
+     "name": "Bo Nix",
+     "pos": "QB",
+     "salary": 7500,
+     "team": "DEN"
+    },
+    {
+     "id": 55931,
+     "name": "Brock Bowers",
+     "pos": "TE",
+     "salary": 7500,
+     "team": "LV"
+    },
+    {
+     "id": 55983,
+     "name": "Dylan Laube",
+     "pos": "RB",
+     "salary": 4200,
+     "team": "LV"
+    },
+    {
+     "id": 56064,
+     "name": "Troy Franklin",
+     "pos": "WR",
+     "salary": 5000,
+     "team": "DEN"
+    },
+    {
+     "id": 56249,
+     "name": "Ashton Jeanty",
+     "pos": "RB",
+     "salary": 5800,
+     "team": "LV"
+    },
+    {
+     "id": 56275,
+     "name": "RJ Harvey",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "DEN"
+    },
+    {
+     "id": 56295,
+     "name": "Dont'e Thornton Jr.",
+     "pos": "WR",
+     "salary": 4100,
+     "team": "LV"
+    },
+    {
+     "id": 56314,
+     "name": "Jack Bech",
+     "pos": "WR",
+     "salary": 5100,
+     "team": "LV"
+    },
+    {
+     "id": 56357,
+     "name": "Pat Bryant",
+     "pos": "WR",
+     "salary": 5700,
+     "team": "DEN"
+    },
+    {
+     "id": 52104,
+     "name": "Travis Kelce",
+     "pos": "TE",
+     "salary": 5400,
+     "team": "KC"
     },
     {
      "id": 53421,
      "name": "James Conner",
      "pos": "RB",
-     "salary": 5000,
+     "salary": 4500,
      "team": "ARI"
+    },
+    {
+     "id": 53432,
+     "name": "Patrick Mahomes",
+     "pos": "QB",
+     "salary": 8700,
+     "team": "KC"
     },
     {
      "id": 53674,
@@ -2457,85 +2412,92 @@
      "id": 54214,
      "name": "Gardner Minshew",
      "pos": "QB",
-     "salary": 6500,
+     "salary": 6000,
      "team": "ARI"
     },
     {
      "id": 54504,
      "name": "Devin Duvernay",
      "pos": "WR",
-     "salary": 4800,
+     "salary": 5300,
      "team": "ARI"
     },
     {
-     "id": 54804,
-     "name": "Colby Parkinson",
-     "pos": "TE",
-     "salary": 4900,
-     "team": "LA"
+     "id": 54863,
+     "name": "Justin Fields",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "KC"
     },
     {
-     "id": 54990,
-     "name": "Tutu Atwell",
-     "pos": "WR",
-     "salary": 5500,
-     "team": "LA"
+     "id": 55048,
+     "name": "Noah Gray",
+     "pos": "TE",
+     "salary": 4600,
+     "team": "KC"
     },
     {
      "id": 55093,
      "name": "Hunter Long",
      "pos": "TE",
-     "salary": 4100,
+     "salary": 4300,
      "team": "ARI"
     },
     {
      "id": 55232,
      "name": "Trey McBride",
      "pos": "TE",
-     "salary": 7400,
+     "salary": 6900,
      "team": "ARI"
+    },
+    {
+     "id": 55268,
+     "name": "Kenneth Walker III",
+     "pos": "RB",
+     "salary": 9600,
+     "team": "KC"
     },
     {
      "id": 55270,
      "name": "Tyler Allgeier",
      "pos": "RB",
-     "salary": 5800,
+     "salary": 5600,
      "team": "ARI"
     },
     {
      "id": 55288,
      "name": "Simi Fehoko",
      "pos": "WR",
-     "salary": 4000,
+     "salary": 4600,
      "team": "ARI"
     },
     {
      "id": 55503,
      "name": "Teagan Quitoriano",
      "pos": "TE",
-     "salary": 4200,
+     "salary": 4100,
      "team": "ARI"
-    },
-    {
-     "id": 55506,
-     "name": "Kyren Williams",
-     "pos": "RB",
-     "salary": 7300,
-     "team": "LA"
     },
     {
      "id": 55527,
      "name": "Zonovan Knight",
      "pos": "RB",
-     "salary": 5000,
+     "salary": 5300,
      "team": "ARI"
     },
     {
-     "id": 55652,
-     "name": "Puka Nacua",
+     "id": 55622,
+     "name": "Rashee Rice",
      "pos": "WR",
-     "salary": 9300,
-     "team": "LA"
+     "salary": 7000,
+     "team": "KC"
+    },
+    {
+     "id": 55636,
+     "name": "Josh Downs",
+     "pos": "WR",
+     "salary": 6000,
+     "team": "KC"
     },
     {
      "id": 55656,
@@ -2548,15 +2510,8 @@
      "id": 55823,
      "name": "Elijah Higgins",
      "pos": "TE",
-     "salary": 4400,
-     "team": "ARI"
-    },
-    {
-     "id": 55842,
-     "name": "Davis Allen",
-     "pos": "TE",
      "salary": 4200,
-     "team": "LA"
+     "team": "ARI"
     },
     {
      "id": 55851,
@@ -2566,74 +2521,263 @@
      "team": "ARI"
     },
     {
-     "id": 55929,
-     "name": "Blake Corum",
-     "pos": "RB",
-     "salary": 5900,
-     "team": "LA"
-    },
-    {
-     "id": 55992,
-     "name": "Jordan Whittington",
+     "id": 55917,
+     "name": "Xavier Worthy",
      "pos": "WR",
-     "salary": 4700,
-     "team": "LA"
+     "salary": 5300,
+     "team": "KC"
     },
     {
-     "id": 56313,
-     "name": "Terrance Ferguson",
+     "id": 56071,
+     "name": "Jared Wiley",
      "pos": "TE",
-     "salary": 4800,
-     "team": "LA"
+     "salary": 4000,
+     "team": "KC"
     },
     {
-     "id": 56341,
-     "name": "Konata Mumpfield",
-     "pos": "WR",
-     "salary": 5700,
-     "team": "LA"
+     "id": 56299,
+     "name": "Brashard Smith",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "KC"
     },
     {
-     "id": 56548,
-     "name": "Stetson Bennett",
+     "id": 53101,
+     "name": "Dak Prescott",
+     "pos": "QB",
+     "salary": 8200,
+     "team": "DAL"
+    },
+    {
+     "id": 53426,
+     "name": "Mitchell Trubisky",
      "pos": "QB",
      "salary": 6000,
-     "team": "LA"
+     "team": "TEN"
     },
     {
-     "id": 56569,
-     "name": "Brennan Presley",
+     "id": 53772,
+     "name": "Calvin Ridley",
      "pos": "WR",
+     "salary": 4500,
+     "team": "TEN"
+    },
+    {
+     "id": 54185,
+     "name": "Tony Pollard",
+     "pos": "RB",
+     "salary": 6800,
+     "team": "TEN"
+    },
+    {
+     "id": 54517,
+     "name": "CeeDee Lamb",
+     "pos": "WR",
+     "salary": 9100,
+     "team": "DAL"
+    },
+    {
+     "id": 54867,
+     "name": "Javonte Williams",
+     "pos": "RB",
+     "salary": 8100,
+     "team": "DAL"
+    },
+    {
+     "id": 55071,
+     "name": "Kylen Granson",
+     "pos": "TE",
      "salary": 4000,
-     "team": "LA"
+     "team": "TEN"
+    },
+    {
+     "id": 55262,
+     "name": "Wan'Dale Robinson",
+     "pos": "WR",
+     "salary": 5100,
+     "team": "TEN"
+    },
+    {
+     "id": 55267,
+     "name": "George Pickens",
+     "pos": "WR",
+     "salary": 7500,
+     "team": "DAL"
+    },
+    {
+     "id": 55285,
+     "name": "Daniel Bellinger",
+     "pos": "TE",
+     "salary": 4200,
+     "team": "TEN"
+    },
+    {
+     "id": 55345,
+     "name": "KaVontae Turpin",
+     "pos": "WR",
+     "salary": 4300,
+     "team": "DAL"
+    },
+    {
+     "id": 55396,
+     "name": "Jake Ferguson",
+     "pos": "TE",
+     "salary": 5000,
+     "team": "DAL"
+    },
+    {
+     "id": 55492,
+     "name": "Malik Davis",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "DAL"
+    },
+    {
+     "id": 55532,
+     "name": "Julius Chestnut",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "TEN"
+    },
+    {
+     "id": 55563,
+     "name": "Sam Howell",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "DAL"
+    },
+    {
+     "id": 55587,
+     "name": "Jonathan Mingo",
+     "pos": "WR",
+     "salary": 4200,
+     "team": "DAL"
+    },
+    {
+     "id": 55592,
+     "name": "Luke Schoonmaker",
+     "pos": "TE",
+     "salary": 4500,
+     "team": "DAL"
+    },
+    {
+     "id": 55639,
+     "name": "Tyjae Spears",
+     "pos": "RB",
+     "salary": 4800,
+     "team": "TEN"
+    },
+    {
+     "id": 55724,
+     "name": "Hunter Luepke",
+     "pos": "RB",
+     "salary": 4200,
+     "team": "DAL"
+    },
+    {
+     "id": 55869,
+     "name": "Tyler Goodson",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "DAL"
+    },
+    {
+     "id": 56075,
+     "name": "Brevyn Spann-Ford",
+     "pos": "TE",
+     "salary": 4900,
+     "team": "DAL"
+    },
+    {
+     "id": 56139,
+     "name": "Ryan Flournoy",
+     "pos": "WR",
+     "salary": 5500,
+     "team": "DAL"
+    },
+    {
+     "id": 56207,
+     "name": "David Martin-Robinson",
+     "pos": "TE",
+     "salary": 4000,
+     "team": "TEN"
+    },
+    {
+     "id": 56245,
+     "name": "Cam Ward",
+     "pos": "QB",
+     "salary": 6700,
+     "team": "TEN"
+    },
+    {
+     "id": 56302,
+     "name": "Elic Ayomanor",
+     "pos": "WR",
+     "salary": 5200,
+     "team": "TEN"
+    },
+    {
+     "id": 56349,
+     "name": "Chimere Dike",
+     "pos": "WR",
+     "salary": 4900,
+     "team": "TEN"
     },
     {
      "id": 52802,
      "name": "Darren Waller",
      "pos": "TE",
-     "salary": 5300,
+     "salary": 5200,
      "team": "CAR"
     },
     {
-     "id": 53438,
-     "name": "Alvin Kamara",
+     "id": 53086,
+     "name": "Derrick Henry",
      "pos": "RB",
-     "salary": 5600,
-     "team": "NO"
+     "salary": 8800,
+     "team": "BAL"
+    },
+    {
+     "id": 53222,
+     "name": "Jacoby Brissett",
+     "pos": "QB",
+     "salary": 7000,
+     "team": "BAL"
+    },
+    {
+     "id": 53773,
+     "name": "Lamar Jackson",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "BAL"
+    },
+    {
+     "id": 53836,
+     "name": "Mark Andrews",
+     "pos": "TE",
+     "salary": 5300,
+     "team": "BAL"
     },
     {
      "id": 53884,
      "name": "David Moore",
      "pos": "WR",
-     "salary": 4100,
+     "salary": 4000,
      "team": "CAR"
     },
     {
-     "id": 54136,
-     "name": "Noah Fant",
+     "id": 53972,
+     "name": "Durham Smythe",
      "pos": "TE",
-     "salary": 4500,
-     "team": "NO"
+     "salary": 4000,
+     "team": "BAL"
+    },
+    {
+     "id": 54173,
+     "name": "Justice Hill",
+     "pos": "RB",
+     "salary": 5500,
+     "team": "BAL"
     },
     {
      "id": 54522,
@@ -2643,31 +2787,24 @@
      "team": "CAR"
     },
     {
-     "id": 54742,
-     "name": "Juwan Johnson",
-     "pos": "TE",
-     "salary": 5100,
-     "team": "NO"
-    },
-    {
-     "id": 54870,
-     "name": "Travis Etienne",
-     "pos": "RB",
-     "salary": 6000,
-     "team": "NO"
-    },
-    {
-     "id": 54874,
-     "name": "Zach Wilson",
+     "id": 54818,
+     "name": "Tyler Huntley",
      "pos": "QB",
      "salary": 6000,
-     "team": "NO"
+     "team": "BAL"
+    },
+    {
+     "id": 54860,
+     "name": "Rashod Bateman",
+     "pos": "WR",
+     "salary": 5500,
+     "team": "BAL"
     },
     {
      "id": 54896,
      "name": "Chuba Hubbard",
      "pos": "RB",
-     "salary": 7200,
+     "salary": 7900,
      "team": "CAR"
     },
     {
@@ -2688,15 +2825,8 @@
      "id": 55250,
      "name": "John Metchie III",
      "pos": "WR",
-     "salary": 4600,
+     "salary": 4700,
      "team": "CAR"
-    },
-    {
-     "id": 55261,
-     "name": "Chris Olave",
-     "pos": "WR",
-     "salary": 7900,
-     "team": "NO"
     },
     {
      "id": 55275,
@@ -2706,11 +2836,18 @@
      "team": "CAR"
     },
     {
-     "id": 55461,
-     "name": "Ty Chandler",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "NO"
+     "id": 55450,
+     "name": "Skylar Thompson",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "BAL"
+    },
+    {
+     "id": 55585,
+     "name": "Zay Flowers",
+     "pos": "WR",
+     "salary": 8000,
+     "team": "BAL"
     },
     {
      "id": 55588,
@@ -2723,7 +2860,7 @@
      "id": 55909,
      "name": "Xavier Legette",
      "pos": "WR",
-     "salary": 4700,
+     "salary": 4600,
      "team": "CAR"
     },
     {
@@ -2734,13 +2871,6 @@
      "team": "CAR"
     },
     {
-     "id": 55985,
-     "name": "Audric Estime",
-     "pos": "RB",
-     "salary": 5700,
-     "team": "NO"
-    },
-    {
      "id": 56003,
      "name": "Ja'Tavion Sanders",
      "pos": "TE",
@@ -2748,32 +2878,18 @@
      "team": "CAR"
     },
     {
-     "id": 56005,
-     "name": "Devaughn Vele",
-     "pos": "WR",
-     "salary": 5600,
-     "team": "NO"
-    },
-    {
      "id": 56109,
      "name": "Jalen Coker",
      "pos": "WR",
-     "salary": 5600,
+     "salary": 5400,
      "team": "CAR"
     },
     {
      "id": 56119,
      "name": "Brycen Tremayne",
      "pos": "WR",
-     "salary": 4400,
+     "salary": 4200,
      "team": "CAR"
-    },
-    {
-     "id": 56128,
-     "name": "Spencer Rattler",
-     "pos": "QB",
-     "salary": 6000,
-     "team": "NO"
     },
     {
      "id": 56153,
@@ -2783,11 +2899,18 @@
      "team": "CAR"
     },
     {
-     "id": 56183,
-     "name": "Kevin Austin Jr.",
+     "id": 56161,
+     "name": "Devontez Walker",
      "pos": "WR",
-     "salary": 4300,
-     "team": "NO"
+     "salary": 4700,
+     "team": "BAL"
+    },
+    {
+     "id": 56198,
+     "name": "Rasheen Ali",
+     "pos": "RB",
+     "salary": 4400,
+     "team": "BAL"
     },
     {
      "id": 56250,
@@ -2797,10 +2920,185 @@
      "team": "CAR"
     },
     {
+     "id": 56371,
+     "name": "Trevor Etienne",
+     "pos": "RB",
+     "salary": 4400,
+     "team": "CAR"
+    },
+    {
+     "id": 56418,
+     "name": "Mitchell Evans",
+     "pos": "TE",
+     "salary": 4100,
+     "team": "CAR"
+    },
+    {
+     "id": 52350,
+     "name": "Case Keenum",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "CHI"
+    },
+    {
+     "id": 53362,
+     "name": "Kalif Raymond",
+     "pos": "WR",
+     "salary": 5400,
+     "team": "CHI"
+    },
+    {
+     "id": 53438,
+     "name": "Alvin Kamara",
+     "pos": "RB",
+     "salary": 5500,
+     "team": "NO"
+    },
+    {
+     "id": 54136,
+     "name": "Noah Fant",
+     "pos": "TE",
+     "salary": 4500,
+     "team": "NO"
+    },
+    {
+     "id": 54510,
+     "name": "Cole Kmet",
+     "pos": "TE",
+     "salary": 4000,
+     "team": "CHI"
+    },
+    {
+     "id": 54521,
+     "name": "D'Andre Swift",
+     "pos": "RB",
+     "salary": 6400,
+     "team": "CHI"
+    },
+    {
+     "id": 54742,
+     "name": "Juwan Johnson",
+     "pos": "TE",
+     "salary": 5000,
+     "team": "NO"
+    },
+    {
+     "id": 54870,
+     "name": "Travis Etienne",
+     "pos": "RB",
+     "salary": 5900,
+     "team": "NO"
+    },
+    {
+     "id": 54874,
+     "name": "Zach Wilson",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "NO"
+    },
+    {
+     "id": 55261,
+     "name": "Chris Olave",
+     "pos": "WR",
+     "salary": 7700,
+     "team": "NO"
+    },
+    {
+     "id": 55461,
+     "name": "Ty Chandler",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "NO"
+    },
+    {
+     "id": 55519,
+     "name": "Brittain Brown",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "CHI"
+    },
+    {
+     "id": 55634,
+     "name": "Kendre Miller",
+     "pos": "RB",
+     "salary": 5200,
+     "team": "NO"
+    },
+    {
+     "id": 55635,
+     "name": "Roschon Johnson",
+     "pos": "RB",
+     "salary": 4900,
+     "team": "CHI"
+    },
+    {
+     "id": 55807,
+     "name": "Tyson Bagent",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "CHI"
+    },
+    {
+     "id": 55911,
+     "name": "Rome Odunze",
+     "pos": "WR",
+     "salary": 6100,
+     "team": "CHI"
+    },
+    {
+     "id": 55912,
+     "name": "Caleb Williams",
+     "pos": "QB",
+     "salary": 8100,
+     "team": "CHI"
+    },
+    {
+     "id": 55985,
+     "name": "Audric Estime",
+     "pos": "RB",
+     "salary": 5400,
+     "team": "NO"
+    },
+    {
+     "id": 56005,
+     "name": "Devaughn Vele",
+     "pos": "WR",
+     "salary": 5000,
+     "team": "NO"
+    },
+    {
+     "id": 56128,
+     "name": "Spencer Rattler",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "NO"
+    },
+    {
+     "id": 56183,
+     "name": "Kevin Austin Jr.",
+     "pos": "WR",
+     "salary": 4100,
+     "team": "NO"
+    },
+    {
+     "id": 56251,
+     "name": "Colston Loveland",
+     "pos": "TE",
+     "salary": 5700,
+     "team": "CHI"
+    },
+    {
+     "id": 56269,
+     "name": "Luther Burden III",
+     "pos": "WR",
+     "salary": 6400,
+     "team": "CHI"
+    },
+    {
      "id": 56271,
      "name": "Tyler Shough",
      "pos": "QB",
-     "salary": 7300,
+     "salary": 7400,
      "team": "NO"
     },
     {
@@ -2811,648 +3109,67 @@
      "team": "NO"
     },
     {
-     "id": 56371,
-     "name": "Trevor Etienne",
-     "pos": "RB",
-     "salary": 4600,
-     "team": "CAR"
-    },
-    {
-     "id": 56418,
-     "name": "Mitchell Evans",
-     "pos": "TE",
-     "salary": 4200,
-     "team": "CAR"
-    },
-    {
-     "id": 52765,
-     "name": "Michael Burton",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "CLE"
-    },
-    {
-     "id": 53433,
-     "name": "Deshaun Watson",
-     "pos": "QB",
-     "salary": 6800,
-     "team": "CLE"
-    },
-    {
-     "id": 54022,
-     "name": "Dalton Schultz",
-     "pos": "TE",
-     "salary": 5000,
-     "team": "HOU"
-    },
-    {
-     "id": 54069,
-     "name": "Dare Ogunbowale",
-     "pos": "RB",
-     "salary": 4100,
-     "team": "HOU"
-    },
-    {
-     "id": 54134,
-     "name": "David Montgomery",
-     "pos": "RB",
-     "salary": 6200,
-     "team": "HOU"
-    },
-    {
-     "id": 54273,
-     "name": "Foster Moreau",
-     "pos": "TE",
-     "salary": 4300,
-     "team": "HOU"
-    },
-    {
-     "id": 54518,
-     "name": "Jerry Jeudy",
-     "pos": "WR",
-     "salary": 4900,
-     "team": "CLE"
-    },
-    {
-     "id": 54887,
-     "name": "Nico Collins",
-     "pos": "WR",
-     "salary": 7500,
-     "team": "HOU"
-    },
-    {
-     "id": 54983,
-     "name": "Davis Mills",
-     "pos": "QB",
-     "salary": 6000,
-     "team": "HOU"
-    },
-    {
-     "id": 55065,
-     "name": "Tylan Wallace",
-     "pos": "WR",
-     "salary": 4200,
-     "team": "CLE"
-    },
-    {
-     "id": 55111,
-     "name": "Brevin Jordan",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "HOU"
-    },
-    {
-     "id": 55619,
-     "name": "C.J. Stroud",
-     "pos": "QB",
-     "salary": 7500,
-     "team": "HOU"
-    },
-    {
-     "id": 55643,
-     "name": "Tank Dell",
-     "pos": "WR",
-     "salary": 5800,
-     "team": "HOU"
-    },
-    {
-     "id": 55669,
-     "name": "Jaleel McLaughlin",
-     "pos": "RB",
-     "salary": 4400,
-     "team": "CLE"
-    },
-    {
-     "id": 55686,
-     "name": "Kayshon Boutte",
-     "pos": "WR",
-     "salary": 5300,
-     "team": "HOU"
-    },
-    {
-     "id": 55693,
-     "name": "Xavier Hutchinson",
-     "pos": "WR",
-     "salary": 5500,
-     "team": "HOU"
-    },
-    {
-     "id": 55723,
-     "name": "Emari Demercado",
-     "pos": "RB",
-     "salary": 4400,
-     "team": "HOU"
-    },
-    {
-     "id": 55906,
-     "name": "Marvin Harrison Jr.",
-     "pos": "WR",
-     "salary": 5200,
-     "team": "HOU"
-    },
-    {
-     "id": 55923,
-     "name": "Malachi Corley",
-     "pos": "WR",
-     "salary": 4100,
-     "team": "CLE"
-    },
-    {
-     "id": 56007,
-     "name": "British Brooks",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "HOU"
-    },
-    {
-     "id": 56062,
-     "name": "Cade Stover",
-     "pos": "TE",
-     "salary": 4100,
-     "team": "HOU"
-    },
-    {
-     "id": 56111,
-     "name": "Blake Whiteheart",
-     "pos": "TE",
-     "salary": 4200,
-     "team": "CLE"
-    },
-    {
-     "id": 56272,
-     "name": "Quinshon Judkins",
-     "pos": "RB",
-     "salary": 6300,
-     "team": "CLE"
-    },
-    {
-     "id": 56273,
-     "name": "Dylan Sampson",
-     "pos": "RB",
-     "salary": 5200,
-     "team": "CLE"
-    },
-    {
-     "id": 56274,
-     "name": "Shedeur Sanders",
-     "pos": "QB",
-     "salary": 6800,
-     "team": "CLE"
-    },
-    {
-     "id": 56293,
-     "name": "Woody Marks",
-     "pos": "RB",
-     "salary": 6200,
-     "team": "HOU"
-    },
-    {
-     "id": 56308,
-     "name": "Jaylin Noel",
-     "pos": "WR",
-     "salary": 4000,
-     "team": "HOU"
-    },
-    {
-     "id": 56332,
-     "name": "Raheim Sanders",
-     "pos": "RB",
-     "salary": 4500,
-     "team": "CLE"
-    },
-    {
-     "id": 56411,
-     "name": "Isaiah Bond",
-     "pos": "WR",
-     "salary": 4300,
-     "team": "CLE"
-    },
-    {
-     "id": 56496,
-     "name": "Jimmy Horn Jr.",
-     "pos": "WR",
-     "salary": 4000,
-     "team": "CLE"
-    },
-    {
-     "id": 56813,
-     "name": "Lewis Bond",
-     "pos": "WR",
-     "salary": 4000,
-     "team": "HOU"
-    },
-    {
-     "id": 52081,
-     "name": "Geno Smith",
-     "pos": "QB",
-     "salary": 6600,
-     "team": "NYJ"
-    },
-    {
-     "id": 53775,
-     "name": "Josh Allen",
-     "pos": "QB",
-     "salary": 9500,
-     "team": "BUF"
-    },
-    {
-     "id": 53776,
-     "name": "D.J. Moore",
-     "pos": "WR",
-     "salary": 6700,
-     "team": "BUF"
-    },
-    {
-     "id": 53848,
-     "name": "Tim Patrick",
-     "pos": "WR",
-     "salary": 4300,
-     "team": "NYJ"
-    },
-    {
-     "id": 54111,
-     "name": "Kyle Allen",
+     "id": 52774,
+     "name": "Jameis Winston",
      "pos": "QB",
      "salary": 6400,
-     "team": "BUF"
-    },
-    {
-     "id": 54230,
-     "name": "Dawson Knox",
-     "pos": "TE",
-     "salary": 4900,
-     "team": "BUF"
-    },
-    {
-     "id": 54241,
-     "name": "Ty Johnson",
-     "pos": "RB",
-     "salary": 5500,
-     "team": "BUF"
-    },
-    {
-     "id": 54321,
-     "name": "Andrew Beck",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "NYJ"
-    },
-    {
-     "id": 54899,
-     "name": "Josh Palmer",
-     "pos": "WR",
-     "salary": 4900,
-     "team": "BUF"
-    },
-    {
-     "id": 55120,
-     "name": "Kene Nwangwu",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "NYJ"
-    },
-    {
-     "id": 55235,
-     "name": "Breece Hall",
-     "pos": "RB",
-     "salary": 7000,
-     "team": "NYJ"
-    },
-    {
-     "id": 55236,
-     "name": "James Cook",
-     "pos": "RB",
-     "salary": 8400,
-     "team": "BUF"
-    },
-    {
-     "id": 55264,
-     "name": "Garrett Wilson",
-     "pos": "WR",
-     "salary": 7200,
-     "team": "NYJ"
-    },
-    {
-     "id": 55359,
-     "name": "Jeremy Ruckert",
-     "pos": "TE",
-     "salary": 4100,
-     "team": "NYJ"
-    },
-    {
-     "id": 55390,
-     "name": "Khalil Shakir",
-     "pos": "WR",
-     "salary": 5900,
-     "team": "BUF"
-    },
-    {
-     "id": 55399,
-     "name": "Jelani Woods",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "NYJ"
-    },
-    {
-     "id": 55586,
-     "name": "Dalton Kincaid",
-     "pos": "TE",
-     "salary": 5600,
-     "team": "BUF"
-    },
-    {
-     "id": 55810,
-     "name": "Irvin Charles",
-     "pos": "WR",
-     "salary": 4000,
-     "team": "NYJ"
-    },
-    {
-     "id": 55908,
-     "name": "Keon Coleman",
-     "pos": "WR",
-     "salary": 5600,
-     "team": "BUF"
-    },
-    {
-     "id": 55915,
-     "name": "Adonai Mitchell",
-     "pos": "WR",
-     "salary": 5500,
-     "team": "NYJ"
-    },
-    {
-     "id": 55975,
-     "name": "Ray Davis",
-     "pos": "RB",
-     "salary": 5100,
-     "team": "BUF"
-    },
-    {
-     "id": 55977,
-     "name": "Braelon Allen",
-     "pos": "RB",
-     "salary": 5800,
-     "team": "NYJ"
-    },
-    {
-     "id": 56086,
-     "name": "Isaiah Davis",
-     "pos": "RB",
-     "salary": 4600,
-     "team": "NYJ"
-    },
-    {
-     "id": 56165,
-     "name": "Isaiah Williams",
-     "pos": "WR",
-     "salary": 4600,
-     "team": "NYJ"
-    },
-    {
-     "id": 56283,
-     "name": "Mason Taylor",
-     "pos": "TE",
-     "salary": 4700,
-     "team": "NYJ"
-    },
-    {
-     "id": 52104,
-     "name": "Travis Kelce",
-     "pos": "TE",
-     "salary": 5500,
-     "team": "KC"
-    },
-    {
-     "id": 53054,
-     "name": "Austin Hooper",
-     "pos": "TE",
-     "salary": 4400,
-     "team": "ATL"
-    },
-    {
-     "id": 53432,
-     "name": "Patrick Mahomes",
-     "pos": "QB",
-     "salary": 7800,
-     "team": "KC"
-    },
-    {
-     "id": 54379,
-     "name": "Olamide Zaccheaus",
-     "pos": "WR",
-     "salary": 4800,
-     "team": "ATL"
-    },
-    {
-     "id": 54530,
-     "name": "Tua Tagovailoa",
-     "pos": "QB",
-     "salary": 6300,
-     "team": "ATL"
-    },
-    {
-     "id": 54786,
-     "name": "Charlie Woerner",
-     "pos": "TE",
-     "salary": 4100,
-     "team": "ATL"
-    },
-    {
-     "id": 54859,
-     "name": "Kyle Pitts",
-     "pos": "TE",
-     "salary": 5100,
-     "team": "ATL"
-    },
-    {
-     "id": 54863,
-     "name": "Justin Fields",
-     "pos": "QB",
-     "salary": 6300,
-     "team": "KC"
-    },
-    {
-     "id": 54910,
-     "name": "Khalil Herbert",
-     "pos": "RB",
-     "salary": 4900,
-     "team": "ATL"
-    },
-    {
-     "id": 55048,
-     "name": "Noah Gray",
-     "pos": "TE",
-     "salary": 4300,
-     "team": "KC"
-    },
-    {
-     "id": 55233,
-     "name": "Drake London",
-     "pos": "WR",
-     "salary": 7700,
-     "team": "ATL"
-    },
-    {
-     "id": 55244,
-     "name": "Jahan Dotson",
-     "pos": "WR",
-     "salary": 5100,
-     "team": "ATL"
-    },
-    {
-     "id": 55268,
-     "name": "Kenneth Walker III",
-     "pos": "RB",
-     "salary": 9800,
-     "team": "KC"
-    },
-    {
-     "id": 55276,
-     "name": "Brian Robinson",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "ATL"
-    },
-    {
-     "id": 55582,
-     "name": "Bijan Robinson",
-     "pos": "RB",
-     "salary": 8800,
-     "team": "ATL"
-    },
-    {
-     "id": 55622,
-     "name": "Rashee Rice",
-     "pos": "WR",
-     "salary": 6900,
-     "team": "KC"
-    },
-    {
-     "id": 55636,
-     "name": "Josh Downs",
-     "pos": "WR",
-     "salary": 5900,
-     "team": "KC"
-    },
-    {
-     "id": 55899,
-     "name": "Nick Muse",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "ATL"
-    },
-    {
-     "id": 55917,
-     "name": "Xavier Worthy",
-     "pos": "WR",
-     "salary": 5700,
-     "team": "KC"
-    },
-    {
-     "id": 55991,
-     "name": "Michael Penix Jr.",
-     "pos": "QB",
-     "salary": 6900,
-     "team": "ATL"
-    },
-    {
-     "id": 56071,
-     "name": "Jared Wiley",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "KC"
-    },
-    {
-     "id": 56202,
-     "name": "Nikko Remigio",
-     "pos": "WR",
-     "salary": 4200,
-     "team": "KC"
-    },
-    {
-     "id": 56222,
-     "name": "Chris Blair",
-     "pos": "WR",
-     "salary": 4200,
-     "team": "ATL"
-    },
-    {
-     "id": 56299,
-     "name": "Brashard Smith",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "KC"
-    },
-    {
-     "id": 56805,
-     "name": "Jack Strand",
-     "pos": "QB",
-     "salary": 6000,
-     "team": "ATL"
+     "team": "NYG"
     },
     {
      "id": 52787,
      "name": "Ameer Abdullah",
      "pos": "RB",
-     "salary": 4600,
+     "salary": 4500,
      "team": "JAC"
     },
     {
-     "id": 53426,
-     "name": "Mitchell Trubisky",
-     "pos": "QB",
-     "salary": 6000,
-     "team": "TEN"
+     "id": 53390,
+     "name": "Chris Manhertz",
+     "pos": "TE",
+     "salary": 4000,
+     "team": "NYG"
     },
     {
-     "id": 53772,
-     "name": "Calvin Ridley",
-     "pos": "WR",
-     "salary": 4600,
-     "team": "TEN"
-    },
-    {
-     "id": 54185,
-     "name": "Tony Pollard",
+     "id": 53546,
+     "name": "Patrick Ricard",
      "pos": "RB",
-     "salary": 6500,
-     "team": "TEN"
+     "salary": 4000,
+     "team": "NYG"
+    },
+    {
+     "id": 54171,
+     "name": "Devin Singletary",
+     "pos": "RB",
+     "salary": 4900,
+     "team": "NYG"
     },
     {
      "id": 54193,
      "name": "Jakobi Meyers",
      "pos": "WR",
-     "salary": 5800,
+     "salary": 5600,
      "team": "JAC"
+    },
+    {
+     "id": 54612,
+     "name": "Darnell Mooney",
+     "pos": "WR",
+     "salary": 4700,
+     "team": "NYG"
     },
     {
      "id": 54869,
      "name": "Trevor Lawrence",
      "pos": "QB",
-     "salary": 7700,
+     "salary": 7900,
      "team": "JAC"
     },
     {
-     "id": 55071,
-     "name": "Kylen Granson",
+     "id": 55282,
+     "name": "Isaiah Likely",
      "pos": "TE",
-     "salary": 4000,
-     "team": "TEN"
-    },
-    {
-     "id": 55262,
-     "name": "Wan'Dale Robinson",
-     "pos": "WR",
-     "salary": 5200,
-     "team": "TEN"
-    },
-    {
-     "id": 55285,
-     "name": "Daniel Bellinger",
-     "pos": "TE",
-     "salary": 4200,
-     "team": "TEN"
+     "salary": 6000,
+     "team": "NYG"
     },
     {
      "id": 55394,
@@ -3462,60 +3179,60 @@
      "team": "JAC"
     },
     {
-     "id": 55532,
-     "name": "Julius Chestnut",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "TEN"
-    },
-    {
-     "id": 55639,
-     "name": "Tyjae Spears",
-     "pos": "RB",
-     "salary": 4800,
-     "team": "TEN"
-    },
-    {
      "id": 55710,
      "name": "Chris Rodriguez Jr.",
      "pos": "RB",
-     "salary": 5500,
+     "salary": 5100,
      "team": "JAC"
     },
     {
      "id": 55757,
      "name": "Brenton Strange",
      "pos": "TE",
-     "salary": 5000,
+     "salary": 5100,
      "team": "JAC"
     },
     {
      "id": 55786,
      "name": "Parker Washington",
      "pos": "WR",
-     "salary": 6800,
+     "salary": 7200,
      "team": "JAC"
     },
     {
      "id": 55916,
      "name": "Brian Thomas Jr.",
      "pos": "WR",
-     "salary": 5000,
+     "salary": 5100,
      "team": "JAC"
     },
     {
-     "id": 56207,
-     "name": "David Martin-Robinson",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "TEN"
+     "id": 55918,
+     "name": "J.J. McCarthy",
+     "pos": "QB",
+     "salary": 6800,
+     "team": "NYG"
     },
     {
-     "id": 56245,
-     "name": "Cam Ward",
-     "pos": "QB",
-     "salary": 6600,
-     "team": "TEN"
+     "id": 55922,
+     "name": "Malik Nabers",
+     "pos": "WR",
+     "salary": 7600,
+     "team": "NYG"
+    },
+    {
+     "id": 55978,
+     "name": "Tyrone Tracy Jr.",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "NYG"
+    },
+    {
+     "id": 56025,
+     "name": "Theo Johnson",
+     "pos": "TE",
+     "salary": 4300,
+     "team": "NYG"
     },
     {
      "id": 56246,
@@ -3525,32 +3242,32 @@
      "team": "JAC"
     },
     {
+     "id": 56288,
+     "name": "Cam Skattebo",
+     "pos": "RB",
+     "salary": 6600,
+     "team": "NYG"
+    },
+    {
      "id": 56292,
      "name": "Bhayshul Tuten",
      "pos": "RB",
-     "salary": 6800,
+     "salary": 6900,
      "team": "JAC"
-    },
-    {
-     "id": 56302,
-     "name": "Elic Ayomanor",
-     "pos": "WR",
-     "salary": 4700,
-     "team": "TEN"
     },
     {
      "id": 56345,
      "name": "LeQuint Allen Jr.",
      "pos": "RB",
-     "salary": 4200,
+     "salary": 4100,
      "team": "JAC"
     },
     {
-     "id": 56349,
-     "name": "Chimere Dike",
-     "pos": "WR",
-     "salary": 4900,
-     "team": "TEN"
+     "id": 56502,
+     "name": "Thomas Fidone II",
+     "pos": "TE",
+     "salary": 4100,
+     "team": "NYG"
     },
     {
      "id": 56528,
@@ -3560,207 +3277,494 @@
      "team": "JAC"
     },
     {
-     "id": 53448,
-     "name": "Cooper Kupp",
+     "id": 53082,
+     "name": "Jared Goff",
+     "pos": "QB",
+     "salary": 7800,
+     "team": "DET"
+    },
+    {
+     "id": 53594,
+     "name": "Chris Godwin",
      "pos": "WR",
+     "salary": 5100,
+     "team": "TB"
+    },
+    {
+     "id": 53777,
+     "name": "Baker Mayfield",
+     "pos": "QB",
+     "salary": 7100,
+     "team": "TB"
+    },
+    {
+     "id": 53898,
+     "name": "Tyler Conklin",
+     "pos": "TE",
+     "salary": 4100,
+     "team": "DET"
+    },
+    {
+     "id": 53987,
+     "name": "Joshua Dobbs",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "DET"
+    },
+    {
+     "id": 54885,
+     "name": "Amon-Ra St. Brown",
+     "pos": "WR",
+     "salary": 8900,
+     "team": "DET"
+    },
+    {
+     "id": 54895,
+     "name": "Kenneth Gainwell",
+     "pos": "RB",
      "salary": 5300,
-     "team": "SEA"
+     "team": "TB"
     },
     {
-     "id": 53528,
-     "name": "Eric Saubert",
-     "pos": "TE",
-     "salary": 4100,
-     "team": "SEA"
-    },
-    {
-     "id": 53786,
-     "name": "Sam Darnold",
-     "pos": "QB",
-     "salary": 7000,
-     "team": "SEA"
-    },
-    {
-     "id": 53897,
-     "name": "Ian Thomas",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "LV"
-    },
-    {
-     "id": 54167,
-     "name": "Drew Lock",
-     "pos": "QB",
-     "salary": 7000,
-     "team": "SEA"
-    },
-    {
-     "id": 55050,
-     "name": "Cody White",
-     "pos": "WR",
-     "salary": 4300,
-     "team": "LV"
-    },
-    {
-     "id": 55238,
-     "name": "Velus Jones",
-     "pos": "RB",
-     "salary": 4000,
-     "team": "SEA"
-    },
-    {
-     "id": 55306,
-     "name": "Connor Heyward",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "LV"
-    },
-    {
-     "id": 55424,
-     "name": "Jalen Nailor",
-     "pos": "WR",
-     "salary": 4900,
-     "team": "LV"
-    },
-    {
-     "id": 55472,
-     "name": "Rashid Shaheed",
-     "pos": "WR",
-     "salary": 5200,
-     "team": "SEA"
-    },
-    {
-     "id": 55490,
-     "name": "Dareke Young",
+     "id": 54981,
+     "name": "Tom Kennedy",
      "pos": "WR",
      "salary": 4000,
-     "team": "LV"
+     "team": "DET"
     },
     {
-     "id": 55578,
-     "name": "Michael Mayer",
+     "id": 55103,
+     "name": "Brock Wright",
      "pos": "TE",
-     "salary": 4600,
-     "team": "LV"
+     "salary": 4200,
+     "team": "DET"
     },
     {
-     "id": 55595,
-     "name": "Jaxon Smith-Njigba",
+     "id": 55245,
+     "name": "Jameson Williams",
      "pos": "WR",
-     "salary": 9500,
-     "team": "SEA"
-    },
-    {
-     "id": 55596,
-     "name": "Zach Charbonnet",
-     "pos": "RB",
      "salary": 6700,
-     "team": "SEA"
+     "team": "DET"
     },
     {
-     "id": 55715,
-     "name": "Emanuel Wilson",
-     "pos": "RB",
-     "salary": 4800,
-     "team": "SEA"
-    },
-    {
-     "id": 55732,
-     "name": "Tre Tucker",
-     "pos": "WR",
-     "salary": 5600,
-     "team": "LV"
-    },
-    {
-     "id": 55762,
-     "name": "Brady Russell",
+     "id": 55280,
+     "name": "Isiah Pacheco",
      "pos": "RB",
      "salary": 4000,
-     "team": "SEA"
+     "team": "DET"
     },
     {
-     "id": 55931,
-     "name": "Brock Bowers",
+     "id": 55343,
+     "name": "Cade Otton",
      "pos": "TE",
-     "salary": 8000,
-     "team": "LV"
+     "salary": 4900,
+     "team": "TB"
     },
     {
-     "id": 55983,
-     "name": "Dylan Laube",
+     "id": 55387,
+     "name": "Ko Kieft",
+     "pos": "TE",
+     "salary": 4000,
+     "team": "TB"
+    },
+    {
+     "id": 55608,
+     "name": "Sam LaPorta",
+     "pos": "TE",
+     "salary": 5500,
+     "team": "DET"
+    },
+    {
+     "id": 55609,
+     "name": "Jahmyr Gibbs",
+     "pos": "RB",
+     "salary": 12000,
+     "team": "DET"
+    },
+    {
+     "id": 55641,
+     "name": "Sean Tucker",
      "pos": "RB",
      "salary": 4300,
-     "team": "LV"
+     "team": "TB"
     },
     {
-     "id": 56078,
-     "name": "AJ Barner",
+     "id": 55808,
+     "name": "Payne Durham",
      "pos": "TE",
-     "salary": 5000,
-     "team": "SEA"
-    },
-    {
-     "id": 56204,
-     "name": "George Holani",
-     "pos": "RB",
-     "salary": 4600,
-     "team": "SEA"
-    },
-    {
-     "id": 56249,
-     "name": "Ashton Jeanty",
-     "pos": "RB",
-     "salary": 6100,
-     "team": "LV"
-    },
-    {
-     "id": 56295,
-     "name": "Dont'e Thornton Jr.",
-     "pos": "WR",
      "salary": 4100,
-     "team": "LV"
+     "team": "TB"
     },
     {
-     "id": 56304,
-     "name": "Tory Horton",
-     "pos": "WR",
-     "salary": 5000,
-     "team": "SEA"
+     "id": 55976,
+     "name": "Bucky Irving",
+     "pos": "RB",
+     "salary": 7600,
+     "team": "TB"
     },
     {
-     "id": 56314,
-     "name": "Jack Bech",
+     "id": 55980,
+     "name": "Jalen McMillan",
      "pos": "WR",
      "salary": 4500,
-     "team": "LV"
+     "team": "TB"
     },
     {
-     "id": 56315,
-     "name": "Robbie Ouzts",
+     "id": 56023,
+     "name": "Kameron Johnson",
+     "pos": "WR",
+     "salary": 4200,
+     "team": "TB"
+    },
+    {
+     "id": 56076,
+     "name": "Sione Vaki",
      "pos": "RB",
-     "salary": 4000,
-     "team": "SEA"
+     "salary": 4700,
+     "team": "DET"
     },
     {
-     "id": 56376,
-     "name": "Jalen Milroe",
+     "id": 56258,
+     "name": "Emeka Egbuka",
+     "pos": "WR",
+     "salary": 5900,
+     "team": "TB"
+    },
+    {
+     "id": 56307,
+     "name": "Isaac TeSlaa",
+     "pos": "WR",
+     "salary": 4500,
+     "team": "DET"
+    },
+    {
+     "id": 56383,
+     "name": "Tez Johnson",
+     "pos": "WR",
+     "salary": 4800,
+     "team": "TB"
+    },
+    {
+     "id": 10,
+     "name": "Aaron Rodgers",
+     "pos": "QB",
+     "salary": 7200,
+     "team": "PIT"
+    },
+    {
+     "id": 52077,
+     "name": "Zach Ertz",
+     "pos": "TE",
+     "salary": 4300,
+     "team": "PHI"
+    },
+    {
+     "id": 53785,
+     "name": "Saquon Barkley",
+     "pos": "RB",
+     "salary": 7000,
+     "team": "PHI"
+    },
+    {
+     "id": 53795,
+     "name": "Dallas Goedert",
+     "pos": "TE",
+     "salary": 5200,
+     "team": "PHI"
+    },
+    {
+     "id": 54046,
+     "name": "Robert Tonyan",
+     "pos": "TE",
+     "salary": 4200,
+     "team": "PIT"
+    },
+    {
+     "id": 54117,
+     "name": "Johnny Mundt",
+     "pos": "TE",
+     "salary": 4100,
+     "team": "PHI"
+    },
+    {
+     "id": 54159,
+     "name": "D.K. Metcalf",
+     "pos": "WR",
+     "salary": 6600,
+     "team": "PIT"
+    },
+    {
+     "id": 54276,
+     "name": "Mason Rudolph",
      "pos": "QB",
      "salary": 6400,
-     "team": "SEA"
+     "team": "PIT"
     },
     {
-     "id": 56390,
-     "name": "Elijah Arroyo",
-     "pos": "TE",
-     "salary": 4000,
-     "team": "SEA"
+     "id": 54356,
+     "name": "Travis Homer",
+     "pos": "RB",
+     "salary": 4600,
+     "team": "PIT"
     },
     {
-     "id": 56547,
-     "name": "Ricky White III",
+     "id": 54524,
+     "name": "Michael Pittman Jr.",
      "pos": "WR",
      "salary": 4000,
-     "team": "SEA"
+     "team": "PIT"
+    },
+    {
+     "id": 54728,
+     "name": "Rico Dowdle",
+     "pos": "RB",
+     "salary": 5700,
+     "team": "PIT"
+    },
+    {
+     "id": 54875,
+     "name": "Elijah Moore",
+     "pos": "WR",
+     "salary": 4600,
+     "team": "PHI"
+    },
+    {
+     "id": 54877,
+     "name": "DeVonta Smith",
+     "pos": "WR",
+     "salary": 7300,
+     "team": "PHI"
+    },
+    {
+     "id": 54891,
+     "name": "Pat Freiermuth",
+     "pos": "TE",
+     "salary": 5100,
+     "team": "PIT"
+    },
+    {
+     "id": 54953,
+     "name": "Elijah Mitchell",
+     "pos": "RB",
+     "salary": 5000,
+     "team": "PHI"
+    },
+    {
+     "id": 55037,
+     "name": "Ben Skowronek",
+     "pos": "WR",
+     "salary": 4400,
+     "team": "PIT"
+    },
+    {
+     "id": 55313,
+     "name": "Britain Covey",
+     "pos": "WR",
+     "salary": 4200,
+     "team": "PHI"
+    },
+    {
+     "id": 55315,
+     "name": "Jaylen Warren",
+     "pos": "RB",
+     "salary": 7500,
+     "team": "PIT"
+    },
+    {
+     "id": 55414,
+     "name": "Grant Calcaterra",
+     "pos": "TE",
+     "salary": 4200,
+     "team": "PHI"
+    },
+    {
+     "id": 55626,
+     "name": "Tank Bigsby",
+     "pos": "RB",
+     "salary": 4800,
+     "team": "PHI"
+    },
+    {
+     "id": 55705,
+     "name": "Dontayvion Wicks",
+     "pos": "WR",
+     "salary": 5500,
+     "team": "PHI"
+    },
+    {
+     "id": 55776,
+     "name": "Darnell Washington",
+     "pos": "TE",
+     "salary": 4900,
+     "team": "PIT"
+    },
+    {
+     "id": 55924,
+     "name": "Roman Wilson",
+     "pos": "WR",
+     "salary": 4000,
+     "team": "PIT"
+    },
+    {
+     "id": 55988,
+     "name": "Will Shipley",
+     "pos": "RB",
+     "salary": 4000,
+     "team": "PHI"
+    },
+    {
+     "id": 56228,
+     "name": "Tanner McKee",
+     "pos": "QB",
+     "salary": 6300,
+     "team": "PHI"
+    },
+    {
+     "id": 56237,
+     "name": "Joe Milton III",
+     "pos": "QB",
+     "salary": 6600,
+     "team": "PHI"
+    },
+    {
+     "id": 56358,
+     "name": "Darius Cooper",
+     "pos": "WR",
+     "salary": 5400,
+     "team": "PHI"
+    },
+    {
+     "id": 53775,
+     "name": "Josh Allen",
+     "pos": "QB",
+     "salary": 9700,
+     "team": "BUF"
+    },
+    {
+     "id": 53776,
+     "name": "D.J. Moore",
+     "pos": "WR",
+     "salary": 6900,
+     "team": "BUF"
+    },
+    {
+     "id": 54111,
+     "name": "Kyle Allen",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "BUF"
+    },
+    {
+     "id": 54230,
+     "name": "Dawson Knox",
+     "pos": "TE",
+     "salary": 4600,
+     "team": "BUF"
+    },
+    {
+     "id": 54241,
+     "name": "Ty Johnson",
+     "pos": "RB",
+     "salary": 5200,
+     "team": "BUF"
+    },
+    {
+     "id": 54382,
+     "name": "Greg Dortch",
+     "pos": "WR",
+     "salary": 4400,
+     "team": "BUF"
+    },
+    {
+     "id": 54899,
+     "name": "Josh Palmer",
+     "pos": "WR",
+     "salary": 4000,
+     "team": "BUF"
+    },
+    {
+     "id": 55236,
+     "name": "James Cook",
+     "pos": "RB",
+     "salary": 8600,
+     "team": "BUF"
+    },
+    {
+     "id": 55243,
+     "name": "Jalen Tolbert",
+     "pos": "WR",
+     "salary": 4600,
+     "team": "MIA"
+    },
+    {
+     "id": 55390,
+     "name": "Khalil Shakir",
+     "pos": "WR",
+     "salary": 5800,
+     "team": "BUF"
+    },
+    {
+     "id": 55391,
+     "name": "Malik Willis",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "MIA"
+    },
+    {
+     "id": 55475,
+     "name": "Greg Dulcich",
+     "pos": "TE",
+     "salary": 4600,
+     "team": "MIA"
+    },
+    {
+     "id": 55586,
+     "name": "Dalton Kincaid",
+     "pos": "TE",
+     "salary": 5600,
+     "team": "BUF"
+    },
+    {
+     "id": 55908,
+     "name": "Keon Coleman",
+     "pos": "WR",
+     "salary": 5200,
+     "team": "BUF"
+    },
+    {
+     "id": 55975,
+     "name": "Ray Davis",
+     "pos": "RB",
+     "salary": 4700,
+     "team": "BUF"
+    },
+    {
+     "id": 55982,
+     "name": "Jaylen Wright",
+     "pos": "RB",
+     "salary": 4600,
+     "team": "MIA"
+    },
+    {
+     "id": 56117,
+     "name": "Malik Washington",
+     "pos": "WR",
+     "salary": 5700,
+     "team": "MIA"
+    },
+    {
+     "id": 56294,
+     "name": "Ollie Gordon II",
+     "pos": "RB",
+     "salary": 6000,
+     "team": "MIA"
+    },
+    {
+     "id": 56461,
+     "name": "Brady Cook",
+     "pos": "QB",
+     "salary": 6000,
+     "team": "MIA"
     }
    ],
    "single": false,
@@ -3768,724 +3772,111 @@
     {
      "book": "FanDuel",
      "cap": 60000,
-     "count": 31,
+     "count": 33,
      "def": {
-      "NYG": 6600,
-      "WSH": 6400
+      "HOU": 7000,
+      "IND": 6200
      },
      "games": 1,
-     "kickoff": 1794532500000.0,
-     "players": [
-      {
-       "id": 52774,
-       "name": "Jameis Winston",
-       "pos": "QB",
-       "salary": 10000,
-       "team": "NYG"
-      },
-      {
-       "id": 52775,
-       "name": "Marcus Mariota",
-       "pos": "QB",
-       "salary": 8000,
-       "team": "WSH"
-      },
-      {
-       "id": 52804,
-       "name": "Stefon Diggs",
-       "pos": "WR",
-       "salary": 10800,
-       "team": "WSH"
-      },
-      {
-       "id": 53390,
-       "name": "Chris Manhertz",
-       "pos": "TE",
-       "salary": 1000,
-       "team": "NYG"
-      },
-      {
-       "id": 53546,
-       "name": "Patrick Ricard",
-       "pos": "RB",
-       "salary": 1600,
-       "team": "NYG"
-      },
-      {
-       "id": 53567,
-       "name": "Austin Ekeler",
-       "pos": "RB",
-       "salary": 5800,
-       "team": "WSH"
-      },
-      {
-       "id": 53752,
-       "name": "Jeremy McNichols",
-       "pos": "RB",
-       "salary": 1000,
-       "team": "WSH"
-      },
-      {
-       "id": 54162,
-       "name": "Terry McLaurin",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "WSH"
-      },
-      {
-       "id": 54171,
-       "name": "Devin Singletary",
-       "pos": "RB",
-       "salary": 8800,
-       "team": "NYG"
-      },
-      {
-       "id": 54541,
-       "name": "Van Jefferson",
-       "pos": "WR",
-       "salary": 7600,
-       "team": "WSH"
-      },
-      {
-       "id": 54612,
-       "name": "Darnell Mooney",
-       "pos": "WR",
-       "salary": 4800,
-       "team": "NYG"
-      },
-      {
-       "id": 54897,
-       "name": "Dyami Brown",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "WSH"
-      },
-      {
-       "id": 55089,
-       "name": "John Bates",
-       "pos": "TE",
-       "salary": 2000,
-       "team": "WSH"
-      },
-      {
-       "id": 55260,
-       "name": "Treylon Burks",
-       "pos": "WR",
-       "salary": 4000,
-       "team": "WSH"
-      },
-      {
-       "id": 55271,
-       "name": "Rachaad White",
-       "pos": "RB",
-       "salary": 10200,
-       "team": "WSH"
-      },
-      {
-       "id": 55282,
-       "name": "Isaiah Likely",
-       "pos": "TE",
-       "salary": 8200,
-       "team": "NYG"
-      },
-      {
-       "id": 55293,
-       "name": "Chigoziem Okonkwo",
-       "pos": "TE",
-       "salary": 5400,
-       "team": "WSH"
-      },
-      {
-       "id": 55642,
-       "name": "Charlie Jones",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "NYG"
-      },
-      {
-       "id": 55918,
-       "name": "J.J. McCarthy",
-       "pos": "QB",
-       "salary": 11600,
-       "team": "NYG"
-      },
-      {
-       "id": 55922,
-       "name": "Malik Nabers",
-       "pos": "WR",
-       "salary": 11200,
-       "team": "NYG"
-      },
-      {
-       "id": 55926,
-       "name": "Ben Sinnott",
-       "pos": "TE",
-       "salary": 2400,
-       "team": "WSH"
-      },
-      {
-       "id": 55927,
-       "name": "Luke McCaffrey",
-       "pos": "WR",
-       "salary": 3400,
-       "team": "WSH"
-      },
-      {
-       "id": 55928,
-       "name": "Jayden Daniels",
-       "pos": "QB",
-       "salary": 12600,
-       "team": "WSH"
-      },
-      {
-       "id": 55978,
-       "name": "Tyrone Tracy Jr.",
-       "pos": "RB",
-       "salary": 1000,
-       "team": "NYG"
-      },
-      {
-       "id": 56025,
-       "name": "Theo Johnson",
-       "pos": "TE",
-       "salary": 4200,
-       "team": "NYG"
-      },
-      {
-       "id": 56067,
-       "name": "Colson Yankoff",
-       "pos": "TE",
-       "salary": 2800,
-       "team": "WSH"
-      },
-      {
-       "id": 56288,
-       "name": "Cam Skattebo",
-       "pos": "RB",
-       "salary": 9400,
-       "team": "NYG"
-      },
-      {
-       "id": 56298,
-       "name": "Jacory Croskey-Merritt",
-       "pos": "RB",
-       "salary": 3000,
-       "team": "WSH"
-      },
-      {
-       "id": 56502,
-       "name": "Thomas Fidone II",
-       "pos": "TE",
-       "salary": 1200,
-       "team": "NYG"
-      }
-     ],
-     "single": true,
-     "slate": "WAS @ NYG",
-     "slateId": "2138235",
-     "teams": [
-      "WAS",
-      "NYG"
-     ]
-    },
-    {
-     "book": "FanDuel",
-     "cap": 60000,
-     "count": 31,
-     "def": {
-      "CIN": 6200,
-      "PIT": 6400
-     },
-     "games": 1,
-     "kickoff": 1794792000000.0,
-     "players": [
-      {
-       "id": 10,
-       "name": "Aaron Rodgers",
-       "pos": "QB",
-       "salary": 10600,
-       "team": "PIT"
-      },
-      {
-       "id": 15,
-       "name": "Joe Flacco",
-       "pos": "QB",
-       "salary": 8000,
-       "team": "CIN"
-      },
-      {
-       "id": 53446,
-       "name": "Samaje Perine",
-       "pos": "RB",
-       "salary": 5400,
-       "team": "CIN"
-      },
-      {
-       "id": 53784,
-       "name": "Mike Gesicki",
-       "pos": "TE",
-       "salary": 5600,
-       "team": "CIN"
-      },
-      {
-       "id": 54046,
-       "name": "Robert Tonyan",
-       "pos": "TE",
-       "salary": 1000,
-       "team": "PIT"
-      },
-      {
-       "id": 54159,
-       "name": "D.K. Metcalf",
-       "pos": "WR",
-       "salary": 8800,
-       "team": "PIT"
-      },
-      {
-       "id": 54276,
-       "name": "Mason Rudolph",
-       "pos": "QB",
-       "salary": 8000,
-       "team": "PIT"
-      },
-      {
-       "id": 54280,
-       "name": "Drew Sample",
-       "pos": "TE",
-       "salary": 1600,
-       "team": "CIN"
-      },
-      {
-       "id": 54356,
-       "name": "Travis Homer",
-       "pos": "RB",
-       "salary": 1200,
-       "team": "PIT"
-      },
-      {
-       "id": 54397,
-       "name": "Tanner Hudson",
-       "pos": "TE",
-       "salary": 1400,
-       "team": "CIN"
-      },
-      {
-       "id": 54499,
-       "name": "Joe Burrow",
-       "pos": "QB",
-       "salary": 13200,
-       "team": "CIN"
-      },
-      {
-       "id": 54512,
-       "name": "Tee Higgins",
-       "pos": "WR",
-       "salary": 11800,
-       "team": "CIN"
-      },
-      {
-       "id": 54524,
-       "name": "Michael Pittman Jr.",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "PIT"
-      },
-      {
-       "id": 54728,
-       "name": "Rico Dowdle",
-       "pos": "RB",
-       "salary": 6000,
-       "team": "PIT"
-      },
-      {
-       "id": 54864,
-       "name": "Ja'Marr Chase",
-       "pos": "WR",
-       "salary": 12400,
-       "team": "CIN"
-      },
-      {
-       "id": 54891,
-       "name": "Pat Freiermuth",
-       "pos": "TE",
-       "salary": 4800,
-       "team": "PIT"
-      },
-      {
-       "id": 55037,
-       "name": "Ben Skowronek",
-       "pos": "WR",
-       "salary": 1200,
-       "team": "PIT"
-      },
-      {
-       "id": 55315,
-       "name": "Jaylen Warren",
-       "pos": "RB",
-       "salary": 11600,
-       "team": "PIT"
-      },
-      {
-       "id": 55640,
-       "name": "Chase Brown",
-       "pos": "RB",
-       "salary": 9800,
-       "team": "CIN"
-      },
-      {
-       "id": 55776,
-       "name": "Darnell Washington",
-       "pos": "TE",
-       "salary": 4400,
-       "team": "PIT"
-      },
-      {
-       "id": 55777,
-       "name": "Andrei Iosivas",
-       "pos": "WR",
-       "salary": 1800,
-       "team": "CIN"
-      },
-      {
-       "id": 55924,
-       "name": "Roman Wilson",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "PIT"
-      },
-      {
-       "id": 56061,
-       "name": "Erick All Jr.",
-       "pos": "TE",
-       "salary": 1000,
-       "team": "CIN"
-      },
-      {
-       "id": 56187,
-       "name": "Cam Grandy",
-       "pos": "TE",
-       "salary": 1000,
-       "team": "CIN"
-      },
-      {
-       "id": 56297,
-       "name": "Tahj Brooks",
-       "pos": "RB",
-       "salary": 1000,
-       "team": "CIN"
-      },
-      {
-       "id": 56334,
-       "name": "Mitchell Tinsley",
-       "pos": "WR",
-       "salary": 2200,
-       "team": "CIN"
-      },
-      {
-       "id": 56556,
-       "name": "Kendall Milton",
-       "pos": "RB",
-       "salary": 1000,
-       "team": "CIN"
-      },
-      {
-       "id": 56583,
-       "name": "Jordan Moore",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "CIN"
-      },
-      {
-       "id": 56810,
-       "name": "Jack Endries",
-       "pos": "TE",
-       "salary": 1400,
-       "team": "CIN"
-      }
-     ],
-     "single": true,
-     "slate": "PIT @ CIN",
-     "slateId": "2139494",
-     "teams": [
-      "PIT",
-      "CIN"
-     ]
-    },
-    {
-     "book": "FanDuel",
-     "cap": 60000,
-     "count": 28,
-     "def": {
-      "DET": 6400,
-      "NE": 6200
-     },
-     "games": 1,
-     "kickoff": 1794753000000.0,
-     "players": [
-      {
-       "id": 53079,
-       "name": "Hunter Henry",
-       "pos": "TE",
-       "salary": 5800,
-       "team": "NE"
-      },
-      {
-       "id": 53082,
-       "name": "Jared Goff",
-       "pos": "QB",
-       "salary": 12200,
-       "team": "DET"
-      },
-      {
-       "id": 53538,
-       "name": "Mack Hollins",
-       "pos": "WR",
-       "salary": 6000,
-       "team": "NE"
-      },
-      {
-       "id": 53876,
-       "name": "DeAndre Carter",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "DET"
-      },
-      {
-       "id": 53898,
-       "name": "Tyler Conklin",
-       "pos": "TE",
-       "salary": 1400,
-       "team": "DET"
-      },
-      {
-       "id": 53987,
-       "name": "Joshua Dobbs",
-       "pos": "QB",
-       "salary": 8000,
-       "team": "DET"
-      },
-      {
-       "id": 54161,
-       "name": "A.J. Brown",
-       "pos": "WR",
-       "salary": 9600,
-       "team": "NE"
-      },
-      {
-       "id": 54640,
-       "name": "Reggie Gilliam",
-       "pos": "RB",
-       "salary": 1000,
-       "team": "NE"
-      },
-      {
-       "id": 54885,
-       "name": "Amon-Ra St. Brown",
-       "pos": "WR",
-       "salary": 11600,
-       "team": "DET"
-      },
-      {
-       "id": 54894,
-       "name": "Rhamondre Stevenson",
-       "pos": "RB",
-       "salary": 8800,
-       "team": "NE"
-      },
-      {
-       "id": 54981,
-       "name": "Tom Kennedy",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "DET"
-      },
-      {
-       "id": 55103,
-       "name": "Brock Wright",
-       "pos": "TE",
-       "salary": 1800,
-       "team": "DET"
-      },
-      {
-       "id": 55245,
-       "name": "Jameson Williams",
-       "pos": "WR",
-       "salary": 10400,
-       "team": "DET"
-      },
-      {
-       "id": 55278,
-       "name": "Romeo Doubs",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "NE"
-      },
-      {
-       "id": 55280,
-       "name": "Isiah Pacheco",
-       "pos": "RB",
-       "salary": 1000,
-       "team": "DET"
-      },
-      {
-       "id": 55608,
-       "name": "Sam LaPorta",
-       "pos": "TE",
-       "salary": 7200,
-       "team": "DET"
-      },
-      {
-       "id": 55609,
-       "name": "Jahmyr Gibbs",
-       "pos": "RB",
-       "salary": 13400,
-       "team": "DET"
-      },
-      {
-       "id": 55684,
-       "name": "Demario Douglas",
-       "pos": "WR",
-       "salary": 7600,
-       "team": "NE"
-      },
-      {
-       "id": 55753,
-       "name": "Julian Hill",
-       "pos": "TE",
-       "salary": 1000,
-       "team": "NE"
-      },
-      {
-       "id": 55831,
-       "name": "Tommy DeVito",
-       "pos": "QB",
-       "salary": 8000,
-       "team": "NE"
-      },
-      {
-       "id": 55921,
-       "name": "Drake Maye",
-       "pos": "QB",
-       "salary": 12600,
-       "team": "NE"
-      },
-      {
-       "id": 56076,
-       "name": "Sione Vaki",
-       "pos": "RB",
-       "salary": 2800,
-       "team": "DET"
-      },
-      {
-       "id": 56276,
-       "name": "TreVeyon Henderson",
-       "pos": "RB",
-       "salary": 1000,
-       "team": "NE"
-      },
-      {
-       "id": 56307,
-       "name": "Isaac TeSlaa",
-       "pos": "WR",
-       "salary": 3800,
-       "team": "DET"
-      },
-      {
-       "id": 56374,
-       "name": "Kyle Williams",
-       "pos": "WR",
-       "salary": 4000,
-       "team": "NE"
-      },
-      {
-       "id": 56519,
-       "name": "Efton Chism III",
-       "pos": "WR",
-       "salary": 5200,
-       "team": "NE"
-      }
-     ],
-     "single": true,
-     "slate": "NE @ DET",
-     "slateId": "2140050",
-     "teams": [
-      "NE",
-      "DET"
-     ]
-    },
-    {
-     "book": "FanDuel",
-     "cap": 60000,
-     "count": 23,
-     "def": {
-      "IND": 6600,
-      "MIA": 6200
-     },
-     "games": 1,
-     "kickoff": 1794765600000.0,
+     "kickoff": 1795137300000.0,
      "players": [
       {
        "id": 53069,
        "name": "Laquon Treadwell",
        "pos": "WR",
-       "salary": 5800,
+       "salary": 7400,
        "team": "IND"
       },
       {
        "id": 53973,
        "name": "Mo Alie-Cox",
        "pos": "TE",
-       "salary": 1400,
+       "salary": 1000,
        "team": "IND"
+      },
+      {
+       "id": 54022,
+       "name": "Dalton Schultz",
+       "pos": "TE",
+       "salary": 6400,
+       "team": "HOU"
+      },
+      {
+       "id": 54069,
+       "name": "Dare Ogunbowale",
+       "pos": "RB",
+       "salary": 3400,
+       "team": "HOU"
+      },
+      {
+       "id": 54134,
+       "name": "David Montgomery",
+       "pos": "RB",
+       "salary": 10200,
+       "team": "HOU"
       },
       {
        "id": 54168,
        "name": "Daniel Jones",
        "pos": "QB",
-       "salary": 11600,
+       "salary": 10800,
        "team": "IND"
+      },
+      {
+       "id": 54273,
+       "name": "Foster Moreau",
+       "pos": "TE",
+       "salary": 2000,
+       "team": "HOU"
       },
       {
        "id": 54348,
        "name": "Ashton Dulin",
        "pos": "WR",
-       "salary": 4600,
+       "salary": 5200,
        "team": "IND"
       },
       {
        "id": 54525,
        "name": "Jonathan Taylor",
        "pos": "RB",
-       "salary": 13000,
+       "salary": 11800,
        "team": "IND"
       },
       {
-       "id": 55243,
-       "name": "Jalen Tolbert",
+       "id": 54887,
+       "name": "Nico Collins",
        "pos": "WR",
-       "salary": 1200,
-       "team": "MIA"
+       "salary": 11400,
+       "team": "HOU"
+      },
+      {
+       "id": 54983,
+       "name": "Davis Mills",
+       "pos": "QB",
+       "salary": 8000,
+       "team": "HOU"
+      },
+      {
+       "id": 55111,
+       "name": "Brevin Jordan",
+       "pos": "TE",
+       "salary": 1000,
+       "team": "HOU"
       },
       {
        "id": 55253,
        "name": "Alec Pierce",
        "pos": "WR",
-       "salary": 7000,
+       "salary": 7800,
        "team": "IND"
       },
       {
-       "id": 55391,
-       "name": "Malik Willis",
+       "id": 55619,
+       "name": "C.J. Stroud",
        "pos": "QB",
-       "salary": 1000,
-       "team": "MIA"
-      },
-      {
-       "id": 55475,
-       "name": "Greg Dulcich",
-       "pos": "TE",
-       "salary": 5400,
-       "team": "MIA"
+       "salary": 12400,
+       "team": "HOU"
       },
       {
        "id": 55623,
@@ -4495,11 +3886,39 @@
        "team": "IND"
       },
       {
+       "id": 55643,
+       "name": "Tank Dell",
+       "pos": "WR",
+       "salary": 9600,
+       "team": "HOU"
+      },
+      {
        "id": 55667,
        "name": "Andrew Ogletree",
        "pos": "TE",
        "salary": 1000,
        "team": "IND"
+      },
+      {
+       "id": 55686,
+       "name": "Kayshon Boutte",
+       "pos": "WR",
+       "salary": 4600,
+       "team": "HOU"
+      },
+      {
+       "id": 55693,
+       "name": "Xavier Hutchinson",
+       "pos": "WR",
+       "salary": 5800,
+       "team": "HOU"
+      },
+      {
+       "id": 55723,
+       "name": "Emari Demercado",
+       "pos": "RB",
+       "salary": 3800,
+       "team": "HOU"
       },
       {
        "id": 55725,
@@ -4509,60 +3928,60 @@
        "team": "IND"
       },
       {
+       "id": 55906,
+       "name": "Marvin Harrison Jr.",
+       "pos": "WR",
+       "salary": 6000,
+       "team": "HOU"
+      },
+      {
        "id": 55981,
        "name": "Anthony Gould",
        "pos": "WR",
-       "salary": 5000,
+       "salary": 4000,
        "team": "IND"
       },
       {
-       "id": 55982,
-       "name": "Jaylen Wright",
+       "id": 56007,
+       "name": "British Brooks",
        "pos": "RB",
-       "salary": 4400,
-       "team": "MIA"
+       "salary": 1000,
+       "team": "HOU"
       },
       {
-       "id": 56117,
-       "name": "Malik Washington",
-       "pos": "WR",
-       "salary": 7600,
-       "team": "MIA"
-      },
-      {
-       "id": 56244,
-       "name": "Jared Wayne",
-       "pos": "WR",
-       "salary": 1400,
-       "team": "MIA"
+       "id": 56062,
+       "name": "Cade Stover",
+       "pos": "TE",
+       "salary": 1800,
+       "team": "HOU"
       },
       {
        "id": 56254,
        "name": "Tyler Warren",
        "pos": "TE",
-       "salary": 9200,
+       "salary": 8800,
        "team": "IND"
       },
       {
-       "id": 56294,
-       "name": "Ollie Gordon II",
+       "id": 56293,
+       "name": "Woody Marks",
        "pos": "RB",
-       "salary": 11200,
-       "team": "MIA"
+       "salary": 10200,
+       "team": "HOU"
       },
       {
        "id": 56296,
        "name": "DJ Giddens",
        "pos": "RB",
-       "salary": 2000,
+       "salary": 2600,
        "team": "IND"
       },
       {
-       "id": 56461,
-       "name": "Brady Cook",
-       "pos": "QB",
-       "salary": 8000,
-       "team": "MIA"
+       "id": 56308,
+       "name": "Jaylin Noel",
+       "pos": "WR",
+       "salary": 1000,
+       "team": "HOU"
       },
       {
        "id": 56511,
@@ -4570,465 +3989,26 @@
        "pos": "QB",
        "salary": 1000,
        "team": "IND"
+      },
+      {
+       "id": 56813,
+       "name": "Lewis Bond",
+       "pos": "WR",
+       "salary": 1000,
+       "team": "HOU"
       }
      ],
      "single": true,
-     "slate": "MIA @ IND",
-     "slateId": "2140054",
+     "slate": "IND @ HOU",
+     "slateId": "2142317",
      "teams": [
-      "MIA",
-      "IND"
-     ]
-    },
-    {
-     "book": "FanDuel",
-     "cap": 60000,
-     "count": 33,
-     "def": {
-      "CAR": 6200,
-      "NO": 6400
-     },
-     "games": 1,
-     "kickoff": 1794765600000.0,
-     "players": [
-      {
-       "id": 52802,
-       "name": "Darren Waller",
-       "pos": "TE",
-       "salary": 5800,
-       "team": "CAR"
-      },
-      {
-       "id": 53438,
-       "name": "Alvin Kamara",
-       "pos": "RB",
-       "salary": 6000,
-       "team": "NO"
-      },
-      {
-       "id": 53884,
-       "name": "David Moore",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "CAR"
-      },
-      {
-       "id": 54136,
-       "name": "Noah Fant",
-       "pos": "TE",
-       "salary": 2200,
-       "team": "NO"
-      },
-      {
-       "id": 54522,
-       "name": "A.J. Dillon",
-       "pos": "RB",
-       "salary": 1200,
-       "team": "CAR"
-      },
-      {
-       "id": 54742,
-       "name": "Juwan Johnson",
-       "pos": "TE",
-       "salary": 5000,
-       "team": "NO"
-      },
-      {
-       "id": 54870,
-       "name": "Travis Etienne",
-       "pos": "RB",
-       "salary": 9400,
-       "team": "NO"
-      },
-      {
-       "id": 54874,
-       "name": "Zach Wilson",
-       "pos": "QB",
-       "salary": 1000,
-       "team": "NO"
-      },
-      {
-       "id": 54896,
-       "name": "Chuba Hubbard",
-       "pos": "RB",
-       "salary": 10800,
-       "team": "CAR"
-      },
-      {
-       "id": 54965,
-       "name": "Tommy Tremble",
-       "pos": "TE",
-       "salary": 3600,
-       "team": "CAR"
-      },
-      {
-       "id": 55067,
-       "name": "Feleipe Franks",
-       "pos": "TE",
-       "salary": 1000,
-       "team": "CAR"
-      },
-      {
-       "id": 55250,
-       "name": "John Metchie III",
-       "pos": "WR",
-       "salary": 2800,
-       "team": "CAR"
-      },
-      {
-       "id": 55261,
-       "name": "Chris Olave",
-       "pos": "WR",
-       "salary": 11600,
-       "team": "NO"
-      },
-      {
-       "id": 55275,
-       "name": "Kenny Pickett",
-       "pos": "QB",
-       "salary": 8000,
-       "team": "CAR"
-      },
-      {
-       "id": 55461,
-       "name": "Ty Chandler",
-       "pos": "RB",
-       "salary": 1000,
-       "team": "NO"
-      },
-      {
-       "id": 55588,
-       "name": "Bryce Young",
-       "pos": "QB",
-       "salary": 12800,
-       "team": "CAR"
-      },
-      {
-       "id": 55909,
-       "name": "Xavier Legette",
-       "pos": "WR",
-       "salary": 3200,
-       "team": "CAR"
-      },
-      {
-       "id": 55910,
-       "name": "Jonathon Brooks",
-       "pos": "RB",
-       "salary": 4800,
-       "team": "CAR"
-      },
-      {
-       "id": 55985,
-       "name": "Audric Estime",
-       "pos": "RB",
-       "salary": 7600,
-       "team": "NO"
-      },
-      {
-       "id": 56003,
-       "name": "Ja'Tavion Sanders",
-       "pos": "TE",
-       "salary": 1000,
-       "team": "CAR"
-      },
-      {
-       "id": 56005,
-       "name": "Devaughn Vele",
-       "pos": "WR",
-       "salary": 7000,
-       "team": "NO"
-      },
-      {
-       "id": 56109,
-       "name": "Jalen Coker",
-       "pos": "WR",
-       "salary": 8600,
-       "team": "CAR"
-      },
-      {
-       "id": 56119,
-       "name": "Brycen Tremayne",
-       "pos": "WR",
-       "salary": 1600,
-       "team": "CAR"
-      },
-      {
-       "id": 56128,
-       "name": "Spencer Rattler",
-       "pos": "QB",
-       "salary": 8000,
-       "team": "NO"
-      },
-      {
-       "id": 56153,
-       "name": "Casey Washington",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "CAR"
-      },
-      {
-       "id": 56183,
-       "name": "Kevin Austin Jr.",
-       "pos": "WR",
-       "salary": 1400,
-       "team": "NO"
-      },
-      {
-       "id": 56250,
-       "name": "Tetairoa McMillan",
-       "pos": "WR",
-       "salary": 10400,
-       "team": "CAR"
-      },
-      {
-       "id": 56271,
-       "name": "Tyler Shough",
-       "pos": "QB",
-       "salary": 12400,
-       "team": "NO"
-      },
-      {
-       "id": 56343,
-       "name": "Moliki Matavao",
-       "pos": "TE",
-       "salary": 1000,
-       "team": "NO"
-      },
-      {
-       "id": 56371,
-       "name": "Trevor Etienne",
-       "pos": "RB",
-       "salary": 1800,
-       "team": "CAR"
-      },
-      {
-       "id": 56418,
-       "name": "Mitchell Evans",
-       "pos": "TE",
-       "salary": 1400,
-       "team": "CAR"
-      }
-     ],
-     "single": true,
-     "slate": "CAR @ NO",
-     "slateId": "2140055",
-     "teams": [
-      "CAR",
-      "NO"
-     ]
-    },
-    {
-     "book": "FanDuel",
-     "cap": 60000,
-     "count": 29,
-     "def": {
-      "ARI": 6200,
-      "LA": 6800
-     },
-     "games": 1,
-     "kickoff": 1794776700000.0,
-     "players": [
-      {
-       "id": 46,
-       "name": "Matthew Stafford",
-       "pos": "QB",
-       "salary": 12800,
-       "team": "LA"
-      },
-      {
-       "id": 52438,
-       "name": "Davante Adams",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "LA"
-      },
-      {
-       "id": 53085,
-       "name": "Tyler Higbee",
-       "pos": "TE",
-       "salary": 3800,
-       "team": "LA"
-      },
-      {
-       "id": 53421,
-       "name": "James Conner",
-       "pos": "RB",
-       "salary": 5800,
-       "team": "ARI"
-      },
-      {
-       "id": 53674,
-       "name": "Kendrick Bourne",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "ARI"
-      },
-      {
-       "id": 54214,
-       "name": "Gardner Minshew",
-       "pos": "QB",
-       "salary": 1000,
-       "team": "ARI"
-      },
-      {
-       "id": 54504,
-       "name": "Devin Duvernay",
-       "pos": "WR",
-       "salary": 3000,
-       "team": "ARI"
-      },
-      {
-       "id": 54804,
-       "name": "Colby Parkinson",
-       "pos": "TE",
-       "salary": 4600,
-       "team": "LA"
-      },
-      {
-       "id": 54990,
-       "name": "Tutu Atwell",
-       "pos": "WR",
-       "salary": 7200,
-       "team": "LA"
-      },
-      {
-       "id": 55093,
-       "name": "Hunter Long",
-       "pos": "TE",
-       "salary": 1000,
-       "team": "ARI"
-      },
-      {
-       "id": 55232,
-       "name": "Trey McBride",
-       "pos": "TE",
-       "salary": 12000,
-       "team": "ARI"
-      },
-      {
-       "id": 55270,
-       "name": "Tyler Allgeier",
-       "pos": "RB",
-       "salary": 8800,
-       "team": "ARI"
-      },
-      {
-       "id": 55288,
-       "name": "Simi Fehoko",
-       "pos": "WR",
-       "salary": 2400,
-       "team": "ARI"
-      },
-      {
-       "id": 55503,
-       "name": "Teagan Quitoriano",
-       "pos": "TE",
-       "salary": 1200,
-       "team": "ARI"
-      },
-      {
-       "id": 55506,
-       "name": "Kyren Williams",
-       "pos": "RB",
-       "salary": 12400,
-       "team": "LA"
-      },
-      {
-       "id": 55527,
-       "name": "Zonovan Knight",
-       "pos": "RB",
-       "salary": 5400,
-       "team": "ARI"
-      },
-      {
-       "id": 55652,
-       "name": "Puka Nacua",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "LA"
-      },
-      {
-       "id": 55656,
-       "name": "Evan Hull",
-       "pos": "RB",
-       "salary": 1000,
-       "team": "ARI"
-      },
-      {
-       "id": 55823,
-       "name": "Elijah Higgins",
-       "pos": "TE",
-       "salary": 3200,
-       "team": "ARI"
-      },
-      {
-       "id": 55842,
-       "name": "Davis Allen",
-       "pos": "TE",
-       "salary": 1400,
-       "team": "LA"
-      },
-      {
-       "id": 55851,
-       "name": "Jalen Brooks",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "ARI"
-      },
-      {
-       "id": 55929,
-       "name": "Blake Corum",
-       "pos": "RB",
-       "salary": 10000,
-       "team": "LA"
-      },
-      {
-       "id": 55992,
-       "name": "Jordan Whittington",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "LA"
-      },
-      {
-       "id": 56313,
-       "name": "Terrance Ferguson",
-       "pos": "TE",
-       "salary": 1000,
-       "team": "LA"
-      },
-      {
-       "id": 56341,
-       "name": "Konata Mumpfield",
-       "pos": "WR",
-       "salary": 7800,
-       "team": "LA"
-      },
-      {
-       "id": 56548,
-       "name": "Stetson Bennett",
-       "pos": "QB",
-       "salary": 8000,
-       "team": "LA"
-      },
-      {
-       "id": 56569,
-       "name": "Brennan Presley",
-       "pos": "WR",
-       "salary": 1000,
-       "team": "LA"
-      }
-     ],
-     "single": true,
-     "slate": "LAR @ ARI",
-     "slateId": "2140061",
-     "teams": [
-      "LAR",
-      "ARI"
+      "IND",
+      "HOU"
      ]
     }
    ],
    "slate": "FanDuel Main",
-   "slateId": "2138264"
+   "slateId": "2142332"
   }
  }
 }
